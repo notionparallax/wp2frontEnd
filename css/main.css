@@ -146,3 +146,13 @@ figure figcaption {
 .use-case li {
   list-style-type: none;
 }
+
+.icon > svg {
+  display: inline-block;
+  height: 1.3em;
+  vertical-align: middle;
+}
+
+.icon > svg path {
+  fill: #4d4d4d;
+}
