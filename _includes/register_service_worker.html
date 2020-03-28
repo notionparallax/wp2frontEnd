@@ -1,0 +1,11 @@
+<script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(reg){
+        console.log("Yes, we have some bananas, I mean a service worker.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
+</script>

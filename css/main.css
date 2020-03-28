@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP|Raleway|Cinzel+Decorative|Raleway+Dots");
+
+body {
+  background-color: hsla(60, 10%, 98%, 1);
+  font-family: "Noto Serif JP", serif;
+  font-size: 21px;
+  margin: auto;
+  max-width: 700px;
+  padding: 1em;
+  word-break: break-word;
+}
+
+.name-title {
+  border-bottom: 0.5mm solid black;
+  column-span: all;
+  font-family: "Raleway Dots", cursive;
+  font-size: 400%;
+  margin-bottom: 5mm;
+  padding-bottom: 10mm;
+  font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+section {
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+  border-top: 1px solid hsla(0, 0%, 0%, 0.05);
+  margin-bottom: 1em;
+}
+
+button {
+  border-radius: 0.2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 200%;
+  padding: 0.5em;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.img-circle {
+  width: 2em;
+  border-radius: 50%;
+  transform: translateY(0.6em);
+}
+
+.range-output {
+  float: right;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  height: 1em;
+}
+
+.form-group {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  border-radius: 0.5em;
+  border: 1px solid silver;
+  margin: 0.25em;
+  padding: 0.5em;
+}
+
+.slider {
+  width: 100%;
+}
+
+.hamburger {
+  height: 2em;
+  padding-right: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+  z-index: 1000;
+}
+.hamburger svg {
+  width: 3em;
+}
+.hamburger img {
+  transform: translateY(-0.5em);
+}
+
+.profile {
+  background-color: azure;
+  display: block;
+  height: 100vh;
+  line-height: 3;
+  padding-top: 4em;
+  position: fixed;
+  right: -100vw;
+  text-align: center;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+  width: 12em;
+  z-index: 500;
+}
+
+.profile.menu-active {
+  right: 0;
+  width: 100vw;
+}
+.profile ul {
+  padding: 0;
+}
+.profile li {
+  display: block;
+}
+
+figure {
+  float: right;
+  max-width: 40vw;
+  width: 10em;
+}
+figure img {
+  max-height: 5em;
+}
+figure figcaption {
+  font-size: 70%;
+}
+
+.whisper {
+  font-size: 70%;
+  background-color: chartreuse;
+  padding: 0 1em;
+}
+
+.use-case img {
+  border-radius: 50%;
+  float: left;
+  height: 3em;
+  margin-left: -3em;
+  width: auto;
+}
+
+.use-case li {
+  list-style-type: none;
+}

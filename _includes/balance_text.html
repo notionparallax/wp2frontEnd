@@ -1,0 +1,15 @@
+<style type="text/css">
+  /* Plugin looks for elements with class named "balance-text" */
+  .balance-text {
+      text-wrap: balanced;  /* Apply (proposed) CSS style */
+  }
+</style>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/balance-text/1.6.0/jquery.balancetext.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$( document ).ready( function () {
+		$('blockquote p').balanceText();
+		$('figcaption p').balanceText();
+		$('.post-header h1').balanceText();
+	} )
+</script>

@@ -1,0 +1,7 @@
+<!-- Docs here https://dev.twitter.com/cards/types/summary-large-image -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:site"        content="@{{site.twitter_username}}">
+<meta name="twitter:creator"     content="@{% if page.author-twitter %}{{page.author-twitter}}{% else %}{{site.twitter_username}}{% endif %}">
+<meta name="twitter:title"       content="{{ page.title }}">
+<meta name="twitter:description" content="{% if page.twitter-body %}{{page.twitter-body}}{% else %}{{ page.description }}{% endif %}">
+<meta name="twitter:image"       content="{% if page.featuredimg %}{{ site.url }}/assets/{{ page.featuredimg }}{% else %} {% endif %}">

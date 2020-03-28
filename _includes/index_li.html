@@ -1,0 +1,26 @@
+<li itemscope itemtype="http://schema.org/BlogPosting">
+  <!-- {% if post.featured_image %}<img src="./assets/{{post.featured_image}}">{% endif %} -->
+  <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" />
+  <meta itemprop="dateModified" content="{{  post.date | date_to_xmlschema }}" /> {% if post.author.display_name %}<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name" content="{{ post.author.display_name }}"></span>
+  </span>{% endif %}
+  <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="https://upload.wikimedia.org/wikipedia/commons/9/9e/Sus_scrofa_avionica.png">
+            <meta itemprop="width"  content="700">
+            <meta itemprop="height" content="500">
+          </span>
+  <meta itemprop="name" content="Notion Parallax">
+  </span>
+  <span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="https://upload.wikimedia.org/wikipedia/commons/9/9e/Sus_scrofa_avionica.png">
+            <meta itemprop="width"  content="700">
+            <meta itemprop="height" content="500">
+        </span>
+  <h2 itemprop="headline">
+          <a itemprop="mainEntityOfPage"  class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+  <p itemprop="description">{% if post.description %}{{ post.description | truncate: 250 }}{% else %}>_{% endif %}</p>
+  <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">read more</a>
+</li>
