@@ -12,7 +12,10 @@ We make web articles for you to read in your cabin. <span class="secondary-prop"
 </blockquote>
 
 <div id="firebaseui-auth-container"></div>
-<div id="loader">Loading...</div>
+
+<div id="loader">Loading...
+
+</div>
 
 <div class="quick-story">
 
