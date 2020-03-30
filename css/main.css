@@ -1,35 +1,58 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP|Raleway|Cinzel+Decorative|Raleway+Dots");
 
+:root {
+  --big-img-width: 98.5vw;
+  --main-column-width: 38em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 body {
   background-color: hsla(60, 10%, 98%, 1);
   font-family: "Noto Serif JP", serif;
   font-size: 21px;
-  margin: auto;
-  max-width: 700px;
-  padding: 1em;
+  /* padding: 1em; */
   word-break: break-word;
 }
+.page-content {
+  margin: auto;
+  max-width: var(--main-column-width);
+}
 
-.name-title {
+h1 {
   border-bottom: 0.5mm solid black;
   column-span: all;
   font-family: "Raleway Dots", cursive;
-  font-size: 400%;
-  margin-bottom: 5mm;
-  padding-bottom: 10mm;
   font-weight: lighter;
+  margin: 1rem 0;
+}
+.name-title {
+  font-size: 400%;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5 {
+  margin-top: 1em;
   font-family: "Raleway", sans-serif;
   break-inside: avoid;
   page-break-inside: avoid;
 }
-
+p {
+  margin-top: 1em;
+}
+p.reset {
+  margin-top: 0;
+}
 section {
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
   border-top: 1px solid hsla(0, 0%, 0%, 0.05);
@@ -165,4 +188,27 @@ figure figcaption {
   text-align: center;
   vertical-align: top;
   width: 32%;
+}
+
+/* index */
+.mega-image {
+  height: 60vh;
+  margin-left: calc((var(--big-img-width) - var(--main-column-width)) * -0.5);
+  object-fit: cover;
+  object-position: 50% 34%;
+  width: var(--big-img-width);
+}
+
+/* footer */
+footer {
+  column-count: 3;
+  margin-top: 10em;
+  border-top: 1px solid;
+  padding-top: 1em;
+}
+footer h2 {
+  column-span: all;
+}
+footer div {
+  break-inside: avoid-column;
 }

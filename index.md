@@ -1,9 +1,10 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: default
+layout: index
 ---
+
+<p class="reset"><img src="{{ site.baseurl }}/img/frontPageImage.jpg" class="mega-image"></p>
+
+<h1 class="name-title">Walden Pond</h1>
 
 <blockquote class="value-prop">
 We make web articles for you to read in your cabin. <span class="secondary-prop">(Or on a plane, a train, or your sofa)</span>

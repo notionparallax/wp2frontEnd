@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body itemscope="" itemtype="http://schema.org/Blog">
+    <div class="page-content {{page.type}}">
+      <noscript>
+        <p>
+          Looks like you've got JS turned off. NBD, it won't change how things
+          work much. It's mostly presentational on here anyway.
+        </p>
+      </noscript>
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <!-- <script src="{{'/js/ga-events.js' | prepend: site.baseurl }}" type="text/javascript"></script> -->
+    <!-- {% include ga-tracking.html %} -->
+    <!-- {% include socialScript.html %} -->
+    <!-- {% include balance_text.html %} -->
+  </body>
+</html>

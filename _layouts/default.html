@@ -5,16 +5,14 @@
   <body itemscope="" itemtype="http://schema.org/Blog">
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper {{page.type}}">
-        <noscript>
-          <p>
-            Looks like you've got JS turned off. NBD, it won't change how things
-            work much. It's mostly presentational on here anyway.
-          </p>
-        </noscript>
-        {{ content }}
-      </div>
+    <div class="page-content {{page.type}}">
+      <noscript>
+        <p>
+          Looks like you've got JS turned off. NBD, it won't change how things
+          work much. It's mostly presentational on here anyway.
+        </p>
+      </noscript>
+      {{ content }}
     </div>
 
     {% include footer.html %}
