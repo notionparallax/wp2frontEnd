@@ -48,6 +48,7 @@ We make web articles for you to read in your cabin. <span class="secondary-prop"
 />
 <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
 
+<script src="js/helpers.js"></script>
 <script src="js/init-firebase.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/firebase-user.js"></script>

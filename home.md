@@ -149,8 +149,7 @@ for you, forever!
 
 <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
 
+<script src="js/helpers.js"></script>
 <script src="js/init-firebase.js"></script>
-
 <script src="js/firebase-user.js"></script>
-
 <script src="js/home.js"></script>
