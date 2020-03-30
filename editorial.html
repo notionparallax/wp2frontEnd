@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<p>
+  The magazine is made specifically for you. Tell us a bit about how you'd like
+  us to do that:
+</p>
+
+<form class="form" id="everything-form">
+  <!-- Later --><!-- 'minutes_of_content_wanted': 60,  -->
+
+  <div class="form-group">
+    <!-- 'longest_article': 19,  -->
+    <label for="form-longest_article">Longest article</label>
+    <div class="range-output" id="max-output"></div>
+    <p>What's the maximum length of article that you'd like?</p>
+    <input
+      type="range"
+      class="slider"
+      name="form-longest_article"
+      id="form-longest_article"
+      placeholder="Maximum, in minutes"
+      min="1"
+      max="60"
+      value="25"
+      step="1"
+    />
+  </div>
+
+  <div class="form-group">
+    <!-- 'shortest_article': 9,   -->
+    <label for="form-shortest_article">Shortest article</label>
+    <div class="range-output" id="min-output"></div>
+    <p>What's the minimum length of article that you'd like?</p>
+    <input
+      type="range"
+      class="slider"
+      name="form-shortest_article"
+      id="form-shortest_article"
+      placeholder="Minimum, in minutes"
+      min="0"
+      max="59"
+      value="9"
+      step="1"
+    />
+  </div>
+
+  <!-- <div class="form-group">
+    <p>This isn't implemented yet, but it's coming soon.</p>
+    <label for="form-shortest_article"
+      >Should we include <code>code</code>?</label
+    >
+    <input
+      type="checkbox"
+      class="form-control"
+      name="form-allow_code"
+      id="form-allow_code"
+      value="allow_code"
+    /><span id="allow_code_output">No code please</span>
+    <p>
+      Articles with code sometimes have really long lines that don't wrap well.
+      We can exclude them if you like.
+    </p>
+  </div> -->
+
+  <input id="hidden-all-ok" name="allok" type="hidden" value="allok" />
+
+  <button id="all-good-btn">That all looks great</button>
+</form>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+
+<script src="js/init-firebase.js"></script>
+<script src="js/firebase-user.js"></script>
+<script src="js/editorial.js"></script>

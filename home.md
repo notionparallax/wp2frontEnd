@@ -8,14 +8,33 @@ layout: default
 
 ## Getting Started
 
+<div class="onboarding-flow">
+
+Because you are a dearly beloved 🦙 alpha tester ⚗ the subscription is only \$1AUD, and for you, that's for as long as this thing keeps going.
+
 Before we can send you anything, we need a few things from you:
 
-- <span class="check address1"           >❓</span>[Your address](address)
-- <span class="check editorial_checked"  >❓</span>[How long your articles should be](editorial)
-- <span class="check pocket_access_token">❓</span>[A connection to your Pocket](pocket)
-- <span class="     "                    >✔️</span>[Some payment](payment Details) <span class="whisper">For the moment it's free!</span>
+- <span class="check editorial_checked">❓</span>
 
-<p class="fully-setup">Once you've got four green ticks you can:</p>
+  [How long your articles should be](editorial)
+
+  🧾
+
+- <span class="check pocket_access_token">❓</span>
+
+  [A connection to your Pocket account](pocket)
+
+  <svg class="logo-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 20 115 130" height="24px"><path fill="#EF4056" d="M84.058 83.308L58.54 107.324c-1.313 1.5-3.377 2.065-4.878 2.065-1.876 0-3.752-.564-5.253-2.065L23.266 83.308c-2.627-2.814-3.002-7.505 0-10.507 2.814-2.627 7.505-3.002 10.32 0l20.076 19.325L74.114 72.8c2.627-3.002 7.317-2.627 9.944 0 2.627 3.002 2.627 7.693 0 10.507M97.005 43.53H10.32C4.691 43.53 0 47.846 0 53.475v32.084c0 29.083 24.016 53.288 53.662 53.288 29.458 0 53.287-24.205 53.287-53.288V53.475c0-5.63-4.503-9.945-9.944-9.945"></path></svg>
+
+- <span class="check payment">❓</span>
+
+  [Some payment and address details](payment)
+
+  💳
+
+</div>
+
+<p class="fully-setup">Once you've got three green ticks you can:</p>
 <form action="/activate" method="POST" class="form" id="activate-form">
 <button>Activate your subscription</button>
 </form>
@@ -49,11 +68,16 @@ can have huge tables and so many links to other parts of the page.
 
 </section>
 
+# debug data
+
+Don't worry about this, it's so that I can see everything, but it's here in case
+you're interested in what data we've captured about you.
+
 <section>
 
 ## Editorial
 
-Each edition I'd like to read <a href="/editorial"><span class="minutes_of_content_wanted">X</span></a> minutes of great content.
+Each edition I'd like to read <a href="/editorial"><span class="minutes_of_content_wanted">X</span></a> minutes of articles I already know I want to read.
 
 I'd like the articles to be between <a href="/editorial"><span class="shortest_article">X</span> and <span class="longest_article">Y</span></a> minutes long.
 
@@ -108,12 +132,25 @@ Here's some articles you saved recently:
 ## Payment
 
 Surprise! It's free for now because you're an alpha user. It'll be $10 an 
-issue for everyone else when it comes out of alpha, but it'll be $5 an issue
+issue for everyone else when it comes out of alpha, but it'll be $1 an issue
 for you, forever!
 
 - currency: <span class="currency">AUD</span>
 - price: <span class="price">\$0</span>
 
 </section>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+
+<script src="js/init-firebase.js"></script>
+
+<script src="js/firebase-user.js"></script>
 
 <script src="js/home.js"></script>

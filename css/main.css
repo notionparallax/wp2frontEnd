@@ -156,3 +156,13 @@ figure figcaption {
 .icon > svg path {
   fill: #4d4d4d;
 }
+
+/* home */
+.onboarding-flow li {
+  border: 1px solid;
+  display: inline-block;
+  min-height: 10em;
+  text-align: center;
+  vertical-align: top;
+  width: 32%;
+}

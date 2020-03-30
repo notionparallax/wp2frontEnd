@@ -1,20 +1,5 @@
 console.log("in auth.js");
 
-// Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: "AIzaSyALDPnYGsg5CA0cuznLke-Jm5Yc82Jq3Bk",
-  authDomain: "walden-pond-2.firebaseapp.com",
-  databaseURL: "https://walden-pond-2.firebaseio.com",
-  projectId: "walden-pond-2",
-  storageBucket: "walden-pond-2.appspot.com",
-  messagingSenderId: "771291632963",
-  appId: "1:771291632963:web:531e5ff7bb47bdd20f0bf6",
-  measurementId: "G-KYKF8Z3L7X"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-
 document.addEventListener(
   "DOMContentLoaded",
   function() {
@@ -35,7 +20,7 @@ document.addEventListener(
       },
       // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
       signInFlow: "popup",
-      signInSuccessUrl: "home.html",
+      signInSuccessUrl: "home",
       signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID
@@ -46,9 +31,9 @@ document.addEventListener(
         // firebase.auth.PhoneAuthProvider.PROVIDER_ID
       ],
       // Terms of service url.
-      tosUrl: "tos.html",
+      tosUrl: "tos",
       // Privacy policy url.
-      privacyPolicyUrl: "privacy.html"
+      privacyPolicyUrl: "privacy"
     };
 
     // The start method will wait until the DOM is loaded.
