@@ -2,7 +2,7 @@
 layout: index
 ---
 
-<p class="reset"><img src="{{ site.baseurl }}/img/frontPageImage.jpg" class="mega-image"></p>
+<p class="reset"><img src="./img/frontPageImage.jpg" class="mega-image"></p>
 
 <h1 class="name-title">Walden Pond</h1>
 
