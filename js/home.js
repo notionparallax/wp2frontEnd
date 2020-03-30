@@ -1,6 +1,6 @@
 window.addEventListener("userReady", function() {
   let body = JSON.stringify(window.wp_user);
-  fetch("http://localhost:8000" + "/user-data", {
+  fetch(contextAwareURL() + "/user-data", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
     headers: { "Content-Type": "application/json" },
     body: body // body data type must match "Content-Type" header
@@ -8,7 +8,6 @@ window.addEventListener("userReady", function() {
   })
     .then(response => response.json())
     .then(data => {
-      console.log(data, "Would do something with this, but not yet");
       populatePage(data);
     })
     .catch(e => console.error("fetch failed", e));

@@ -1,6 +1,6 @@
 window.addEventListener("userReady", function() {
   let body = JSON.stringify(window.wp_user);
-  fetch("http://localhost:8000" + "/user-data", {
+  fetch(contextAwareURL() + "/user-data", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
     headers: { "Content-Type": "application/json" },
     body: body // body data type must match "Content-Type" header
@@ -71,7 +71,7 @@ function collectEditorial(event) {
   };
   user.editorial = editorial;
 
-  fetch("http://localhost:8000" + "/update", {
+  fetch(contextAwareURL() + "/update", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
