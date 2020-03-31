@@ -16,16 +16,6 @@ window.addEventListener("userReady", function() {
 function populatePage(user) {
   console.log(user);
 
-  // Populate all the simple fields
-  // document.querySelectorAll("span").forEach(x => {
-  //   let k = x.classList.value;
-  //   let relaventData = personData[k];
-  //   if (relaventData) {
-  //     // console.log(k, relaventData);
-  //     x.innerHTML = relaventData;
-  //   }
-  // });
-
   setSignupProgressTicks(user); //set the check marks or not
 
   document.querySelector(".profile-preview").src =
