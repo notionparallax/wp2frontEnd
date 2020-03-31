@@ -49,7 +49,7 @@ Collect the ticks and you will unlock greatness.
 ## Tips
 
 <figure>
-<img src="{{ site.baseurl }}/img/android_tag_at_save.png">
+<img src="./img/android_tag_at_save.png">
 <figcaption>You can tag from inside the Pocket app or, at least in Android, you can do it as you save it.
 
 </figcaption>
@@ -131,7 +131,7 @@ Here's some articles you saved recently:
 
 ## Payment
 
-Surprise! It's free for now because you're an alpha user. It'll be $10 an 
+Surprise! It's a dollar an issue because you're an alpha user. It'll be $10 an 
 issue for everyone else when it comes out of alpha, but it'll be $1 an issue
 for you, forever!
 
