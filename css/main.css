@@ -35,6 +35,7 @@ h1 {
   border-bottom: 0.5mm solid black;
   column-span: all;
   font-family: "Raleway Dots", cursive;
+  font-size: 200%;
   font-weight: lighter;
   margin: 1rem 0;
 }
@@ -63,6 +64,7 @@ section {
   margin-bottom: 1em;
 }
 
+button,
 a.button {
   border-radius: 0.12em;
   border: 0.1em solid black;
@@ -76,10 +78,12 @@ a.button {
   text-decoration: none;
   transition: all 0.2s;
 }
+button:hover,
 a.button:hover {
   color: white;
   background-color: black;
 }
+button.disabled,
 a.button.disabled {
   opacity: 0.3;
   pointer-events: none;
@@ -210,7 +214,6 @@ figure figcaption {
 
 /* home */
 .onboarding-flow li {
-  border: 1px solid;
   display: inline-block;
   min-height: 10em;
   text-align: center;
