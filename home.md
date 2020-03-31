@@ -14,23 +14,15 @@ Because you are a dearly beloved 🦙 alpha tester ⚗ the subscription is only 
 
 Before we can send you anything, we need a few things from you:
 
-- <span class="check editorial_checked">❓</span>
+<ul>
 
-  [How long your articles should be](editorial)
+<li><a href="editorial"><span class="check editorial_checked">❓</span><br>How long your articles should be?<br>🧾</a></li>
 
-  🧾
+<li><a href="/connect-pocket"><span class="check pocket_access_token">❓</span><br>A connection to your Pocket account<br><svg class="logo-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 20 115 130" height="24px"><path fill="#EF4056" d="M84.058 83.308L58.54 107.324c-1.313 1.5-3.377 2.065-4.878 2.065-1.876 0-3.752-.564-5.253-2.065L23.266 83.308c-2.627-2.814-3.002-7.505 0-10.507 2.814-2.627 7.505-3.002 10.32 0l20.076 19.325L74.114 72.8c2.627-3.002 7.317-2.627 9.944 0 2.627 3.002 2.627 7.693 0 10.507M97.005 43.53H10.32C4.691 43.53 0 47.846 0 53.475v32.084c0 29.083 24.016 53.288 53.662 53.288 29.458 0 53.287-24.205 53.287-53.288V53.475c0-5.63-4.503-9.945-9.944-9.945"></path></svg></a></li>
 
-- <span class="check pocket_access_token">❓</span>
+<li><a href="payment"><span class="check payment">❓</span><br>Some payment and address details<br>💳🏡</a></li>
 
-  [A connection to your Pocket account](pocket)
-
-  <svg class="logo-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 20 115 130" height="24px"><path fill="#EF4056" d="M84.058 83.308L58.54 107.324c-1.313 1.5-3.377 2.065-4.878 2.065-1.876 0-3.752-.564-5.253-2.065L23.266 83.308c-2.627-2.814-3.002-7.505 0-10.507 2.814-2.627 7.505-3.002 10.32 0l20.076 19.325L74.114 72.8c2.627-3.002 7.317-2.627 9.944 0 2.627 3.002 2.627 7.693 0 10.507M97.005 43.53H10.32C4.691 43.53 0 47.846 0 53.475v32.084c0 29.083 24.016 53.288 53.662 53.288 29.458 0 53.287-24.205 53.287-53.288V53.475c0-5.63-4.503-9.945-9.944-9.945"></path></svg>
-
-- <span class="check payment">❓</span>
-
-  [Some payment and address details](payment)
-
-  💳
+</ul>
 
 </div>
 
