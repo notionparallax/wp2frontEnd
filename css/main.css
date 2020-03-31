@@ -80,6 +80,15 @@ a.button.disabled {
   opacity: 0.3;
   pointer-events: none;
 }
+
+.auth-with-pocket {
+  text-align: center;
+}
+
+.auth-with-pocket img {
+  height: 1.1em;
+  transform: translateY(5px);
+  width: initial;
 }
 
 img {
