@@ -36,8 +36,8 @@ Currently there isn't a button to automatically cancel your subscription, which 
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://notionparallax.co.uk/success',
-      cancelUrl: 'https://notionparallax.co.uk/canceled',
+      successUrl: 'https://waldenpond.press/success',
+      cancelUrl: 'https://waldenpond.press/canceled',
       // billingAddressCollection: 'required',
       shippingAddressCollection: {
         allowedCountries: ['AU'], // Just AU for the moment...
