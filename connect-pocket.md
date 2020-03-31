@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<h2>Connect to your Pocket</h2>
+## Connect to your Pocket
 
-<p>Follow this link to authorise us to see your Pocket</p>
+Follow this link to authorise us to see your Pocket.
 
 <div class="auth-with-pocket">
   <a href="" class="button disabled" id="pocket-auth-link">
@@ -13,12 +13,7 @@ layout: default
   </a>
 </div>
 
-<p>
-  If you've already authourised us, this will give you an error. If you want to
-  re-authourise, go
-  <a href="https://getpocket.com/connected_applications">here</a> to
-  de-authourise us first.
-</p>
+If you've already authorised us, this will give you an error. If you want to re-authorise, go <a href="https://getpocket.com/connected_applications">here</a> to de-authorise us first.
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<h2 class="finalise-pocket-header">
+  <span id="waiting" class="show">Nearly there&hellip;</span>
+  <span id="done" class="hide"
+    >If that looks good, we're done here!
+    <a href="home">Let's go home and finish off</a></span
+  >
+</h2>
+
+<div id="articles-container" class="articles-container">
+  <template id="article-template">
+    <div class="article-preview">
+      <img src="https://placebear.com/200/300" />
+      <h3 class="preview-title">
+        <a target="_blank" rel="noopener noreferrer" href="">TITLE</a>
+      </h3>
+      <p class="exerpt">
+        I would have got away with it if it wasn't for you pesky kids
+      </p>
+      <p class="meta"><span class="minutes"></span> minutes to read</p>
+    </div>
+  </template>
+</div>
+
+<p>
+  We're trying to get a few of your recent Pocket articles to check that the
+  connection has worked.
+</p>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+
+<script src="js/helpers.js"></script>
+<script src="js/init-firebase.js"></script>
+<script src="js/firebase-user.js"></script>
+<script src="js/finalise-pocket.js"></script>

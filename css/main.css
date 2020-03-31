@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP|Raleway|Cinzel+Decorative|Raleway+Dots");
 
 :root {
+  --body-bg-colour: hsla(60, 10%, 98%, 1);
+
   --big-img-width: 98.5vw;
   --main-column-width: 38em;
+
+  --preview-width: 9rem;
 }
 
 * {
@@ -16,7 +20,7 @@
 }
 
 body {
-  background-color: hsla(60, 10%, 98%, 1);
+  background-color: var(--body-bg-colour);
   font-family: "Noto Serif JP", serif;
   font-size: 21px;
   /* padding: 1em; */
@@ -238,4 +242,61 @@ footer h2 {
 }
 footer div {
   break-inside: avoid-column;
+}
+
+/* article preview page */
+.articles-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+.article-preview {
+  display: inline-block;
+  flex: 0 1 auto;
+  font-size: 70%;
+  justify-content: space-between;
+  max-height: 22em;
+  overflow: hidden;
+  position: relative;
+  width: 20%;
+}
+.article-preview img {
+  height: var(--preview-width);
+  width: var(--preview-width);
+  object-fit: cover;
+}
+h3.preview-title,
+p.exerpt,
+p.meta {
+  margin: 0;
+  width: var(--preview-width);
+}
+p.exerpt {
+  font-size: 80%;
+}
+p.meta {
+  font-size: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  margin: 0;
+  padding: 2.5em 0 1em 0;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    var(--body-bg-colour),
+    var(--body-bg-colour)
+  );
+}
+
+h2 .show {
+  display: block;
+}
+h2 .hide {
+  display: none;
 }
