@@ -59,12 +59,27 @@ section {
   margin-bottom: 1em;
 }
 
-button {
-  border-radius: 0.2em;
-  font-family: "Raleway", sans-serif;
-  font-size: 200%;
-  padding: 0.5em;
-  width: 100%;
+a.button {
+  border-radius: 0.12em;
+  border: 0.1em solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 300;
+  margin: 1em 0;
+  padding: 0.35em 1.2em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+a.button:hover {
+  color: white;
+  background-color: black;
+}
+a.button.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
 }
 
 img {
@@ -188,6 +203,9 @@ figure figcaption {
   text-align: center;
   vertical-align: top;
   width: 32%;
+}
+.onboarding-flow a.button {
+  min-height: 10em;
 }
 
 /* index */
