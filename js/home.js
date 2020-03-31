@@ -18,8 +18,7 @@ function populatePage(user) {
 
   setSignupProgressTicks(user); //set the check marks or not
 
-  document.querySelector(".profile-preview").src =
-    user.from_firebase_auth.picture;
+  document.querySelector(".profile-preview").src = user.photoURL;
 }
 
 function setSignupProgressTicks(user) {
