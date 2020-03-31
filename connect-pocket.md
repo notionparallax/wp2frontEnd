@@ -2,16 +2,7 @@
 layout: default
 ---
 
-<h1>Connect to your Pocket</h1>
-
-{% if articlelist %}
-<p>Here's some articles you saved recently:</p>
-<ul>
-  {% for a in articlelist %}
-  <li>{{a}}</li>
-  {% endfor %}
-</ul>
-{% endif %}
+<h2>Connect to your Pocket</h2>
 
 <p>Follow this link to authorise us to see your Pocket</p>
 
