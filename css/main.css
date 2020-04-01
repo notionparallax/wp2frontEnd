@@ -240,6 +240,7 @@ figure figcaption {
 }
 .value-prop {
   font-size: 120%;
+  text-align: center;
 }
 .secondary-prop {
   font-size: 90%;

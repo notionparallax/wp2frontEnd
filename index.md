@@ -7,7 +7,8 @@ layout: index
 <h1 class="name-title">Walden Pond</h1>
 
 <blockquote class="value-prop">
-A little paper zine, full of articles for you to read in your cabin. <span class="secondary-prop">(Or on a plane, a train, or your sofa)</span>
+A little paper zine, full of articles for you to read in your cabin.<span class="secondary-prop">(Or, on the beach, on a plane, a train, or your sofa)</span>
+
 </blockquote>
 
 <div id="firebaseui-auth-container"></div>
@@ -15,6 +16,8 @@ A little paper zine, full of articles for you to read in your cabin. <span class
 <div id="loader">Loading...
 
 </div>
+
+_Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It's full of a selection of the articles you've saved to [Pocket](https://getpocket.com), so you know that you're interested in everything inside. Each issue has an hour of reading, the battery will never run out, it's clear in bright sunlight 😎 and has a low-latency pen interface (or pencil) 📝.
 
 <div class="quick-story">
 
