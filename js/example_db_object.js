@@ -50,6 +50,7 @@ let aUser = {
     checkout_session: {
       x: "THE WHOLE SESSION OBJECT (because I'm sure I'll need it later...)"
     },
+    name: "Ben Doherty",
     address: {
       line1: "BVN, Level 11",
       line2: "255 Pitt Street",
