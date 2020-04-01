@@ -14,43 +14,23 @@ This is a subscription for 1 issue of Walden Pond every month.
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_Gzyj9CJSY7885d"
-  role="link">Checkout</button>
+  role="link"
+  class="disabled"> Checkout</button>
 
 <div id="error-message"></div>
 
 Currently there isn't a button to automatically cancel your subscription, which is a total dick move, but this link will send an email to me, and I'll do it for you: [cancel my subscription](mailto:ben@notionparallax.co.uk?cc=user@email.com&subject=Cancel my Walden Pond subscription please&body=No hard feelings)
 
-<script>
-(function() {
-  var stripe = Stripe('pk_test_oqvBwVn1rocov0b3aHDawOWL');
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
 
-  var checkoutButton = document.getElementById('checkout-button-plan_Gzyj9CJSY7885d');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{plan: 'plan_Gzyj9CJSY7885d', quantity: 1}],
+<!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
 
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://waldenpond.press/success',
-      cancelUrl: 'https://waldenpond.press/canceled',
-      // billingAddressCollection: 'required',
-      shippingAddressCollection: {
-        allowedCountries: ['AU'], // Just AU for the moment...
-      }
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+
+<script src="js/helpers.js"></script>
+<script src="js/init-firebase.js"></script>
+<script src="js/firebase-user.js"></script>
+<script src="js/payment.js"></script>
