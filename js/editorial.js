@@ -69,12 +69,12 @@ function collectEditorial(event) {
     minutes_of_content_wanted: 60,
     weeks_to_select_from: 200
   };
-  user.editorial = editorial;
+  let body = JSON.stringify({ user: user, payload: editorial });
 
-  fetch(contextAwareURL() + "/update", {
+  fetch(contextAwareURL() + "/update-editorial", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(user)
+    body: body
   })
     .then(response => response.json())
     .then(data => {

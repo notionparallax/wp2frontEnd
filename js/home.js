@@ -18,7 +18,8 @@ function populatePage(user) {
 
   setSignupProgressTicks(user); //set the check marks or not
 
-  document.querySelector(".profile-preview").src = user.photoURL;
+  document.querySelector(".profile-preview").src =
+    user.from_firebase_auth.picture;
 }
 
 function setSignupProgressTicks(user) {
@@ -33,7 +34,7 @@ function setSignupProgressTicks(user) {
   ) {
     document.querySelector("span.check.pocket_access_token").innerHTML = "✔️";
   }
-  if (user && user.stripe) {
+  if (user && user.stripe && user.stripe.complete_event) {
     document.querySelector("span.check.payment").innerHTML = "✔️";
   }
 }

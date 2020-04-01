@@ -1,29 +1,5 @@
 window.addEventListener("userReady", function() {
   let body = JSON.stringify(window.wp_user);
-  fetch(contextAwareURL() + "/user-data", {
-    method: "POST", // *GET, POST, PUT, DELETE, etc.
-    headers: { "Content-Type": "application/json" },
-    body: body // body data type must match "Content-Type" header
-    //docs: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log("trip1", data);
-      if (
-        data.pocket &&
-        typeof data.pocket.pocket_access_token === "string" &&
-        typeof data.pocket.pocket_request_token === "string"
-      ) {
-        getSampleArticles(data.pocket);
-      } else {
-        getAccessToken(data);
-      }
-    })
-    .catch(e => console.error("fetch failed", e));
-});
-
-function getAccessToken(user) {
-  let body = JSON.stringify(user);
   fetch(contextAwareURL() + "/issue-pocket-access-token", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
     headers: { "Content-Type": "application/json" },
@@ -36,7 +12,7 @@ function getAccessToken(user) {
       getSampleArticles(data.pocket);
     })
     .catch(e => console.error("fetch failed", e));
-}
+});
 
 function getSampleArticles(pocketKeys) {
   let body = JSON.stringify(pocketKeys);
