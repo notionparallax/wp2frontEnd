@@ -25,12 +25,18 @@ body {
   background-color: var(--body-bg-colour);
   font-family: "Noto Serif JP", serif;
   font-size: 21px;
-  /* padding: 1em; */
   word-break: break-word;
+  padding: 0;
 }
 .page-content {
   margin: auto;
   max-width: var(--main-column-width);
+  padding: 0 1em;
+}
+@media only screen and (min-device-width: 812px) {
+  .page-content {
+    padding: 0;
+  }
 }
 
 h1 {
@@ -62,7 +68,12 @@ p {
   margin-top: 1em;
 }
 p.reset {
-  margin-top: 0;
+  margin: 0 -1em;
+}
+@media only screen and (min-device-width: 812px) {
+  p.reset {
+    margin: 0;
+  }
 }
 section {
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
@@ -232,12 +243,22 @@ figure figcaption {
 
 /* index */
 .mega-image {
-  height: 60vh;
-  margin-left: calc((var(--big-img-width) - var(--main-column-width)) * -0.5);
+  height: 64vw;
+  margin: 0;
   object-fit: cover;
-  object-position: 50% 34%;
-  width: var(--big-img-width);
+  object-position: 50% 54%;
+  width: 100%;
 }
+@media only screen and (min-device-width: 812px) {
+  .mega-image {
+    height: 60vh;
+    margin-left: calc((var(--big-img-width) - var(--main-column-width)) * -0.5);
+    object-fit: cover;
+    object-position: 50% 34%;
+    width: var(--big-img-width);
+  }
+}
+
 .value-prop {
   font-size: 120%;
   text-align: center;
