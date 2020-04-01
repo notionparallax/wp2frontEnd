@@ -7,6 +7,8 @@
   --main-column-width: 38em;
 
   --preview-width: 9rem;
+
+  --main-text-colour: black;
 }
 
 * {
@@ -41,6 +43,10 @@ h1 {
 }
 .name-title {
   font-size: 400%;
+}
+h1 a {
+  text-decoration: none;
+  color: var(--main-text-colour);
 }
 
 h2,
@@ -231,6 +237,13 @@ figure figcaption {
   object-fit: cover;
   object-position: 50% 34%;
   width: var(--big-img-width);
+}
+.value-prop {
+  font-size: 120%;
+}
+.secondary-prop {
+  font-size: 90%;
+  opacity: 65%;
 }
 
 /* footer */

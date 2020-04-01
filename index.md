@@ -7,7 +7,7 @@ layout: index
 <h1 class="name-title">Walden Pond</h1>
 
 <blockquote class="value-prop">
-We make web articles for you to read in your cabin. <span class="secondary-prop">(Or on a plane, a train, or your sofa)</span>
+A little paper zine, full of articles for you to read in your cabin. <span class="secondary-prop">(Or on a plane, a train, or your sofa)</span>
 </blockquote>
 
 <div id="firebaseui-auth-container"></div>
