@@ -211,12 +211,13 @@ figure figcaption {
   border-radius: 50%;
   float: left;
   height: 3em;
-  margin-left: -3em;
+  margin-left: -3.5em;
   width: auto;
 }
 
 .use-case li {
   list-style-type: none;
+  padding-left: 3.5em;
 }
 
 .icon > svg {
