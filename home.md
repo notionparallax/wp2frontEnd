@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<p class="fully-activated">You're all done with setting up. If you need to change anything then look in the menu.</p>
+<p class="fully-activated hide">You're all done with setting up. If you need to change anything then look in the menu.</p>
 
 <section id="getting_started">
 
@@ -26,6 +26,8 @@ Before we can send you anything, we need a few things from you:
 
 </div>
 
+<div id="activate-button" class="hide">
+
 <p class="fully-setup">Once you've got three green ticks you can:</p>
 <form action="/activate" method="POST" class="form" id="activate-form">
 <button>Activate your subscription</button>
@@ -34,9 +36,11 @@ Before we can send you anything, we need a few things from you:
 Collect the ticks and you will unlock greatness.
 </p>
 
+</div>
+
 </section>
 
-<section>
+<section class="hide" id="tips">
 
 ## Tips
 
