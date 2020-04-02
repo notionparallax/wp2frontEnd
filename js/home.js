@@ -60,8 +60,14 @@ function populatePage(user) {
 }
 
 function setSignupProgressTicks(user) {
+  let ticks = {
+    editorial_set: false,
+    pocket_set: false,
+    money_set: false
+  };
   if (user && user.editorial && user.editorial.editorial_checked == true) {
     document.querySelector("span.check.editorial_checked").innerHTML = "✔️";
+    ticks.editorial_set = true;
   }
   if (
     user &&
@@ -70,8 +76,18 @@ function setSignupProgressTicks(user) {
     user.pocket.pocket_request_token
   ) {
     document.querySelector("span.check.pocket_access_token").innerHTML = "✔️";
+    ticks.pocket_set = true;
   }
   if (user && user.stripe && user.stripe.complete_event) {
     document.querySelector("span.check.payment").innerHTML = "✔️";
+    ticks.money_set = true;
+  }
+
+  if (ticks.editorial_set && ticks.pocket_set && ticks.money_set) {
+    document.querySelector(".fully-activated").classList.remove("hide");
+    document.querySelector("#activate-button").classList.remove("hide");
+    document.querySelector("#tips").classList.remove("hide");
+
+    document.querySelector("#getting_started").classList.add("hide");
   }
 }
