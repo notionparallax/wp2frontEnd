@@ -46,7 +46,7 @@ Collect the ticks and you will unlock greatness.
 
 <figure>
 <img src="./img/android_tag_at_save.png">
-<figcaption>You can tag from inside the Pocket app or, at least in Android, you can do it as you save it.
+<figcaption>You can tag from inside the Pocket app or you can do it as you save it. (At least in Android.)
 
 </figcaption>
 
