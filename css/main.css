@@ -53,6 +53,7 @@ h1 {
 
 a.site-title {
   color: var(--main-text-colour);
+  margin-left: 1rem;
   text-decoration: none;
 }
 
