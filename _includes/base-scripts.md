@@ -7,6 +7,8 @@
 
 <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
 
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
 <script src="js/helpers.js"></script>
 <script src="js/init-firebase.js"></script>
 <script src="js/firebase-user.js"></script>
