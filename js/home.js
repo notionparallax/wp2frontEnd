@@ -80,7 +80,7 @@ function setSignupProgressTicks(user) {
     user.pocket.pocket_access_token &&
     user.pocket.pocket_request_token
   ) {
-    document.querySelector("span.check.pocket_access_token").innerHTML = "✔️";
+    document.querySelector("span.check.pocket_access").innerHTML = "✔️";
     ticks.pocket_set = true;
   }
   if (user && user.stripe && user.stripe.complete_event) {
