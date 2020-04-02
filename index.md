@@ -43,8 +43,6 @@ _Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It
   href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"
 />
 
-{% include use_case.md %}
-
-<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+{% include base-scripts.md %}
 
 <script src="js/auth.js"></script>
