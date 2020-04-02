@@ -50,9 +50,10 @@ h1 {
 .name-title {
   font-size: 400%;
 }
-h1 a {
-  text-decoration: none;
+
+a.site-title {
   color: var(--main-text-colour);
+  text-decoration: none;
 }
 
 h2,
@@ -158,6 +159,7 @@ input[type="checkbox"] {
 }
 .hamburger svg {
   width: 3em;
+  opacity: 50%;
 }
 .hamburger img {
   transform: translateY(-0.5em);
@@ -174,13 +176,19 @@ input[type="checkbox"] {
   text-align: center;
   top: 0;
   transition: all 0.2s ease-in-out;
-  width: 12em;
+  /* width: 12em; */
   z-index: 500;
 }
 
 .profile.menu-active {
   right: 0;
   width: 100vw;
+}
+@media only screen and (min-device-width: 812px) {
+  .profile.menu-active {
+    box-shadow: -16px 0px 22px 0px rgba(0, 0, 0, 0.26);
+    max-width: 15em;
+  }
 }
 .profile ul {
   padding: 0;

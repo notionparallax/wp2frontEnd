@@ -1,9 +1,40 @@
 <header class="site-header">
-
   <div class="wrapper {{page.type}}">
+    <h1>
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </h1>
 
-    <h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <div class="hamburger">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+        <!-- <rect x="0" y="0" width="100" height="100" fill="white"/> -->
+        <!-- prettier-ignore -->
+        <line id="t" x1="10" x2="90" y1="30" y2="30" stroke="#000" stroke-linecap="round" stroke-width="10"/>
+        <!-- prettier-ignore -->
+        <line id="m" x1="10" x2="90" y1="50" y2="50" stroke="#000" stroke-linecap="round" stroke-width="10"/>
+        <!-- prettier-ignore -->
+        <line id="b" x1="10" x2="90" y1="70" y2="70" stroke="#000" stroke-linecap="round" stroke-width="10"/>
+      </svg>
+    </div>
 
+    <div class="profile">
+      <p id="header-profile-name"></p>
+      <img
+        id="header-profile-picture"
+        class="img-circle profile-preview"
+        src="https://placebear.com/100/100"
+      />
+      <p class="name"></p>
+      <ul>
+        <li><a href="home">Home</a></li>
+        <!-- <li><a href="address">Address Details</a></li> -->
+        <li><a href="editorial">Editorial Details</a></li>
+        <li><a href="payment">Payment Details</a></li>
+        <li><a href="pocket">Pocket Details</a></li>
+        <li><a href="tos">TOS</a> & <a href="privacy">Privacy</a></li>
+      </ul>
+      <p><a href="/logout" id="sign-out">Sign Out</a></p>
+    </div>
   </div>
 
+  <script src="js/header.js"></script>
 </header>
