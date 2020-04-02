@@ -16,32 +16,37 @@ window.addEventListener("userReady", function() {
 
 function populatePage(user) {
   console.log(user);
+
   let fba = user.from_firebase_auth;
   let e = user.editorial;
   let ad = user.stripe.address;
   let p = user.pocket;
-  let sub = user.stripe.sub;
+  let sub = user.stripe.sub || { currency: " " };
   document.querySelector(".profile-preview").src = fba.picture;
-  setPageValue(".minutes_of_content_wanted", e.minutes_of_content_wanted);
-  setPageValue(".minutes_of_content_wanted", e.minutes_of_content_wanted);
-  setPageValue(".shortest_article", e.shortest_article);
-  setPageValue(".longest_article", e.longest_article);
   document.querySelector(".allow_code").src = e.allow_code ? "do" : "don't";
-  // setPageValue(".weeks_to_select_from", e.weeks_to_select_from);
-  setPageValue(".name", fba.name);
-  setPageValue(".email", fba.email);
-  setPageValue(".user_id", user.uid);
-  setPageValue(".name", fba.name);
-  setPageValue(".address1", ad.line1);
-  setPageValue(".address2", ad.line2, " ");
-  setPageValue(".city", ad.city);
-  setPageValue(".postal_code", ad.postal_code);
-  setPageValue(".state", ad.state);
-  setPageValue(".country", ad.country);
-  setPageValue(".pocket_request_token", p.pocket_request_token);
-  setPageValue(".pocket_access_token", p.pocket_access_token);
-  setPageValue(".currency", sub.currency);
-  setPageValue(".price", `$${sub.amount / 100}`);
+
+  things_to_update = [
+    [".minutes_of_content_wanted", e.minutes_of_content_wanted],
+    [".minutes_of_content_wanted", e.minutes_of_content_wanted],
+    [".shortest_article", e.shortest_article],
+    [".longest_article", e.longest_article],
+    // [".weeks_to_select_from", e.weeks_to_select_from],
+    [".name", fba.name],
+    [".email", fba.email],
+    [".user_id", user.uid],
+    [".name", fba.name],
+    [".address1", ad.line1],
+    [".address2", ad.line2, " "],
+    [".city", ad.city],
+    [".postal_code", ad.postal_code],
+    [".state", ad.state],
+    [".country", ad.country],
+    [".pocket_request_token", p.pocket_request_token],
+    [".pocket_access_token", p.pocket_access_token],
+    [".currency", sub.currency],
+    [".price", `$${sub.amount / 100}`]
+  ];
+  things_to_update.forEach(x => setPageValue(x[0], x[1], x[2]));
 
   function setPageValue(selector, value, defaultSubstitution) {
     try {
