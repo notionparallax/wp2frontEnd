@@ -37,22 +37,14 @@ _Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It
 
 </div>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-  https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
-
-<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
 <link
   type="text/css"
   rel="stylesheet"
   href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"
 />
-<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
 
-<script src="js/helpers.js"></script>
-<script src="js/init-firebase.js"></script>
+{% include use_case.md %}
+
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
 <script src="js/auth.js"></script>
-<script src="js/firebase-user.js"></script>
