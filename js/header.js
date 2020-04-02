@@ -10,7 +10,17 @@ if (hamburger) {
 let signOutButton = document.getElementById("sign-out");
 if (signOutButton) {
   signOutButton.onclick = function() {
-    firebase.auth().signOut();
+    firebase
+      .auth()
+      .signOut()
+      .then(function() {
+        // Sign-out successful.
+        window.location = "home";
+      })
+      .catch(function(error) {
+        // An error happened.
+        console.error("Sign out error:", error);
+      });
     console.log(document.cookie);
   };
 }
