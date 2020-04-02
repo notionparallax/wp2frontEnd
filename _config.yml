@@ -5,15 +5,15 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Walden Pond
-email: your-email@example.com
+email: ben@notionparallax.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Walden Pond is a printed zine that is full of the bits of the web that you 
+  are actually interested in. One way to think of it is as a Pocket client made 
+  of paper.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://waldenpond.press" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+twitter_username: notionparallax
+github_username: notionparallax
 
 # Build settings
 markdown: kramdown
@@ -26,7 +26,7 @@ short_name: "Walden Pond"
 name: "Walden Pond"
 default_locale: "en"
 start_url: "/?utm_source=homescreen"
-manifest_description: "A little break to read in peace"
+manifest_description: "A little break, to read in peace"
 background_color: "#FCFCFC"
 theme_color: "#1f597a"
 display: fullscreen

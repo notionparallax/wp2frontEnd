@@ -4,12 +4,14 @@
 
     
       <div class="footer-col">
-        <ul class="contact-list">
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+        <p>This site is run by Ben Doherty, in Sydney, Australia. That's why getting something to read in the cafe or on the beach is so important!</p>
+
+        <p>If you've got an idea about how to make the zine of the site better, email Ben at <a href="mailto:{{ site.email }}">{{ site.email }}</a> or submit an issue on GitHub.</p>
+        
       </div>
 
       <div class="footer-col">
+        <p>You can keep an eye on what's going on by following along:</p>
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -22,10 +24,8 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
-          <li>
-            <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-          </li>
         </ul>
+        <p>The site is made out of a mishmash of Jekyll, Firebase and Stripe. I wouldn't trust me to handle payments but that's what Stripe are really good at. The same goes for Auth and databases with Firebase</p>
       </div>
 
       <div class="footer-col">

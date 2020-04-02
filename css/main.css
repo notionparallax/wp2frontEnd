@@ -291,9 +291,12 @@ figure figcaption {
 
 /* footer */
 footer {
-  margin-top: 10em;
   border-top: 1px solid;
-  padding-top: 1em;
+  column-rule: 1px solid silver;
+  column-width: 17em;
+  font-size: 70%;
+  margin-top: 10em;
+  padding: 1em;
 }
 footer h2 {
   column-span: all;
@@ -301,10 +304,8 @@ footer h2 {
 footer div {
   break-inside: avoid-column;
 }
-@media only screen and (min-device-width: 812px) {
-  footer {
-    column-count: 3;
-  }
+.social-media-list {
+  list-style-type: none;
 }
 
 /* article preview page */
