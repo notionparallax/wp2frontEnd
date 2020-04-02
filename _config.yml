@@ -30,3 +30,6 @@ manifest_description: "A little break, to read in peace"
 background_color: "#FCFCFC"
 theme_color: "#1f597a"
 display: fullscreen
+
+#stripe
+checkout_id: "plan_H1V1UIJudbwmPr"
