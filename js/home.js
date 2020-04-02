@@ -9,17 +9,54 @@ window.addEventListener("userReady", function() {
     .then(response => response.json())
     .then(data => {
       populatePage(data);
+      setSignupProgressTicks(data); //set the check marks or not
     })
     .catch(e => console.error("fetch failed", e));
 });
 
 function populatePage(user) {
   console.log(user);
+  let fba = user.from_firebase_auth;
+  let e = user.editorial;
+  let ad = user.stripe.address;
+  let p = user.pocket;
+  let sub = user.stripe.sub;
+  document.querySelector(".profile-preview").src = fba.picture;
+  setPageValue(".minutes_of_content_wanted", e.minutes_of_content_wanted);
+  setPageValue(".minutes_of_content_wanted", e.minutes_of_content_wanted);
+  setPageValue(".shortest_article", e.shortest_article);
+  setPageValue(".longest_article", e.longest_article);
+  document.querySelector(".allow_code").src = e.allow_code ? "do" : "don't";
+  // setPageValue(".weeks_to_select_from", e.weeks_to_select_from);
+  setPageValue(".name", fba.name);
+  setPageValue(".email", fba.email);
+  setPageValue(".user_id", user.uid);
+  setPageValue(".name", fba.name);
+  setPageValue(".address1", ad.line1);
+  setPageValue(".address2", ad.line2, " ");
+  setPageValue(".city", ad.city);
+  setPageValue(".postal_code", ad.postal_code);
+  setPageValue(".state", ad.state);
+  setPageValue(".country", ad.country);
+  setPageValue(".pocket_request_token", p.pocket_request_token);
+  setPageValue(".pocket_access_token", p.pocket_access_token);
+  setPageValue(".currency", sub.currency);
+  setPageValue(".price", `$${sub.amount / 100}`);
 
-  setSignupProgressTicks(user); //set the check marks or not
-
-  document.querySelector(".profile-preview").src =
-    user.from_firebase_auth.picture;
+  function setPageValue(selector, value, defaultSubstitution) {
+    try {
+      if (value) {
+        document
+          .querySelectorAll(selector)
+          .forEach(el => (el.innerHTML = value));
+      } else {
+        console.warn(`couldn't set value on ${selector}, no value`);
+        document.querySelector(selector).innerHTML = defaultSubstitution || "?";
+      }
+    } catch (e) {
+      console.warn(`couldn't set value on ${selector}: ${e}`, e);
+    }
+  }
 }
 
 function setSignupProgressTicks(user) {
