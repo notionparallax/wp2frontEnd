@@ -27,14 +27,12 @@ function populatePage(user) {
 
   things_to_update = [
     [".minutes_of_content_wanted", e.minutes_of_content_wanted],
-    [".minutes_of_content_wanted", e.minutes_of_content_wanted],
     [".shortest_article", e.shortest_article],
     [".longest_article", e.longest_article],
     // [".weeks_to_select_from", e.weeks_to_select_from],
     [".name", fba.name],
     [".email", fba.email],
     [".user_id", user.uid],
-    [".name", fba.name],
     [".address1", ad.line1],
     [".address2", ad.line2, " "],
     [".city", ad.city],
