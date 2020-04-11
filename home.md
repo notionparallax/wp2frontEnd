@@ -10,7 +10,7 @@ layout: default
 
 <div class="onboarding-flow">
 
-Because you are a dearly beloved 🦙 alpha tester ⚗ the subscription is only \$1AUD, and for you, that's for as long as this thing keeps going.
+Because you are a dearly beloved βeta tester the subscription is only \$5AUD, and for you, that's for as long as this thing keeps going.
 
 Before we can send you anything, we need a few things from you:
 

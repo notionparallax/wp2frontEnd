@@ -42,8 +42,8 @@ Here's some articles you saved recently:
 
 ## Payment
 
-Surprise! It's a dollar an issue because you're an alpha user. It'll be $10 an 
-issue for everyone else when it comes out of alpha, but it'll be $1 an issue
+Surprise! It's five bucks an issue because you're a βeta user. It'll be $10 an 
+issue for everyone else when it comes out of beta, but it'll be \$5 an issue
 for you, forever!
 
 - currency: <span class="currency">AUD</span>
