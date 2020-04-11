@@ -5,7 +5,7 @@ window.addEventListener("userReady", function() {
   var stripe = Stripe("pk_live_q1dcaunx7RfFnw9n8A6K3yHa");
 
   var checkoutButton = document.getElementById(
-    "checkout-button-{{ site.checkout_id }}"
+    "checkout-button-plan_H4pyqo7qsD0TQL"
   );
   checkoutButton.addEventListener("click", function() {
     // When the customer clicks on the button, redirect them to Checkout.
