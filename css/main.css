@@ -221,6 +221,16 @@ figure figcaption {
   float: right;
   mix-blend-mode: multiply;
 }
+
+blockquote {
+  margin: 1em;
+}
+blockquote p {
+  margin-left: -0.5em;
+  display: inline;
+  font-size: 90%;
+}
+
 .use-case img {
   border-radius: 50%;
   float: left;
