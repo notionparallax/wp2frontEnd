@@ -223,7 +223,7 @@ figure figcaption {
   column-span: all;
 }
 .what-is-pocket img {
-  display: inline;
+  display: inline-block;
   height: 1em;
   transform: translateY(0.2em) scale(1.5) translateX(0em);
   width: 6em;
