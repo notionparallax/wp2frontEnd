@@ -31,7 +31,9 @@ _Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It
 
 </div>
 
-{% include long_story.md %}
+<div class="what-is-pocket">
+
+{% include what_is_pocket.md %}
 
 </div>
 
