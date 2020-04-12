@@ -25,7 +25,11 @@ _Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It
 
 </div>
 
-<div class="long-story">
+<div class="yeah-but-why">
+
+{% include yeah_but_why.md %}
+
+</div>
 
 {% include long_story.md %}
 

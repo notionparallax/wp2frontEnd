@@ -216,6 +216,11 @@ figure figcaption {
   padding: 0 1em;
 }
 
+.yeah-but-why img {
+  width: 40%;
+  float: right;
+  mix-blend-mode: multiply;
+}
 .use-case img {
   border-radius: 50%;
   float: left;
