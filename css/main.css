@@ -216,6 +216,18 @@ figure figcaption {
   padding: 0 1em;
 }
 
+.long-story {
+  column-width: 17em;
+}
+.long-story h2 {
+  column-span: all;
+}
+.what-is-pocket img {
+  display: inline;
+  height: 1em;
+  transform: translateY(0.2em) scale(1.5) translateX(0em);
+  width: 6em;
+}
 .yeah-but-why img {
   width: 40%;
   float: right;
@@ -238,9 +250,9 @@ blockquote p {
   margin-left: -3.5em;
   width: auto;
 }
-
 .use-case li {
   list-style-type: none;
+  margin: 1em 0;
   padding-left: 3.5em;
 }
 
