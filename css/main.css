@@ -393,6 +393,11 @@ p.meta {
   display: none;
 }
 
+/* history page */
+.history-container h2 {
+  text-transform: capitalize;
+}
+
 /* debug */
 .monospace {
   font-family: monospace;
