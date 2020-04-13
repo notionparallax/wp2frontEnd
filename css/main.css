@@ -352,6 +352,7 @@ footer div {
   max-height: 22em;
   overflow: hidden;
   position: relative;
+  vertical-align: top;
   width: 20%;
 }
 .article-preview img {

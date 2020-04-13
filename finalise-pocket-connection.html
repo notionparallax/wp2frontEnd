@@ -11,18 +11,7 @@ layout: default
 </h2>
 
 <div id="articles-container" class="articles-container">
-  <template id="article-template">
-    <div class="article-preview">
-      <img src="https://placebear.com/200/300" />
-      <h3 class="preview-title">
-        <a target="_blank" rel="noopener noreferrer" href="">TITLE</a>
-      </h3>
-      <p class="exerpt">
-        I would have got away with it if it wasn't for you pesky kids
-      </p>
-      <p class="meta"><span class="minutes"></span> minutes to read</p>
-    </div>
-  </template>
+  {% include pocket_article_template.html %}
 </div>
 
 <p>
