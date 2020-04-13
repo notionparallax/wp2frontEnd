@@ -46,6 +46,47 @@ layout: default
     />
   </div>
 
+  <div class="form-group">
+    <label for="form-shortest_article">How far back should we look?</label>
+    <div class="range-output" id="history-output"></div>
+    <p>
+      Pocket has been going for a long time, so you might have articles that are
+      that old too. Maybe you want to read them, but this lets you filter for
+      only newer articles.
+    </p>
+    <input
+      type="range"
+      class="slider"
+      name="form-history_depth"
+      id="form-history_depth"
+      placeholder="Weeks to pull from"
+      min="4"
+      max="700"
+      value="200"
+      step="1"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="form-shortest_article">Paper</label>
+    <div class="range-output" id="min-output"></div>
+    <p>
+      What colour paper you'd like? We reccomend ivory, it's relaxing and it's
+      easy on your eyes.
+    </p>
+    <select name="paper-colour" id="paper-colour">
+      <option value="A4RECYCLED80GSM"> White </option>
+      <option value="A4MIDGOLD80GSM"> Mid Gold </option>
+      <option value="A4PASTELBLUE80GSM"> Pastel Blue </option>
+      <option value="A4PASTELGREEN80GSM"> Pastel Green </option>
+      <option value="A4PASTELIVORY80GSM" selected="selected">
+        Pastel Ivory
+      </option>
+      <option value="A4PASTELPINK80GSM"> Pastel Pink </option>
+      <option value="A4PASTELYELLOW80GSM"> Pastel Yellow </option>
+    </select>
+  </div>
+
   <!-- <div class="form-group">
     <p>This isn't implemented yet, but it's coming soon.</p>
     <label for="form-shortest_article"

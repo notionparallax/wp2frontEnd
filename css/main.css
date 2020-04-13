@@ -144,6 +144,9 @@ input[type="checkbox"] {
   margin: 0.25em;
   padding: 0.5em;
 }
+.form-group p {
+  font-size: 80%;
+}
 
 .slider {
   width: 100%;
