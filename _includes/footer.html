@@ -1,50 +1,48 @@
 <footer class="site-footer">  
-
+  <div class="footer-content">
     <h2 class="footer-heading">{{ site.title }}</h2>
-
     
-      <div class="footer-col">
-        <p>This site is run by Ben Doherty, in Sydney, Australia. That's why getting something to read in the cafe or on the beach is so important!</p>
+    <div class="footer-col">
+      <p>This site is run by Ben Doherty, in Sydney, Australia. That's why getting something to read in the cafe or on the beach is so important!</p>
 
-        <p>If you've got an idea about how to make the zine of the site better, email Ben at <a href="mailto:{{ site.email }}">{{ site.email }}</a> or submit an issue on GitHub.</p>
-        
-      </div>
+      <p>If you've got an idea about how to make the zine or the site better, email Ben at <a href="mailto:{{ site.email }}">{{ site.email }}</a> or submit an issue on GitHub.</p>
+    </div>
 
-      <div class="footer-col">
-        <p>You can keep an eye on what's going on by following along:</p>
-        <ul class="social-media-list">
-          {% if site.github_username %}
+    <div class="footer-col">
+      <p>You can keep an eye on what's going on by following along:</p>
+      <ul class="social-media-list">
+        {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
           </li>
-          {% endif %}
+        {% endif %}
 
-          {% if site.twitter_username %}
+        {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
-          {% endif %}
-        </ul>
-        <p>The site is made out of a mishmash of 
-          <a href="https://jekyllrb.com/">Jekyll</a>, 
-          <a href="https://firebase.google.com/">Firebase</a>, 
-          <a href="https://stripe.com/">Stripe</a> and 
-          <a href="http://getpocket.com/">Pocket</a>. 
-          I wouldn't trust me to handle payments but that's what Stripe are 
-          really good at. The same goes for auth and databases with Firebase.
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <p>{{ site.description }}</p>
-      </div>
+        {% endif %}
+      </ul>
+      <p>The site is made out of a mishmash of 
+        <a href="https://jekyllrb.com/">Jekyll</a>, 
+        <a href="https://firebase.google.com/">Firebase</a>, 
+        <a href="https://stripe.com/">Stripe</a> and 
+        <a href="http://getpocket.com/">Pocket</a>. 
+        I wouldn't trust me to handle payments but that's what Stripe are 
+        really good at. The same goes for auth and databases with Firebase.
+      </p>
     </div>
 
-  
+    <div class="footer-col">
+      <p>{{ site.description }}</p>
+    </div>
+  </div>
+</footer>
 
   {% if page.has-math%}
     <script type="text/javascript" async
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
   {% endif %}
+
 </footer>

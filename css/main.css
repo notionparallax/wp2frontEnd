@@ -321,17 +321,24 @@ blockquote p {
 
 /* footer */
 footer {
+  background-color: hsla(0, 0%, 0%, 0.8);
   border-top: 1px solid;
+  box-shadow: inset 0px 20px 10px 0px rgba(0, 0, 0, 0.75);
+  color: white;
   column-rule: 1px solid silver;
-  column-width: 17em;
   font-size: 70%;
   margin-top: 10em;
   padding: 1em;
 }
+.footer-content {
+  column-width: 17em;
+  margin: auto;
+  max-width: 60em;
+}
 footer h2 {
   column-span: all;
 }
-footer div {
+.footer-content div {
   break-inside: avoid-column;
 }
 .social-media-list {
