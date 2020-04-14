@@ -2,6 +2,8 @@
 layout: index
 ---
 
+<div class="index">
+
 <p class="reset"><img src="./img/frontPageImage.jpg" class="mega-image"></p>
 
 <h1 class="name-title">Walden Pond</h1>
@@ -49,6 +51,7 @@ _Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It
 
 </div>
 
+</div>
 <link
   type="text/css"
   rel="stylesheet"
