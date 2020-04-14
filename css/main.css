@@ -358,7 +358,7 @@ footer div {
   vertical-align: top;
   width: 20%;
 }
-.article-preview img {
+.article-preview img.feature-img {
   height: var(--preview-width);
   width: var(--preview-width);
   object-fit: cover;
@@ -387,6 +387,16 @@ p.meta {
     var(--body-bg-colour),
     var(--body-bg-colour)
   );
+}
+p.meta a {
+  float: right;
+}
+img.domain-meta {
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  width: 2em;
+  /* mix-blend-mode: multiply; */
 }
 
 .show {

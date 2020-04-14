@@ -18,9 +18,16 @@ function showArticles(articles, templateID, containerID) {
   for (let [key, article] of Object.entries(articles)) {
     let clone = template.content.cloneNode(true);
 
-    clone.querySelector("img").src = article.top_image_url
+    clone.querySelector("img.feature-img").src = article.top_image_url
       ? article.top_image_url
       : fillerImg;
+
+    clone.querySelector("img.domain-meta").src = article.domain_metadata
+      ? article.domain_metadata.greyscale_logo
+      : "";
+    clone.querySelector("img.domain-meta").title = article.domain_metadata
+      ? article.domain_metadata.name
+      : "";
 
     clone.querySelector("h3 a").innerText =
       article.given_title || article.resolved_title
