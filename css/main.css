@@ -258,6 +258,11 @@ blockquote p {
   margin: 1em 0;
   padding-left: 3.5em;
 }
+.use-case span.testimonial-name {
+  float: right;
+  font-size: 80%;
+  opacity: 0.8;
+}
 
 .icon > svg {
   display: inline-block;
