@@ -98,6 +98,10 @@ a {
 a:visited {
   color: #2f85b6;
 }
+a:hover {
+  cursor: pointer;
+}
+
 button,
 a.button {
   border-radius: 0.12em;
@@ -188,7 +192,7 @@ input[type="checkbox"] {
   background-color: azure;
   display: block;
   height: 100vh;
-  line-height: 3;
+  line-height: 2;
   padding-top: 4em;
   position: fixed;
   right: -100vw;
@@ -445,4 +449,7 @@ img.domain-meta {
 .monospace {
   font-family: monospace;
   font-size: 80%;
+}
+section#debug-data {
+  column-width: 17em;
 }
