@@ -34,9 +34,8 @@ function showArticles(articles, templateID, containerID) {
         ? article.given_title || article.resolved_title
         : "Spooky! no title 👻";
 
-    clone.querySelector("h3 a").href = article.given_url
-      ? article.given_url
-      : "";
+    clone.querySelector("h3 a").href = `https://app.getpocket.com/read/${key}`;
+    // article.given_url ? article.given_url : "";
 
     clone.querySelector(".exerpt").innerText = article.excerpt
       ? article.excerpt
