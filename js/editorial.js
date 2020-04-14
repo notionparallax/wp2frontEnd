@@ -51,15 +51,20 @@ document
   .addEventListener("click", (e) => collectEditorial(e));
 
 function setPage(user) {
+  let ed = user.editorial;
   console.log(user, "ready to set the sliders");
-  setSliderVal("#form-longest_article", user.editorial.longest_article);
+  setSliderVal("#form-longest_article", ed.longest_article);
   updateTimeDisplay("#form-longest_article", "#max-output", "minutes");
 
-  setSliderVal("#form-shortest_article", user.editorial.shortest_article);
+  setSliderVal("#form-shortest_article", ed.shortest_article);
   updateTimeDisplay("#form-shortest_article", "#min-output", "minutes");
 
-  setSliderVal("#form-history_depth", user.editorial.weeks_to_select_from);
+  setSliderVal("#form-history_depth", ed.weeks_to_select_from);
   updateTimeDisplay("#form-history_depth", "#history-output", "weeks");
+
+  document
+    .getElementById("paper-colour")
+    .querySelector(`option[value=${ed.paper_colour}]`).selected = true;
 }
 
 function collectEditorial(event) {
