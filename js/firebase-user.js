@@ -1,5 +1,5 @@
-window.addEventListener("load", function() {
-  firebase.auth().onAuthStateChanged(function(user) {
+window.addEventListener("load", function () {
+  firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
       // User is signed in.
       //   var displayName = user.displayName;
