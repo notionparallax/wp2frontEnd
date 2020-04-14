@@ -68,6 +68,8 @@ h5 {
 }
 p {
   margin-top: 1em;
+  widows: 3;
+  orphans: 3;
 }
 p.reset {
   margin: 0 -1em;
@@ -82,7 +84,15 @@ section {
   border-top: 1px solid hsla(0, 0%, 0%, 0.05);
   margin-bottom: 1em;
 }
-
+a {
+  border-bottom: 3px solid rgba(31, 89, 122, 0.05);
+  color: #1f597a;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+a:visited {
+  color: #2f85b6;
+}
 button,
 a.button {
   border-radius: 0.12em;
@@ -313,6 +323,9 @@ blockquote p {
     object-position: 50% 34%;
     width: var(--big-img-width);
   }
+}
+.index h2 {
+  margin-top: 6em;
 }
 
 .value-prop {
