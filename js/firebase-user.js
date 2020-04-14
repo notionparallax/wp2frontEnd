@@ -15,6 +15,7 @@ window.addEventListener("load", function () {
 
       var event = new Event("userReady");
       window.dispatchEvent(event);
+      document.querySelector(".page-content").classList.remove("invisible");
     } else {
       // User is signed out.
       // ...

@@ -31,7 +31,12 @@ body {
 .page-content {
   margin: auto;
   max-width: var(--main-column-width);
+  min-height: 64vh;
   padding: 0 1em;
+  transition: opacity 0.5s;
+}
+.page-content.invisible {
+  opacity: 0;
 }
 @media only screen and (min-device-width: 812px) {
   .page-content {
