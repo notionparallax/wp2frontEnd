@@ -104,6 +104,7 @@ a:hover {
 
 button,
 a.button {
+  background-color: hsla(0, 0%, 100%, 0.8);
   border-radius: 0.12em;
   border: 0.1em solid black;
   box-sizing: border-box;
@@ -306,10 +307,12 @@ blockquote p {
 }
 @media only screen and (min-device-width: 812px) {
   .onboarding-flow li {
+    background-color: hsla(34, 78%, 91%, 0.4);
+    border-radius: 1em;
     display: inline-block;
-    margin-top: 1em;
-    min-height: 10em;
-    padding: 0 3.5em;
+    margin: 1em 1.5em;
+    min-height: 20em;
+    padding: 0 1.5em;
     vertical-align: top;
     width: 30%;
   }
@@ -321,6 +324,9 @@ blockquote p {
   }
   .onboarding-flow br {
     display: inline;
+  }
+  .beta-message {
+    font-size: 80%;
   }
 }
 
@@ -359,8 +365,8 @@ footer {
   background-color: hsla(0, 0%, 0%, 0.8);
   border-top: 1px solid;
   box-shadow: inset 0px 20px 10px 0px rgba(0, 0, 0, 0.75);
-  color: white;
-  column-rule: 1px solid silver;
+  color: hsla(0, 0%, 100%, 0.6);
+  column-rule: 1px solid hsla(0, 0%, 100%, 0.6);
   font-size: 70%;
   margin-top: 10em;
   padding: 1em;
@@ -388,6 +394,11 @@ footer h2 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: stretch;
+}
+.articles-container h2 {
+  display: block;
+  width: 100%;
+  padding-bottom: 1em;
 }
 .article-preview {
   display: inline-block;

@@ -43,7 +43,7 @@ Before we can send you anything, we need two things from you:
 </div>
 </div>
 
-Because you are a dearly beloved βeta tester the subscription is \$5AUD, and for you, that's for as long as this thing keeps going.
+<div class="beta-message">Because you are a dearly beloved βeta tester the subscription is \$5AUD, and for you, that's for as long as this thing keeps going.</div>
 
 </li>
 
@@ -53,7 +53,7 @@ Because you are a dearly beloved βeta tester the subscription is \$5AUD, and fo
 
 <section id="history-data">
 
-<div id="history-container" class="history-container">
+<div id="articles-container" class="articles-container">
 
 {% include pocket_article_template.html %}
 
@@ -64,5 +64,5 @@ Because you are a dearly beloved βeta tester the subscription is \$5AUD, and fo
 {% include base-scripts.md %}
 
 <script src="js/home.js"></script>
-<script src="js/history.js"></script>
+<script src="js/finalise-pocket.js"></script>
 <script src="js/pocket.js"></script>
