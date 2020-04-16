@@ -1,4 +1,4 @@
-console.log("in auth.js");
+// console.log("in auth.js");
 
 document.addEventListener(
   "DOMContentLoaded",

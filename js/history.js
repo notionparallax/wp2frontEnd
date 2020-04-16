@@ -1,4 +1,4 @@
-console.log("in history.js");
+// console.log("in history.js");
 window.addEventListener("userReady", function () {
   let body = JSON.stringify(window.wp_user);
   fetch(contextAwareURL() + "/user-data", {

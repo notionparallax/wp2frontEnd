@@ -8,7 +8,7 @@ window.addEventListener("userReady", function () {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("trip2", data);
+      console.log("db object for user:", data);
       getSampleArticles(data.pocket);
     })
     .catch((e) => console.error("fetch failed", e));
@@ -25,9 +25,12 @@ function getSampleArticles(pocketKeys) {
     .then((response) => response.json())
     .then((data) => {
       console.log("articles", data);
+      let title = document.createElement("h2");
+      title.innerText = "Some of your recent Pocket saves";
+      document.getElementById("articles-container").appendChild(title);
       showArticles(data, "article-template", "articles-container");
-      document.querySelector("#waiting").classList = "hide";
-      document.querySelector("#done").classList = "show";
+      // document.querySelector("#waiting").classList = "hide";
+      // document.querySelector("#done").classList = "show";
     })
     .catch((e) => console.error("fetch failed", e));
 }
