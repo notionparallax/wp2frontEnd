@@ -132,11 +132,13 @@ a.button.disabled {
   pointer-events: none;
 }
 
-.auth-with-pocket {
+.auth-with-pocket,
+.subscribe-with-stripe {
   text-align: center;
 }
 
-.auth-with-pocket img {
+.auth-with-pocket img,
+.subscribe-with-stripe img {
   height: 1.1em;
   transform: translateY(5px);
   width: initial;
@@ -409,7 +411,12 @@ footer h2 {
   overflow: hidden;
   position: relative;
   vertical-align: top;
-  width: 20%;
+  width: 49.2%;
+}
+@media only screen and (min-device-width: 812px) {
+  .article-preview {
+    width: 20%;
+  }
 }
 .article-preview img.feature-img {
   height: var(--preview-width);

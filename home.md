@@ -4,7 +4,7 @@ layout: default
 
 <p class="fully-activated hide">You're all done with setting up. We'll send you an edition at the beginning of next month. If you need to change anything then look in the menu.</p>
 
-<section id="getting_started">
+<section id="getting_started" class="hide">
 
 ## Getting Started
 
@@ -35,21 +35,35 @@ Before we can send you anything, we need two things from you:
 <div>
 <span class="check payment">❓</span><br>Some payment and address details<br>💳🏡
 
-<div class="auth-with-pocket">
-  <a href="" class="button disabled" id="stripe-link">
+<div class="subscribe-with-stripe">
+  <a href="payment-beta" class="button disabled" id="stripe-link">
     Subscribe with
     <img alt="Stripe" src="./img/Stripe logo - slate_sm.png" />
   </a>
+  
+  
 </div>
 </div>
 
-<div class="beta-message">Because you are a dearly beloved βeta tester the subscription is \$5AUD, and for you, that's for as long as this thing keeps going.</div>
+<div class="beta-message">Because you are <a href="payment-alpha" class="stealth-link">a</a> dearly beloved <a href="payment-beta" class="stealth-link">&beta;</a>eta tester the subscription is $5AUD, and for you, that's for as long as this thing keeps going.</div>
 
 </li>
 
 </ul>
 
 </div>
+
+</section>
+
+<section id="regular-home" class="hide">
+
+Welcome to Walden Pond. There's a bunch of things to explore in the menu, up there ↗.
+
+If there isn't much in your Pocket yet, take a look in your emails for some places that might have something you'll want to read and some tips on how to make saving things easier.
+
+I'd love to hear about how this is all going for you! Give me suggestions and I'll do my best to make them happen.
+
+</section>
 
 <section id="history-data">
 
