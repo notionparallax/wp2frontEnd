@@ -15,7 +15,7 @@ if (signOutButton) {
       .signOut()
       .then(function () {
         // Sign-out successful.
-        window.location = "home";
+        window.location = "";
       })
       .catch(function (error) {
         // An error happened.

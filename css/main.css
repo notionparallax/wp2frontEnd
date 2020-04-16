@@ -112,6 +112,7 @@ a.button {
   border-radius: 0.12em;
   border: 0.1em solid black;
   box-sizing: border-box;
+  cursor: pointer;
   display: inline-block;
   font-family: inherit;
   font-weight: 300;

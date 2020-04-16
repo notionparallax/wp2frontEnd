@@ -25,3 +25,5 @@ layout: default
 {% include long_story.md %}
 
 </div>
+
+{% include base-scripts.md %}
