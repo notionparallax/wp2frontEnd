@@ -50,16 +50,20 @@ h1 {
   font-family: "Raleway Dots", cursive;
   font-size: 200%;
   font-weight: lighter;
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 .name-title {
   font-size: 400%;
 }
 
 a.site-title {
+  border: none;
   color: var(--main-text-colour);
   margin-left: 1rem;
   text-decoration: none;
+}
+a.site-title:visited {
+  color: var(--main-text-colour);
 }
 
 h2,
@@ -85,7 +89,7 @@ p.reset {
   }
 }
 section {
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+  /* border-bottom: 1px solid hsla(0, 0%, 0%, 0.05); */
   border-top: 1px solid hsla(0, 0%, 0%, 0.05);
   margin-bottom: 1em;
 }
@@ -125,6 +129,12 @@ a.button:hover {
 }
 a#stripe-link:hover img {
   filter: invert(1);
+}
+a.stealth-link {
+  border: none;
+  color: inherit;
+  cursor: vertical-text;
+  text-decoration: none;
 }
 button.disabled,
 a.button.disabled {
