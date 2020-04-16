@@ -6,6 +6,8 @@ layout: default
 
 This is a subscription for 1 issue of Walden Pond every month.
 
+As an Alpha user it's \$1 a month.
+
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
@@ -13,7 +15,7 @@ This is a subscription for 1 issue of Walden Pond every month.
 
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-plan_H6dC7DyEWCjLqi"
+  id="checkout-button-plan_H1V1UIJudbwmPr"
   role="link"
   class="disabled">Subscribe with Stripe</button>
 

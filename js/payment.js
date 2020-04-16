@@ -1,17 +1,14 @@
----
-#
----
-window.addEventListener("userReady", function() {
+window.addEventListener("userReady", function () {
   var stripe = Stripe("pk_live_q1dcaunx7RfFnw9n8A6K3yHa");
 
-  var checkoutButton = document.getElementById(
-    "checkout-button-plan_H4pyqo7qsD0TQL"
-  );
-  checkoutButton.addEventListener("click", function() {
+  var checkoutButton = document.querySelector("[id^='checkout-button-']");
+  var checkoutID = checkoutButton.id.split("checkout-button-")[1];
+
+  checkoutButton.addEventListener("click", function () {
     // When the customer clicks on the button, redirect them to Checkout.
     stripe
       .redirectToCheckout({
-        items: [{ plan: "{{ site.checkout_id }}", quantity: 1 }],
+        items: [{ plan: checkoutID, quantity: 1 }],
 
         // Do not rely on the redirect to the successUrl for fulfilling
         // purchases, customers may not always reach the success_url after
@@ -24,10 +21,10 @@ window.addEventListener("userReady", function() {
         clientReferenceId: window.wp_user.uid,
         // billingAddressCollection: 'required',
         shippingAddressCollection: {
-          allowedCountries: ["AU"] // Just AU for the moment...
-        }
+          allowedCountries: ["AU"], // Just AU for the moment...
+        },
       })
-      .then(function(result) {
+      .then(function (result) {
         if (result.error) {
           // If `redirectToCheckout` fails due to a browser or network
           // error, display the localized error message to your customer.
