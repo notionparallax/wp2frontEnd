@@ -180,6 +180,12 @@ function drawGraphOfTTR() {
     plot_bgcolor: "rgba(0,0,0,0)",
     xaxis: { title: "Time to read", range: [0, 60] },
     // yaxis: { title: "Count" },
+    showlegend: true,
+    legend: {
+      x: 1,
+      xanchor: "right",
+      y: 1,
+    },
   };
   Plotly.newPlot("plotlyDiv", traces, layout);
   document.getElementById("graph-title").innerHTML =
