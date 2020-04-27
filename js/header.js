@@ -13,14 +13,8 @@ if (signOutButton) {
     firebase
       .auth()
       .signOut()
-      .then(function () {
-        // Sign-out successful.
-        window.location = "";
-      })
-      .catch(function (error) {
-        // An error happened.
-        console.error("Sign out error:", error);
-      });
+      .then(() => (window.location = "https://waldenpond.press/")) // Sign-out successful.
+      .catch((error) => console.error("Sign out error:", error));
     console.log(document.cookie);
   };
 }
