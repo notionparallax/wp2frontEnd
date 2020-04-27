@@ -7,6 +7,20 @@ layout: default
   us to do that:
 </p>
 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<div>
+  <div id="graph-loading-message" class="graph-loading-message">
+    <p>
+      Loading your Pocket data for a graph. We love graphs but if you have a lot
+      in your Pocket, this can take a <em>long</em> time.
+    </p>
+  </div>
+  <div class="hide" id="plotlyDiv">
+    <!-- Plotly chart will be drawn inside this DIV -->
+  </div>
+  <button class="hide" id="update-the-graph-btn">update the graph</button>
+</div>
+
 <form class="form" id="everything-form">
   <!-- Later --><!-- 'minutes_of_content_wanted': 60,  -->
 

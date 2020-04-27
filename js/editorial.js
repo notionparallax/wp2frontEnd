@@ -10,6 +10,7 @@ window.addEventListener("userReady", function () {
     .then((data) => {
       if (data.editorial) {
         setPage(data);
+        showArticleLenghts(data);
       }
       window.wp_user = data;
     })
@@ -20,7 +21,7 @@ function updateTimeDisplay(sliderSelector, targetSelector, unit) {
   let slider = document.querySelector(sliderSelector);
   let target = document.querySelector(targetSelector);
   target.innerText = `${slider.value} ${unit}`;
-  console.log();
+  // console.log(sliderSelector, slider.value);
 }
 updateTimeDisplay("#form-longest_article", "#max-output", "minutes");
 updateTimeDisplay("#form-shortest_article", "#min-output", "minutes");
@@ -41,6 +42,9 @@ document
   .addEventListener("input", () =>
     updateTimeDisplay("#form-history_depth", "#history-output", "weeks")
   );
+document
+  .getElementById("update-the-graph-btn")
+  .addEventListener("click", () => drawGraphOfTTR());
 
 if ("{{user.allow_code}}" == "allow_code") {
   document.getElementById("form-allow_code").checked = true;
@@ -108,4 +112,76 @@ function getSliderVal(selector) {
 
 function setSliderVal(selector, value) {
   document.querySelector(selector).value = value;
+}
+
+function showArticleLenghts(data) {
+  let body = data.pocket;
+  body.for_timing = true;
+  fetch(contextAwareURL() + "/sample-pocket-articles", {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body), // body data type must match "Content-Type" header
+    //docs: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      window.waldenPond_articleData = Object.values(data);
+      document.getElementById("plotlyDiv").classList.remove("hide");
+      document.getElementById("update-the-graph-btn").classList.remove("hide");
+      document.getElementById("graph-loading-message").classList.add("hide");
+      drawGraphOfTTR();
+    })
+    .catch((e) => console.error("fetch failed", e));
+}
+
+function drawGraphOfTTR() {
+  // If the data hasn't showed up yet, don't do anything
+  if (!window.waldenPond_articleData) return;
+
+  const longest_article = getSliderVal("#form-longest_article");
+  const shortest_article = getSliderVal("#form-shortest_article");
+  const weeks_to_select_from = getSliderVal("#form-history_depth");
+
+  const wpd = window.waldenPond_articleData;
+
+  const allTTR = wpd.map((a) => a.time_to_read);
+  const total_time = allTTR.reduce((a, b) => a + (b || 0), 0);
+  console.log(total_time, "minutes of content");
+
+  const deepTimeCutoff = weeks_to_select_from * 7 * 24 * 60 * 60;
+  const inRangeTTR = wpd
+    .filter(
+      (x) => parseInt(x.time_added, 10) > Date.now() / 1000 - deepTimeCutoff
+    )
+    .map((x) => x.time_to_read)
+    .filter((x) => x > shortest_article && x < longest_article);
+  const inRangeTime = inRangeTTR.reduce((a, b) => a + (b || 0), 0);
+  console.log(inRangeTime, "minutes of content in range");
+  const xbins = { size: 1 };
+  var traces = [
+    {
+      x: allTTR,
+      type: "histogram",
+      name: "All Articles",
+      xbins: xbins,
+    },
+    {
+      x: inRangeTTR,
+      type: "histogram",
+      name: "In Slider Range",
+      xbins: xbins,
+    },
+  ];
+  let layout = {
+    title:
+      `You have ${total_time} minutes of content in your Pocket` +
+      "<br>" +
+      `${inRangeTime} minutes of it is in range`,
+    barmode: "overlay",
+    paper_bgcolor: "rgba(0,0,0,0)",
+    plot_bgcolor: "rgba(0,0,0,0)",
+    xaxis: { title: "Time to read", range: [0, 60] },
+    // yaxis: { title: "Count" },
+  };
+  Plotly.newPlot("plotlyDiv", traces, layout);
 }

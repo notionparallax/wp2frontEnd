@@ -189,6 +189,17 @@ input[type="checkbox"] {
   width: 100%;
 }
 
+.graph-loading-message {
+  max-width: 30rem;
+  margin: auto;
+  font-size: 80%;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Loadingsome.gif/512px-Loadingsome.gif);
+  height: 14em;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .hamburger {
   height: 2em;
   padding-right: 1em;
