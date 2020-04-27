@@ -128,6 +128,8 @@ function showArticleLenghts(data) {
       window.waldenPond_articleData = Object.values(data);
       document.getElementById("plotlyDiv").classList.remove("hide");
       document.getElementById("update-the-graph-btn").classList.remove("hide");
+      document.getElementById("graph-title").classList.remove("hide");
+
       document.getElementById("graph-loading-message").classList.add("hide");
       drawGraphOfTTR();
     })
@@ -173,10 +175,6 @@ function drawGraphOfTTR() {
     },
   ];
   let layout = {
-    title:
-      `You have ${total_time} minutes of content in your Pocket` +
-      "<br>" +
-      `${inRangeTime} minutes of it is in range`,
     barmode: "overlay",
     paper_bgcolor: "rgba(0,0,0,0)",
     plot_bgcolor: "rgba(0,0,0,0)",
@@ -184,4 +182,8 @@ function drawGraphOfTTR() {
     // yaxis: { title: "Count" },
   };
   Plotly.newPlot("plotlyDiv", traces, layout);
+  document.getElementById("graph-title").innerHTML =
+    `You have ${total_time} minutes of content in your Pocket` +
+    "<br>" +
+    `${inRangeTime} minutes of it is in range`;
 }
