@@ -21,7 +21,11 @@ window.addEventListener("userReady", function () {
         clientReferenceId: window.wp_user.uid,
         // billingAddressCollection: 'required',
         shippingAddressCollection: {
-          allowedCountries: ["AU"], // Just AU for the moment...
+          // prettier-ignore
+          allowedCountries: ["AU",'CA','US',"AQ","AT","BE","BG","CY","CZ","DE",
+                             "DK","EE","ES","FI","FR","GB","GR","HU","IE","IT",
+                             "LT","LU","LV","MT","NL","PL","PT","RO","SE","SI",
+                             "SK",]
         },
       })
       .then(function (result) {
