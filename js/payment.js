@@ -15,7 +15,7 @@ window.addEventListener("userReady", function () {
         // a successful payment.
         // Instead use one of the strategies described in
         // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: "https://waldenpond.press/success",
+        successUrl: "https://waldenpond.press/home",
         cancelUrl: "https://waldenpond.press/canceled",
         customerEmail: window.wp_user.email,
         clientReferenceId: window.wp_user.uid,
