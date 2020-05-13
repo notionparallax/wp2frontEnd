@@ -1,7 +1,9 @@
 window.addEventListener("userReady", function () {
   if (window.location.href.includes("test")) {
+    console.log("using test stripe key");
     var stripe = Stripe("pk_test_oqvBwVn1rocov0b3aHDawOWL");
   } else {
+    console.log("using live stripe key");
     var stripe = Stripe("pk_live_q1dcaunx7RfFnw9n8A6K3yHa");
   }
 
@@ -49,6 +51,7 @@ window.addEventListener("userReady", function () {
   const managePaymentButton = document.getElementById("manage-payment-button");
   // .setAttribute("action", contextAwareURL() + "/create_billing_portal");
   managePaymentButton.addEventListener("click", () => {
+    console.log("asking Stripe for a redirect URL");
     let body = JSON.stringify(window.wp_user);
     fetch(contextAwareURL() + "/create_billing_portal", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
