@@ -25,8 +25,8 @@ body {
   background-color: var(--body-bg-colour);
   font-family: "Noto Serif JP", serif;
   font-size: 21px;
-  word-break: break-word;
   padding: 0;
+  word-break: break-word;
 }
 .page-content {
   margin: auto;
