@@ -24,7 +24,7 @@ window.addEventListener("userReady", function () {
             // Instead use one of the strategies described in
             // https://stripe.com/docs/payments/checkout/fulfillment
             successUrl: "https://waldenpond.press/home",
-            cancelUrl: "https://waldenpond.press/canceled",
+            cancelUrl: "https://waldenpond.press/payment",
             customerEmail: window.wp_user.email,
             clientReferenceId: window.wp_user.uid,
             // billingAddressCollection: 'required',
