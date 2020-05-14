@@ -67,7 +67,7 @@ This is a subscription for 1 issue of Walden Pond every month.
 
 <div id="error-message"></div>
 
-Currently there isn't a button to automatically cancel your subscription, which is a total dick move, but this link will send an email to me, and I'll do it for you: [cancel my subscription](mailto:ben@notionparallax.co.uk?cc=user@email.com&subject=Cancel my Walden Pond subscription please&body=No hard feelings)
+<!-- Currently there isn't a button to automatically cancel your subscription, which is a total dick move, but this link will send an email to me, and I'll do it for you: [cancel my subscription](mailto:ben@notionparallax.co.uk?cc=user@email.com&subject=Cancel my Walden Pond subscription please&body=No hard feelings) -->
 
 <button id="manage-payment-button">Manage billing</button>
 
