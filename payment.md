@@ -15,18 +15,18 @@ This is a subscription for 1 issue of Walden Pond every month.
 
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-plan_HGK3aYMCcwkWcM"
+  id="checkout-button-plan_HGJqSiZXIdOaxk"
   role="link"
   class="disabled">
-<span class="product-name">1 hour</span>
+<span class="product-name">1 hour print</span>
 <span class="sub-with-stripe">Subscribe with Stripe</span>
 </button>
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-plan_HGK2EUGJYdT4Ug"
+  id="checkout-button-plan_HGJvNc7jY9ZRrR"
   role="link"
   class="disabled">
-<span class="product-name">2 hour</span>
+<span class="product-name">2 hour print</span>
 <span class="sub-with-stripe">Subscribe with Stripe</span>
 </button>
 <button
@@ -34,7 +34,7 @@ This is a subscription for 1 issue of Walden Pond every month.
   id="checkout-button-plan_HGJyibrCINh1Uf"
   role="link"
   class="disabled">
-<span class="product-name">4 hour</span>
+<span class="product-name">4 hour print</span>
 <span class="sub-with-stripe">Subscribe with Stripe</span>
 </button>
 
