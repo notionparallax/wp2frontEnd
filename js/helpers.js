@@ -4,7 +4,7 @@ function contextAwareURL(url) {
     url = "http://localhost:8080";
   } else {
     // url = "https://todo-ljb4cakpxq-uc.a.run.app";
-    url = "https://api.waldenpond.press/";
+    url = "https://api.waldenpond.press";
   }
   return url;
 }
