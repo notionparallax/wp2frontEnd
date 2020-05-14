@@ -17,25 +17,25 @@ This is a subscription for 1 issue of Walden Pond every month.
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGJqSiZXIdOaxk"
   role="link"
-  class="disabled">
+  class="disabled"
+  title="Subscribe with Stripe">
 <span class="product-name">1 hour print</span>
-<span class="sub-with-stripe">Subscribe with Stripe</span>
 </button>
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGJvNc7jY9ZRrR"
   role="link"
-  class="disabled">
+  class="disabled"
+  title="Subscribe with Stripe">
 <span class="product-name">2 hour print</span>
-<span class="sub-with-stripe">Subscribe with Stripe</span>
 </button>
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGJyibrCINh1Uf"
   role="link"
-  class="disabled">
+  class="disabled"
+  title="Subscribe with Stripe">
 <span class="product-name">4 hour print</span>
-<span class="sub-with-stripe">Subscribe with Stripe</span>
 </button>
 
 # PDF
@@ -44,25 +44,25 @@ This is a subscription for 1 issue of Walden Pond every month.
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGK3aYMCcwkWcM"
   role="link"
-  class="disabled">
+  class="disabled"
+  title="Subscribe with Stripe">
 <span class="product-name">1 hour</span>
-<span class="sub-with-stripe">Subscribe with Stripe</span>
 </button>
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGK2EUGJYdT4Ug"
   role="link"
-  class="disabled">
+  class="disabled"
+  title="Subscribe with Stripe">
 <span class="product-name">2 hour</span>
-<span class="sub-with-stripe">Subscribe with Stripe</span>
 </button>
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGK2lal9ACxPNz"
   role="link"
-  class="disabled">
+  class="disabled"
+  title="Subscribe with Stripe">
 <span class="product-name">4 hour</span>
-<span class="sub-with-stripe">Subscribe with Stripe</span>
 </button>
 
 <div id="error-message"></div>
