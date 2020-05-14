@@ -61,7 +61,11 @@ window.addEventListener("userReady", function () {
     })
       .then((response) => response.json())
       .then((data) => {
+        if (data.hasOwnProperty("e")) throw data.e;
         console.log(data);
+        if (data.hasOwnProperty("specialWPmessage")) {
+          console.warn(data.specialWPmessage);
+        }
         window.location.replace(data.session.url);
       })
       .catch((e) => console.error("fetch failed", e));
