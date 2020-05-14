@@ -59,7 +59,15 @@ window.addEventListener("userReady", function () {
       body: body, // body data type must match "Content-Type" header
       //docs: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     })
-      .then((response) => response.json())
+      .then((response) => {
+        {
+          if (response.type != "cors") {
+            return response.json();
+          } else {
+            console.error("hey fuck you", response);
+          }
+        }
+      })
       .then((data) => {
         if (data.hasOwnProperty("e")) throw data.e;
         console.log(data);
