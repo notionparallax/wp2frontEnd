@@ -15,6 +15,11 @@ Follow this link to authorise us to see your Pocket.
 
 If you've already authorised us, this will give you an error. If you want to re-authorise, go <a href="https://getpocket.com/connected_applications">here</a> to de-authorise us first.
 
+<div id="articles-container" class="articles-container">
+  {% include pocket_article_template.html %}
+</div>
+
 {% include base-scripts.md %}
 
 <script src="js/pocket.js"></script>
+<script src="js/finalise-pocket.js"></script>
