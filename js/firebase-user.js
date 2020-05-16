@@ -7,6 +7,7 @@ window.addEventListener("load", function () {
       var event = new Event("userReady");
       window.dispatchEvent(event);
       document.querySelector(".page-content").classList.remove("invisible");
+      document.querySelector("body").classList.remove("loading");
     } else {
       // User is signed out.
       // ...

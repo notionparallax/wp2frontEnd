@@ -176,6 +176,39 @@ img {
   float: right;
 }
 
+/* loading BG */
+
+.loading {
+  background: linear-gradient(
+    90deg,
+    var(--body-bg-colour) 0%,
+    var(--body-bg-colour) 45%,
+    rgba(0, 0, 0, 0.5) 50%,
+    var(--body-bg-colour) 55%,
+    var(--body-bg-colour) 100%
+  );
+  background-size: 200% 100%;
+  animation: show_loading 3s ease-in-out infinite;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: show_loading;
+}
+@keyframes show_loading {
+  0% {
+    background-position: 0% 23%;
+  }
+  50% {
+    background-position: 100% 78%;
+  }
+  100% {
+    background-position: 0% 23%;
+  }
+}
 /* Checkbox styling */
 input[type="checkbox"] {
   height: 1em;
