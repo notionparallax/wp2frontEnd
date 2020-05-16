@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home 🏡
 ---
 
 <p class="fully-activated hide">You're all done with setting up. We'll send you an edition at the beginning of next month. If you need to change anything then look in the menu.</p>

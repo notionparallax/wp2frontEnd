@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Stories
 ---
 
 <div class="use-case">
