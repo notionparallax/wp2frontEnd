@@ -189,7 +189,17 @@ function drawGraphOfTTR() {
   };
   Plotly.newPlot("plotlyDiv", traces, layout);
   document.getElementById("graph-title").innerHTML =
-    `You have ${total_time} minutes of content in your Pocket` +
+    `You have ${rational_time(total_time)}  of content in your Pocket` +
     "<br>" +
-    `${inRangeTime} minutes of it is in range`;
+    `${rational_time(inRangeTime)} minutes of it is in range`;
+}
+function rational_time(time_in_minutes) {
+  if (time_in_minutes < 120) {
+    return `${time_in_minutes} minutes`;
+  } else {
+    // round to the nearest 10th of an hour
+    const subdivisions = 10;
+    const h = Math.round((time_in_minutes / 60) * subdivisions) / subdivisions;
+    return `${h} hours`;
+  }
 }
