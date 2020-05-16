@@ -11,7 +11,7 @@ title: Home 🏡
 
 <div class="onboarding-flow">
 
-Before we can send you anything, we need two things from you:
+Before we can send you anything, we need two things from <a href="payment-alpha" class="stealth-link">y</a>o<a href="payment-beta" class="stealth-link">u</a>:
 
 <ul>
 
@@ -19,7 +19,7 @@ Before we can send you anything, we need two things from you:
 <strong>First this:</strong>
 
 <div>
-<span class="check pocket_access">❓</span><br>A connection to your Pocket account<br><svg class="logo-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 20 115 130" height="24px"><path fill="#EF4056" d="M84.058 83.308L58.54 107.324c-1.313 1.5-3.377 2.065-4.878 2.065-1.876 0-3.752-.564-5.253-2.065L23.266 83.308c-2.627-2.814-3.002-7.505 0-10.507 2.814-2.627 7.505-3.002 10.32 0l20.076 19.325L74.114 72.8c2.627-3.002 7.317-2.627 9.944 0 2.627 3.002 2.627 7.693 0 10.507M97.005 43.53H10.32C4.691 43.53 0 47.846 0 53.475v32.084c0 29.083 24.016 53.288 53.662 53.288 29.458 0 53.287-24.205 53.287-53.288V53.475c0-5.63-4.503-9.945-9.944-9.945"></path></svg>
+<span class="check pocket_access">❓</span>A connection to your Pocket account
 </div>
 <div class="auth-with-pocket">
   <a href="" class="button disabled" id="pocket-auth-link">
@@ -34,19 +34,17 @@ Before we can send you anything, we need two things from you:
 <strong>Then this:</strong>
 
 <div>
-<span class="check payment">❓</span><br>Some payment and address details<br>💳🏡
+<span class="check payment">❓</span>Some payment and address details
 
 <div class="subscribe-with-stripe">
   <a href="payment-beta" class="button disabled" id="stripe-link">
     Subscribe with
-    <img alt="Stripe" src="./img/Stripe logo - slate_sm.png" />
+    <img alt="Stripe" src="./img/Stripe logo - slate_sm.png" style="transform: translateY(0.2em) scale(1.8);"/>
   </a>
   
   
 </div>
 </div>
-
-<div class="beta-message">Because you are <a href="payment-alpha" class="stealth-link">a</a> dearly beloved <a href="payment-beta" class="stealth-link">&beta;</a>eta tester the subscription is $5AUD, and for you, that's for as long as this thing keeps going.</div>
 
 </li>
 

@@ -443,13 +443,17 @@ blockquote p {
 .onboarding-flow li {
   list-style-type: none;
 }
+span.check.pocket_access,
+span.check.payment {
+  transform: translateX(-0.5em);
+  display: inline-block;
+}
 @media only screen and (min-device-width: 812px) {
   .onboarding-flow li {
     background-color: hsla(34, 78%, 91%, 0.4);
     border-radius: 1em;
     display: inline-block;
     margin: 1em 1.5em;
-    min-height: 20em;
     padding: 0 1.5em;
     vertical-align: top;
     width: 30%;
@@ -465,6 +469,11 @@ blockquote p {
   }
   .beta-message {
     font-size: 80%;
+  }
+  span.check.pocket_access,
+  span.check.payment {
+    transform: initial;
+    display: block;
   }
 }
 
@@ -483,6 +492,15 @@ blockquote p {
     object-fit: cover;
     object-position: 50% 34%;
     width: var(--big-img-width);
+  }
+  .pricing span.text-description {
+    display: none;
+  }
+  span.product-name {
+    display: block;
+  }
+  .pricing .payment-grid div {
+    text-align: center;
   }
 }
 .index h2 {

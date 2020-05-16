@@ -27,6 +27,16 @@ _Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It
 
 </div>
 
+<div class="pricing">
+
+## Pricing
+
+You can get a monthly edition that fits how much you read. The fancy thing to do is get us to print for you, but if you live somewhere that we don't post to, or if you have an expensive printer and a burning desire to use it, you can get a PDF copy.
+
+{% include pricing.html %}
+
+</div>
+
 <div class="yeah-but-why">
 
 {% include yeah_but_why.md %}
