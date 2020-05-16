@@ -1,73 +1,129 @@
 ---
 layout: default
+title: 💰💵💴💶💷💳💸🤑💲
 ---
 
-# 💰💵💴💶💷💳💸🤑💲
+Walden Pond comes out once a month, you can get 1, 2 or 4 hours of content in each edition.
 
-This is a subscription for 1 issue of Walden Pond every month.
+Once you've signed up, you can change the length of your editions, or cancel your subscription at any time.
 
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 
-# printed
+<div class="payment-grid">
+<div class="print-title">
 
+# Printed
+
+</div>
+<div class="title-1-hr">
+<!-- <img src="./img/50_page_book.png"> -->
+
+# 1 hour
+
+</div>
+<div class="title-2-hr">
+<!-- <img src="./img/50_page_book.png"> -->
+
+# 2 hours
+
+</div>
+<div class="title-4-hr">
+<!-- <img src="./img/50_page_book.png"> -->
+
+# 4 hours
+
+</div>
+<div class="print-1-hr">
 <button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGJqSiZXIdOaxk"
   role="link"
-  class="disabled"
+  tabindex="0"
+  class="disabled checkout-button"
   title="Subscribe with Stripe">
-<span class="product-name">1 hour print</span>
+<span class="text-description">1 hour</span>
+<span class="product-name">⏳📖</span>
+<!-- <span class="Subscribe-with-Stripe">Subscribe with Stripe</span> -->
+<span class="price" title="USD">$10</span>
 </button>
+</div>
+<div class="print-2-hr">
 <button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGJvNc7jY9ZRrR"
   role="link"
-  class="disabled"
+  tabindex="0"
+  class="disabled checkout-button"
   title="Subscribe with Stripe">
-<span class="product-name">2 hour print</span>
+<span class="text-description">2 hours</span>
+<span class="product-name">⏳⏳📖</span>
+<!-- <span class="Subscribe-with-Stripe">Subscribe with Stripe</span> -->
+<span class="price" title="USD">$12</span>
 </button>
+</div>
+<div class="print-4-hr">
 <button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGJyibrCINh1Uf"
   role="link"
-  class="disabled"
+  tabindex="0"
+  class="disabled checkout-button"
   title="Subscribe with Stripe">
-<span class="product-name">4 hour print</span>
+<span class="text-description">4 hours</span>
+<span class="product-name">⏳⏳⏳⏳📖</span>
+<!-- <span class="Subscribe-with-Stripe">Subscribe with Stripe</span> -->
+<span class="price" title="USD">$14</span>
 </button>
+</div>
+<div class="pdf-title">
 
-# PDF
+# Digital
 
+</div>
+<div class="pdf-1-hr">
 <button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGK3aYMCcwkWcM"
   role="link"
-  class="disabled"
+  tabindex="0"
+  class="disabled checkout-button"
   title="Subscribe with Stripe">
-<span class="product-name">1 hour</span>
+<span class="text-description">1 hour</span>
+<span class="product-name">⏳💻</span>
+<!-- <span class="Subscribe-with-Stripe">Subscribe with Stripe</span> -->
+<span class="price" title="USD">$4</span>
 </button>
+</div>
+<div class="pdf-2-hr">
 <button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGK2EUGJYdT4Ug"
   role="link"
-  class="disabled"
+  tabindex="0"
+  class="disabled checkout-button"
   title="Subscribe with Stripe">
-<span class="product-name">2 hour</span>
+<span class="text-description">2 hours</span>
+<span class="product-name">⏳⏳💻</span>
+<!-- <span class="Subscribe-with-Stripe">Subscribe with Stripe</span> -->
+<span class="price" title="USD">$5</span>
 </button>
+</div>
+<div class="pdf-4-hr">
 <button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-plan_HGK2lal9ACxPNz"
   role="link"
-  class="disabled"
+  tabindex="0"
+  class="disabled checkout-button"
   title="Subscribe with Stripe">
-<span class="product-name">4 hour</span>
+<span class="text-description">4 hours</span>
+<span class="product-name">⏳⏳⏳⏳💻</span>
+<!-- <span class="Subscribe-with-Stripe">Subscribe with Stripe</span> -->
+<span class="price" title="USD">$6</span>
 </button>
+</div>
+</div>
 
 <div id="error-message"></div>
 
-<!-- Currently there isn't a button to automatically cancel your subscription, which is a total dick move, but this link will send an email to me, and I'll do it for you: [cancel my subscription](mailto:ben@notionparallax.co.uk?cc=user@email.com&subject=Cancel my Walden Pond subscription please&body=No hard feelings) -->
+Click this button to change or cancel your subscription. It'll take you to Stripe's website. We don't ever see your payment details.
 
 <button id="manage-payment-button">Manage billing</button>
 
