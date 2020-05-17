@@ -11,7 +11,7 @@ title: Home 🏡
 
 <div class="onboarding-flow">
 
-Before we can send you anything, we need two things from <a href="payment-alpha" class="stealth-link">y</a>o<a href="payment-beta" class="stealth-link">u</a>:
+Before we can send you anything, we need two things from yo<a href="payment-beta" class="stealth-link">u</a>:
 
 <ul>
 
