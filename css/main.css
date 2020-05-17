@@ -444,7 +444,7 @@ blockquote p {
   button.checkout-button:hover:after,
   button.checkout-button:active:after,
   button.checkout-button:focus:after {
-    background-image: url(http://localhost:4000/img/Stripe%20logo%20-%20slate_sm.png),
+    background-image: url(/img/Stripe%20logo%20-%20slate_sm.png),
       linear-gradient(
         150deg,
         hsl(250, 100%, 60%) 15%,
