@@ -1,0 +1,13 @@
+article {
+  width: 50vw;
+  position: relative;
+}
+.more-simply-put {
+  position: absolute;
+  right: calc(-35vw - 3em);
+  width: 35vw;
+}
+.more-simply-put:before {
+  content: "More simply put";
+  font-weight: bold;
+}
