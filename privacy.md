@@ -3,8 +3,6 @@ layout: default
 title: Privacy 🔏
 ---
 
-Pinky promise not to be a dickhead
-
-GDPR etc.
+WIP
 
 {% include base-scripts.md %}
