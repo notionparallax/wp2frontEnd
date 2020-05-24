@@ -37,12 +37,11 @@ Before we can send you anything, we need two things from yo<a href="payment-beta
 <span class="check payment">❓</span>Some payment and address details
 
 <div class="subscribe-with-stripe">
-  <a href="payment-beta" class="button disabled" id="stripe-link">
+  <a href="payment" class="button disabled" id="stripe-link">
     Subscribe with
     <img alt="Stripe" src="./img/Stripe logo - slate_sm.png" style="transform: translateY(0.2em) scale(1.8);"/>
   </a>
-  
-  
+
 </div>
 </div>
 
