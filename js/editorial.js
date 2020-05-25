@@ -46,9 +46,9 @@ document
   .getElementById("update-the-graph-btn")
   .addEventListener("click", () => drawGraphOfTTR());
 
-if ("{{user.allow_code}}" == "allow_code") {
-  document.getElementById("form-allow_code").checked = true;
-}
+// if (user.allow_code == "allow_code") {
+//   document.getElementById("form-allow_code").checked = true;
+// }
 
 document
   .getElementById("all-good-btn")
@@ -69,6 +69,13 @@ function setPage(user) {
   document
     .getElementById("paper-colour")
     .querySelector(`option[value=${ed.paper_colour}]`).selected = true;
+
+  if (ed.extraTags) {
+    document.getElementById("extra-tags").value = ed.extraTags;
+  }
+  if (ed.searchTerms) {
+    document.getElementById("search-words").value = ed.searchTerms;
+  }
 }
 
 function collectEditorial(event) {
@@ -85,8 +92,10 @@ function collectEditorial(event) {
     longest_article: getSliderVal("#form-longest_article"),
     shortest_article: getSliderVal("#form-shortest_article"),
     paper_colour: document.getElementById("paper-colour").value,
-    minutes_of_content_wanted: 60,
+    // minutes_of_content_wanted: 60,
     weeks_to_select_from: getSliderVal("#form-history_depth"),
+    extraTags: document.getElementById("extra-tags").value,
+    searchTerms: document.getElementById("search-words").value,
   };
   let body = JSON.stringify({ user: user, payload: editorial });
 

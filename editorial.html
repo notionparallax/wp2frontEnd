@@ -101,6 +101,58 @@ layout: default
     </select>
   </div>
 
+  <div class="form-group">
+    <label for="extra-tags">Tag includer</label>
+    <p>
+      The tag <code>wpmustprint</code> makes articles be prioritised for
+      inclusion in your upcoming edition. If you want to add more tags that do
+      this, put them in here:
+    </p>
+    <input
+      type="text"
+      id="extra-tags"
+      name="extra-tags"
+      placeholder="Type tags in here"
+    />
+    <p>
+      Write them as a comma separated list, e.g.:
+      <code>knitting, malt, mountain bike</code> will give you three extra tags.
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label for="search-words">Search-term includer</label>
+    <p>
+      If you want to include articles with specific words in the title, put them
+      in here:
+    </p>
+    <input
+      type="text"
+      id="search-words"
+      name="search-words"
+      placeholder="Type search terms in here"
+    />
+    <p>
+      Write them as a comma separated list, e.g.:
+      <code>car, typography, plastic bag</code> will give you articles like:
+    </p>
+    <ul>
+      <li>
+        Not All Electric Vehicles Are Cars, You Know
+      </li>
+      <li>
+        Are cotton totes better for the Earth than plastic bags? It depends on
+        what you care about
+      </li>
+      <li>
+        Rhythm in Web Typography
+      </li>
+    </ul>
+    <p>
+      But it will also give you "The secret life of Wetherspoon’s freaky
+      <em>car</em>pets" because there is a car in carpets.
+    </p>
+  </div>
   <!-- <div class="form-group">
     <p>This isn't implemented yet, but it's coming soon.</p>
     <label for="form-shortest_article"
