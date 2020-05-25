@@ -221,8 +221,22 @@ input[type="checkbox"] {
 .form-group p {
   font-size: 80%;
 }
+.form-group ul {
+  font-size: initial;
+  margin-left: 2em;
+}
 
 .slider {
+  width: 100%;
+}
+input[type="text"] {
+  border: 2px solid #0b0c0c;
+  box-sizing: border-box;
+  font-weight: 400;
+  height: 2.5rem;
+  line-height: 1.25;
+  margin-top: 0;
+  padding: 5px;
   width: 100%;
 }
 
