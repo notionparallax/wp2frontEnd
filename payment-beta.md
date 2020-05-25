@@ -21,7 +21,7 @@ As a Beta user it's \$5 a month.
 
 <div id="error-message"></div>
 
-Currently there isn't a button to automatically cancel your subscription, which is a total dick move, but this link will send an email to me, and I'll do it for you: [cancel my subscription](mailto:ben@notionparallax.co.uk?cc=user@email.com&subject=Cancel my Walden Pond subscription please&body=No hard feelings)
+There isn't a button to automatically cancel your subscription if you get this beta subscription. Send an email to me, and I'll do it for you: [cancel my subscription (ben@notionparallax.co.uk)](mailto:ben@notionparallax.co.uk?cc=user@email.com&subject=Cancel my Walden Pond subscription please&body=No hard feelings)
 
 {% include base-scripts.md %}
 
