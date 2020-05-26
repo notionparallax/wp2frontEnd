@@ -24,19 +24,28 @@
       />
       <p class="name"></p>
       <ul>
-        <li><a href="home">Home</a></li>
-        <li><a href="editorial">Editorial Details</a></li>
-        <li><a href="history">History</a></li>
-        <li><a href="payment">Payment Details</a></li>
-        <li><a href="connect-pocket">Pocket Connection</a></li>
-        <li><a href="tos">TOS</a> & <a href="privacy">Privacy</a></li>
+        <li><a href='{{ "home" | absolute_url }}'>Home</a></li>
         <li>
-          <a href="stories">About <em>Walden Pond</em></a>
+          <a href='{{ "editorial" | absolute_url }}'>Editorial Details</a>
         </li>
-        <li><a href="tips">How to</a></li>
-        <li><a href="debug">Data & change log</a></li>
+        <li><a href='{{ "history" | absolute_url }}'>History</a></li>
+        <li><a href='{{ "payment" | absolute_url }}'>Payment Details</a></li>
+        <li>
+          <a href='{{ "connect-pocket" | absolute_url }}'>Pocket Connection</a>
+        </li>
+        <li>
+          <a href='{{ "tos" | absolute_url }}'>TOS</a> &
+          <a href='{{ "privacy" | absolute_url }}'>Privacy</a>
+        </li>
+        <li>
+          <a href='{{ "stories" | absolute_url }}'
+            >About <em>Walden Pond</em></a
+          >
+        </li>
+        <li><a href='{{ "tips" | absolute_url }}'>How to</a></li>
+        <li><a href='{{ "debug" | absolute_url }}'>Data & change log</a></li>
       </ul>
-      <p><a href="/logout" id="sign-out">Sign Out</a></p>
+      <p><a href='{{ "/logout" | absolute_url }}' id="sign-out">Sign Out</a></p>
     </div>
   </div>
 

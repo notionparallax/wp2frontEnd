@@ -18,7 +18,7 @@ description: "How do you work with the editorial page? Some thoughts."
 twitter-body: "How do you work with the editorial page? Some thoughts."
 # Twitter and facebook will pick up this image. you can also use it in a post with: -
 #![alt text]({{ site.baseurl }}/assets/{{page.featuredimg}})
-featuredimg: {{ "./img/blog/editorial/lengthsForEveryone.png" | absolute_url }}
+featuredimg: ./img/blog/editorial/lengthsForEveryone.png"
 ---
 
 I thought I'd tell you about the Editorial page. I added another option to it yesterday, and I thought that this might be a good time to talk about it in a bit more depth.
