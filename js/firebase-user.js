@@ -8,6 +8,7 @@ window.addEventListener("load", function () {
       window.dispatchEvent(event);
       document.querySelector(".page-content").classList.remove("invisible");
       document.querySelector("body").classList.remove("loading");
+      document.querySelector("#header-profile-picture").src = user.photoURL;
     } else {
       // User is signed out.
       // ...
