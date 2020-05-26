@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body itemscope="" class="">
+    {% include header.html %}
+
+    <div class="page-content {{page.type}}">
+      <noscript>
+        <p>
+          Looks like you've got JS turned off. Quite a lot of things won't work
+          properly. ☹
+        </p>
+      </noscript>
+      {{ content }}
+    </div>
+
+    {% include footer.html %} {% include base-scripts.md %}
+  </body>
+</html>

@@ -15,6 +15,9 @@ url: "https://waldenpond.press" # the base hostname & protocol for your site, e.
 twitter_username: notionparallax
 github_username: notionparallax
 
+author:
+  display_name: Ben
+
 # Build settings
 markdown: kramdown
 
