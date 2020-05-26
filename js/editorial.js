@@ -200,7 +200,7 @@ function drawGraphOfTTR() {
   document.getElementById("graph-title").innerHTML =
     `You have ${rational_time(total_time)}  of content in your Pocket` +
     "<br>" +
-    `${rational_time(inRangeTime)} minutes of it is in range`;
+    `${rational_time(inRangeTime)} of it is in range`;
 }
 function rational_time(time_in_minutes) {
   if (time_in_minutes < 120) {
