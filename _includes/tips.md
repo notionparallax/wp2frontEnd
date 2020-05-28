@@ -14,11 +14,11 @@
 
 - Wikipedia articles are sometimes a bit of a challenge because they have can have huge tables and so many links to other parts of the page.
 
-- Each edition takes about an hour to read. Each article has a reading time that's estimated by Pocket's algorithms. If you have your longest article set to 50 minutes, and your shortest set to 45, there's no way to make ah hour of content so you'll only get one article. You can solve this by making sure that your shortest is less than _(1 hour &minus; longest)_ so that it can be used as a filler.
+- If your edition takes about an hour to read. Each article has a reading time that's estimated by Pocket's algorithms. If you have your longest article set to 50 minutes, and your shortest set to 45, there's no way to make ah hour of content so you'll only get one article. You can solve this by making sure that your shortest is less than _(1 hour &minus; longest)_ so that it can fill the gap.
 
 - There's something special about writing on your articles. I enjoy reading Walden Pond much more with a pen in my hand.
 
-- You need to keep more than an hour of content in your Pocket so that there's enough to print an edition. If you get the mobile app and the browser extension for Pocket that makes it much easier because you can save without thinking too much.
+- You need to keep more content in your Pocket than you want in your edition so that there's enough to pick from. If you get the mobile app and the browser extension for Pocket that makes it much easier because you can save without thinking too much.
 
 - If you liked an article, you can go to your [history](history) page and click on the link. That'll take you to the article in Pocket where you can recommend it to friends, or just mark it as _read_ which will make sure that it doesn't ever show up in your _Walden Pond_ again.
 

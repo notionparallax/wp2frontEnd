@@ -19,7 +19,7 @@ A little paper zine, full of articles for you to read in your cabin.<span class=
 
 </div>
 
-_Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It's full of a selection of the articles you've saved to [Pocket](https://getpocket.com), so you know that you're interested in everything inside. Each issue has an hour of reading, the battery will never run out, it's clear in bright sunlight 😎 and has a low-latency pen interface (or pencil) 📝.
+_Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It's full of a selection of the articles you've saved to [Pocket](https://getpocket.com), so you know that you're interested in everything inside. Each issue has over an hour of reading, the battery will never run out, it's clear in bright sunlight 😎 and has a low-latency pen interface (or pencil) 📝.
 
 <div class="use-case">
 
