@@ -46,6 +46,10 @@ function showArticles(articles, templateID, containerID) {
       ? article.time_to_read
       : "?";
 
+    clone.querySelector(".meta a").href = article.resolved_url
+      ? article.resolved_url
+      : "";
+
     container.appendChild(clone);
   }
 
