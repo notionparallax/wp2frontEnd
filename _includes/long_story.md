@@ -1,6 +1,6 @@
 ## The long story
 
-In 2018 [Vankatesh Rao](https://www.ribbonfarm.com/author/admin/) wrote a piece in his newsletter called _[Against Waldenponding](https://mailchi.mp/ribbonfarm/against-waldenponding)_.
+In 2018 [Venkatesh Rao](https://www.ribbonfarm.com/author/admin/) wrote a piece in his newsletter called _[Against Waldenponding](https://mailchi.mp/ribbonfarm/against-waldenponding)_.
 
 > "There is valuable info at all levels from twitter gossip to philosophy books. You should stay plugged in. You can manage anxiety and beat the House without resorting to shaming social platforms into managing attention for you."
 
