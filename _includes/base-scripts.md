@@ -10,5 +10,6 @@
 <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
 
 <script src='{{ "js/helpers.js" | absolute_url }}'></script>
+<script src='{{ "js/linkExpander.js" | absolute_url }}'></script>
 <script src='{{ "js/init-firebase.js" | absolute_url }}'></script>
 <script src='{{ "js/firebase-user.js" | absolute_url }}'></script>

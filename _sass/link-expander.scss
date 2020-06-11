@@ -1,0 +1,62 @@
+form.link-expander {
+  background: #00eeff;
+  border-radius: 0 2em 2em 0;
+  font-size: 100%;
+  left: calc((100vw * -1) + 1.6em);
+  margin-top: 0.5rem;
+  height: 3.5em;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  position: absolute;
+  text-align: right;
+  transition: left 0.3s;
+  width: 100vw;
+  &.out {
+    left: -0.5em;
+  }
+  label {
+    width: 10em;
+  }
+  input {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    font-family: inherit;
+    padding-left: 0.2em;
+    text-align: center;
+    width: 5em;
+  }
+  a {
+    background-color: greenyellow;
+    border-radius: 1em;
+    padding: 0 0.2em;
+    opacity: 0.1;
+    transition: opacity 0.3s;
+    &.live {
+      opacity: 1;
+    }
+  }
+  button.link-expander {
+    background-color: initial;
+    border-radius: initial;
+    border: initial;
+    cursor: initial;
+    margin: initial;
+    padding: initial;
+    text-align: center;
+    text-decoration: none;
+    width: initial;
+    font-size: 200%;
+  }
+  @media only screen and (min-width: 812px) {
+    background: #00eeff;
+    border-radius: 0 1em 1em 0;
+    font-size: 150%;
+    height: initial;
+    left: -18em;
+    margin-top: 0.5rem;
+    padding: 0.1em 0.2em 0.2em 0;
+    width: 19em;
+    button.link-expander {
+      font-size: 100%;
+    }
+  }
+}
