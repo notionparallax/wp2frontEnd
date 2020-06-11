@@ -97,7 +97,7 @@ a {
   transition: all 0.2s;
 }
 a:visited {
-  color: #2f85b6;
+  color: hsla(202, 80%, 39%, 1);
 }
 a:hover {
   cursor: pointer;
@@ -565,25 +565,36 @@ footer {
   background-color: hsla(0, 0%, 0%, 0.8);
   border-top: 1px solid;
   box-shadow: inset 0px 20px 10px 0px rgba(0, 0, 0, 0.75);
-  color: hsla(0, 0%, 100%, 0.6);
+  color: hsla(0, 0%, 100%, 0.85);
   column-rule: 1px solid hsla(0, 0%, 100%, 0.6);
   font-size: 70%;
   margin-top: 10em;
   padding: 1em;
+  a:visited {
+    color: hsla(200, 50%, 73%, 1);
+  }
+  .footer-content {
+    column-width: 17em;
+    margin: auto;
+    max-width: 60em;
+  }
+  footer h2 {
+    column-span: all;
+  }
+  .footer-content div {
+    break-inside: avoid-column;
+  }
+  .social-media-list {
+    list-style-type: none;
+  }
+  ul li a {
+    height: 2em;
+    display: inline-block;
+  }
 }
-.footer-content {
-  column-width: 17em;
-  margin: auto;
-  max-width: 60em;
-}
-footer h2 {
-  column-span: all;
-}
-.footer-content div {
-  break-inside: avoid-column;
-}
-.social-media-list {
-  list-style-type: none;
+/* Firebase login */
+.firebaseui-tos.firebaseui-tospp-full-message {
+  color: hsla(0, 0%, 35%, 1);
 }
 
 /* article preview page */
