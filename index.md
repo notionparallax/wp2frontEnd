@@ -4,12 +4,12 @@ layout: index
 
 <div class="index">
 
-<p class="reset"><img src="./img/frontPageImage.jpg" class="mega-image"></p>
+<p class="reset"><img src="./img/frontPageImage.jpg" class="mega-image" alt="a copy of Walden Pond on a wooden table, with a pencil resting on top"></p>
 
 <h1 class="name-title">Walden Pond</h1>
 
 <blockquote class="value-prop">
-A little paper zine, full of articles for you to read in your cabin.<span class="secondary-prop">(Or, on the beach, on a plane, a train, or your sofa)</span>
+A little paper zine, full of articles for you to read in your cabin. <span class="secondary-prop">(Or, on the beach, on a plane, a train, or your sofa)</span>
 
 </blockquote>
 
