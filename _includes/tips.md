@@ -14,7 +14,7 @@
 
 - Wikipedia articles are sometimes a bit of a challenge because they have can have huge tables and so many links to other parts of the page.
 
-- If your edition takes about an hour to read. Each article has a reading time that's estimated by Pocket's algorithms. If you have your longest article set to 50 minutes, and your shortest set to 45, there's no way to make ah hour of content so you'll only get one article. You can solve this by making sure that your shortest is less than _(1 hour &minus; longest)_ so that it can fill the gap.
+- If your edition takes about an hour to read. Each article has a reading time that's estimated by Pocket's algorithms. If you have your longest article set to 50 minutes, and your shortest set to 45, there's no way to make an hour of content so you'll only get one article. You can solve this by making sure that your shortest is less than _(1 hour &minus; longest)_ so that it can fill the gap.
 
 - There's something special about writing on your articles. I enjoy reading Walden Pond much more with a pen in my hand.
 
