@@ -10,18 +10,18 @@ tags: []
 author-name: Ben Doherty
 
 # this goes on the index page, and into facebook shares
-description: ""
+description: "If you've got a a PDF edition how can you make your experience of reading it great?"
 
 # This is what twitter will pick up if someone tweets the link to this page
 # 110 marker
 #123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
-twitter-body: ""
+twitter-body: "If you've got a a PDF edition how can you make your experience of reading it great?"
 # Twitter and facebook will pick up this image. you can also use it in a post with: -
 #![alt text]({{ site.baseurl }}/assets/{{page.featuredimg}})
-featuredimg: ./img/blog/editorial/lengthsForEveryone.png"
+featuredimg: https://pbs.twimg.com/media/EZakiU8VAAE1Okz?format=jpg
 ---
 
-You'd probably be horrified if you knew how much effort goes into getting your edition of Walden Pond to print nicely every month. The _experience_ of reading is the thing we're really focused on. If you've got a a PDF edition how can you make your experience of reading it great?
+You'd probably be horrified if you knew how much effort goes into getting your edition of Walden Pond to print nicely every month. The _experience_ of reading is the thing we're really focused on. **If you've got a a PDF edition how can you make your experience of reading it great?**
 
 ## Screen
 
@@ -41,7 +41,7 @@ While I'm in that menu, I turn off _Show gaps between pages_ for that authentic 
 
 ## Print
 
-If you've got a printer that can do double sided prints, then you're in the same situation I was in when I started WP. You can use [Acrobat's booklet printing](https://helpx.adobe.com/au/acrobat/kb/print-booklets-acrobat-reader.html) to make a nice start.
+If you've got a printer that can print double-sided, then you're in the same situation I was in when I started WP. You can use [Acrobat's booklet printing](https://helpx.adobe.com/au/acrobat/kb/print-booklets-acrobat-reader.html) to make a nice start.
 
 ![]({{ "./img/blog/pdf_experience/print-settings.png" | absolute_url }})
 
@@ -49,6 +49,8 @@ This is how I set up my print settings. There's one thing that might trip you up
 
 You can then fold the booklets and staple them on the spine. This is what printers euphemistically call "saddle stitch". (I'd be pretty sad if I bought a saddle that had been stapled!) From bitter experience of stabbing myself in the finger, staple from the outside of the book into the middle, or you'll have spikey staple legs poking you while you read.
 
-If you are lucky enough to have some kind of baller document station, don't use the acrobat booklet settings, but the settings on your printer. These will usually need several PhDs to understand, but once you do get it you can print everything this way and look cool with your automatically folded and stapled documents.
+If you are lucky enough to have some kind of baller document station printer, don't use the acrobat booklet settings, but the settings on your printer. These will usually need several PhDs to understand, but once you do get it you can print everything this way and look cool with your automatically folded and stapled documents.
 
 You could also print it at a print shop and get them to handle it I guess!
+
+You can really get crafty and bind it all in vintage fabrics, or fallen leaves, or, well, you could do anything. If you do make a DIY edition, take a picture, tweet it and mention [@waldenpondzine](https://twitter.com/WaldenPondZine), I'd like to see what you make.
