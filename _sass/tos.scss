@@ -1,13 +1,13 @@
-#tos {
-  article {
-    width: 40vw;
-    position: relative;
-  }
+article#tos {
+  --width: 35vw;
+  --gutter: 2em;
+
+  width: var(--width);
+  position: relative;
+
   .more-simply-put {
-    --width: 35vw;
-    --gutter: 2em;
     position: absolute;
-    right: calc(-1 * (var(--width) - var(--gutter)));
+    right: calc(-1 * (var(--width) + var(--gutter)));
     width: var(--width);
   }
   .more-simply-put:before {
