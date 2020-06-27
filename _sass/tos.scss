@@ -1,13 +1,17 @@
-article {
-  width: 50vw;
-  position: relative;
-}
-.more-simply-put {
-  position: absolute;
-  right: calc(-35vw - 3em);
-  width: 35vw;
-}
-.more-simply-put:before {
-  content: "More simply put";
-  font-weight: bold;
+#tos {
+  article {
+    width: 40vw;
+    position: relative;
+  }
+  .more-simply-put {
+    --width: 35vw;
+    --gutter: 2em;
+    position: absolute;
+    right: calc(-1 * (var(--width) - var(--gutter)));
+    width: var(--width);
+  }
+  .more-simply-put:before {
+    content: "More simply put";
+    font-weight: bold;
+  }
 }
