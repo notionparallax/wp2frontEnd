@@ -1,5 +1,31 @@
 ## What's changed?
 
+### June
+
+#### In the zine:
+
+- Another new printer! Colour covers, writing on the spine, Custom Packing slips, more potential for customising the format in the future. (Anyone feel like a green, line bound edition, with gold foil block lettering?)
+  ![](https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.15752-9/106074191_2759750760927006_2981368718359004560_n.jpg?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=h8DCTaFyRfIAX9HuuDA&_nc_ht=scontent.fsyd4-1.fna&oh=fd16fb212e60567c7812f33b8314e875&oe=5F1C1EF6)
+  Fingers crossed that this printer is a bit more reliable than the last one.
+- Progress on stopping headings from getting stuck at the bottom of pages. This is a big issue that's taking a while to get perfect. I wrote an issue for paged.js [here](https://gitlab.pagedmedia.org/tools/pagedjs/issues/212) and with [Julie Blanc](https://twitter.com/julieblancfr)'s help we got an _almost_ perfect solution. There's a little bit more to do, but I think I understand it now.
+- [Baseline grid](https://gdpsu.typepad.com/354/2017/10/achieving-harmony-more-meaningful-typography-and-the-art-of-fine-typography.html): There should now be a much more consistent vertical rhythm to the pages. It's not perfect yet, but it's getting there! (This was _[frustrating!](https://stackoverflow.com/questions/62380128/css-background-image-repeats-not-playing-nicely-with-python-http-server-and-chro)_)
+  ![](https://gitlab.pagedmedia.org/tools/pagedjs/uploads/5f9bbc828a9be06bd2e7dc1060221edb/image.png)
+  You probably won't even notice on the printed page!
+- Short links: There are often some _nasty_ links inside articles. Usually because nobody cares what's hidden _inside_ the link, just what you can see. You can go to the waldenpond.press website and expand the link.
+
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;m playing around with the way that links get shown.<br>Do you think that the shortened links are helpful? The idea is to make them more typable so you&#39;d do: <a href="https://t.co/gZUzxQdsIE">https://t.co/gZUzxQdsIE</a><br>but the root is still there so you don&#39;t get any nasty surprises. <a href="https://t.co/52wLllxtYr">pic.twitter.com/52wLllxtYr</a></p>&mdash; WaldenPond (@WaldenPondZine) <a href="https://twitter.com/WaldenPondZine/status/1269616178827149312?ref_src=twsrc%5Etfw">June 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+So, other than the nice new cover, you won't _see_ much of a difference. This month has been about removing issues that might be annoying and are a fly in the ointment of your reading experience. There have been a _lot_ of little changes.
+
+#### On the website:
+
+Other than link shortening, I haven't touched the website much.
+
+- some of the text's contrast ratio was too low, so that's been bumped up a bit.
+- Some image files have been downsampled to fit their display size. Before you'd download a 3mb image ever time you visit the page. Sorry.
+
+Now the print side of things is under control the web side might get a bit more exciting!
+
 ### May
 
 #### In the zine:
