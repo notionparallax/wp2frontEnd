@@ -4,7 +4,7 @@ layout: index
 
 <div class="index">
 
-<p class="reset"><img src="./img/frontPageImage.jpg" class="mega-image" alt="a copy of Walden Pond on a wooden table, with a pencil resting on top"></p>
+<p class="reset"><img src="./img/frontPageImage2.jpg" class="mega-image" alt="a copy of Walden Pond on a wooden table, with a pencil resting on top"></p>
 
 <h1 class="name-title">Walden Pond</h1>
 

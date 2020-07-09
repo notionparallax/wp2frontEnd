@@ -31,9 +31,9 @@ body {
   min-height: 64vh;
   padding: 0 1em;
   transition: opacity 0.5s;
-}
-.page-content.invisible {
-  opacity: 0;
+  .invisible {
+    opacity: 0;
+  }
 }
 @media only screen and (min-width: 812px) {
   .page-content {
@@ -526,7 +526,7 @@ span.check.payment {
   height: 64vw;
   margin: 0;
   object-fit: cover;
-  object-position: 50% 54%;
+  object-position: 50% 90%;
   width: 100%;
 }
 @media only screen and (min-width: 812px) {
@@ -534,7 +534,7 @@ span.check.payment {
     height: 60vh;
     margin-left: calc((var(--big-img-width) - var(--main-column-width)) * -0.5);
     object-fit: cover;
-    object-position: 50% 34%;
+    object-position: 50% 90%;
     width: var(--big-img-width);
   }
   .pricing span.text-description {
