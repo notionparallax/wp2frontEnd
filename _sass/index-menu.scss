@@ -12,13 +12,13 @@
   ul {
   }
   li {
-    color: white;
     display: inline-block;
     padding: 0 1rem;
     a {
-      padding: 0.2rem 1rem 0.3rem 1rem;
       background-color: hsla(0, 0%, 0%, 0.4);
       border-radius: 1.1rem;
+      color: white;
+      padding: 0.2rem 1rem 0.3rem 1rem;
     }
     a:visited {
       color: hsla(200, 100%, 90%, 1);
