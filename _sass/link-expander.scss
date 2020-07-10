@@ -8,15 +8,19 @@ form.link-expander {
   padding: 0.2em 0.4em 0.2em 0.4em;
   position: absolute;
   text-align: right;
-  transition: left 0.3s;
+  transition: all 0.3s;
   width: 100vw;
   z-index: 1000;
 
   &.out {
     left: -0.5em;
+    button.link-expander {
+      transform: rotate(180deg) translateY(-0.3em);
+    }
   }
   label {
     width: 10em;
+    display: inline-block;
   }
   input {
     background-color: rgba(255, 255, 255, 0.8);
@@ -32,8 +36,10 @@ form.link-expander {
     padding: 0 0.2em;
     opacity: 0.1;
     transition: opacity 0.3s;
+    pointer-events: none;
     &.live {
       opacity: 1;
+      pointer-events: all;
     }
   }
   button.link-expander {
@@ -41,12 +47,14 @@ form.link-expander {
     border-radius: initial;
     border: initial;
     cursor: initial;
+    font-size: 200%;
     margin: initial;
     padding: initial;
     text-align: center;
     text-decoration: none;
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0.2, -0.5, 0.46, 2);
     width: initial;
-    font-size: 200%;
   }
   @media only screen and (min-width: 812px) {
     background: #00eeff;
