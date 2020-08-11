@@ -40,7 +40,10 @@ body {
     padding: 0;
   }
 }
-
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
 h1 {
   border-bottom: 0.5mm solid black;
   column-span: all;
@@ -635,6 +638,7 @@ footer {
   height: var(--preview-width);
   width: var(--preview-width);
   object-fit: cover;
+  background: linear-gradient(to bottom, #43cea2, #185a9d);
 }
 h3.preview-title,
 p.exerpt,
