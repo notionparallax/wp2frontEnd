@@ -314,6 +314,21 @@ figure img {
 figure figcaption {
   font-size: 70%;
 }
+.post-content {
+  figure img {
+    max-height: unset;
+    max-width: unset;
+  }
+  .footnotes {
+    font-size: 75%;
+    margin-top: 4em;
+    width: 80%;
+    min-width: 20rem;
+    border-top-width: 3px;
+    border-top-style: dotted;
+    border-top-color: silver;
+  }
+}
 
 .whisper {
   font-size: 70%;
