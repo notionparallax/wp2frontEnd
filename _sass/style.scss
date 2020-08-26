@@ -315,9 +315,31 @@ figure figcaption {
   font-size: 70%;
 }
 .post-content {
-  figure img {
-    max-height: unset;
+  figure {
+    outline: 1px solid orange;
+    clear: both;
+    float: unset;
     max-width: unset;
+    width: unset;
+    &.v-clip {
+      max-height: 20rem;
+      overflow: hidden;
+      // border-bottom: 30px solid;
+      // border-image: repeating-linear-gradient(0deg, #fff0, white 30px) 30;
+    }
+    &.half-width {
+      width: 50%;
+      &.right {
+        float: right;
+      }
+      &.left {
+        float: left;
+      }
+    }
+    img {
+      max-height: unset;
+      max-width: unset;
+    }
   }
   .footnotes {
     font-size: 75%;
