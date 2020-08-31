@@ -383,10 +383,12 @@ figure figcaption {
   transform: translateY(0.2em) scale(1.5) translateX(0em);
   width: 6em;
 }
+.what .lake-img,
 .yeah-but-why img {
   width: 40%;
   float: right;
   mix-blend-mode: multiply;
+  clear: both;
 }
 
 blockquote {
@@ -606,6 +608,7 @@ span.check.payment {
 }
 .index h2 {
   margin-top: 6em;
+  clear: both;
 }
 
 .value-prop {

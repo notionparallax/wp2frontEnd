@@ -35,6 +35,14 @@ You'll get a monthly edition that fits how much you read. The fancy thing to do 
 
 {% include pricing.html %}
 
+That's the price, no extra postage costs or mystery fees.
+
+</div>
+
+<div class="what">
+
+{% include what_do_I_get.md %}
+
 </div>
 
 <div class="yeah-but-why">
