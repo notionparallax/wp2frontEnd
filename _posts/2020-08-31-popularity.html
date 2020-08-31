@@ -50,7 +50,26 @@ featuredimg: https://waldenpond.press/img/blog/list/sources.png
     width: unset;
     float: right;
   }
+  img.half-width {
+    width: 50%;
+    clear: both;
+  }
+  .right {
+    float: right;
+  }
+  .left {
+    float: left;
+  }
+  h2,
+  h3 {
+    clear: both;
+  }
 </style>
+<a href="{{ './img/blog/list/lengths.png' |  relative_url }}"
+  ><img
+    class="half-width right"
+    src="{{ './img/blog/list/lengths.png' |  relative_url }}"
+/></a>
 <p>
   I
   <a href="https://twitter.com/WaldenPondZine/status/1279309306177875969?s=20"
@@ -59,12 +78,20 @@ featuredimg: https://waldenpond.press/img/blog/list/sources.png
   a while ago. But that was the start of July and now it's the end of August;
   lots more data, what's changed?
 </p>
-<img src="{{ './img/blog/list/lengths.png' |  relative_url }}" />
 <p>
   The peak around 10 minutes is much stronger now, and in general the histogram
   has smoothed out. (This is all as I'd expect.)
 </p>
-<img src="{{ './img/blog/list/sources.png' |  relative_url }}" />
+<p>
+  The graph below shows where people get their content. The most common place,
+  this time and last time, is the Guardian (so you should go and pay them some
+  money!).
+</p>
+<a href="{{ './img/blog/list/sources.png' |  relative_url }}"
+  ><img
+    class="half-width left"
+    src="{{ './img/blog/list/sources.png' |  relative_url }}"
+/></a>
 <p>
   Diversity of sources: so far Walden Pond has printed 1452 articles. 809 of
   them come from the top 47 publishers. (The ones shown in the graph.) The rest
