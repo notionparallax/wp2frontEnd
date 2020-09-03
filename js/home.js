@@ -17,7 +17,11 @@ window.addEventListener("userReady", function () {
         setSignupProgressTicks(user); //set the check marks or not
       }
     })
-    .catch((e) => console.error("fetch failed", e));
+    .catch((e) => {
+      document.querySelector(".page-content").innerHTML =
+        "Nothing's loading. Maybe you're offline?";
+      console.error("fetch failed", e);
+    });
 });
 
 function setSignupProgressTicks(user) {
