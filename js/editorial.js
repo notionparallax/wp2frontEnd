@@ -92,7 +92,6 @@ function collectEditorial(event) {
     longest_article: getSliderVal("#form-longest_article"),
     shortest_article: getSliderVal("#form-shortest_article"),
     paper_colour: document.getElementById("paper-colour").value,
-    // minutes_of_content_wanted: 60,
     weeks_to_select_from: getSliderVal("#form-history_depth"),
     extraTags: document.getElementById("extra-tags").value,
     searchTerms: document.getElementById("search-words").value,
