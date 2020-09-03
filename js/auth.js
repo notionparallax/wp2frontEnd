@@ -18,6 +18,21 @@ document.addEventListener(
         uiShown: function () {
           // The widget is rendered, Hide the loader.
           document.getElementById("loader").style.display = "none";
+
+          setTimeout(function () {
+            document.querySelectorAll(
+              '[data-provider-id="google.com"] >span'
+            )[1].innerText = "Sign in/Sign up with Google";
+            document.querySelectorAll(
+              '[data-provider-id="github.com"] >span'
+            )[1].innerText = "Sign in/Sign up with GitHub";
+            document.querySelectorAll(
+              '[data-provider-id="twitter.com"] >span'
+            )[1].innerText = "Sign in/Sign up with Twitter";
+            document.querySelectorAll(
+              '[data-provider-id="password"] >span'
+            )[1].innerText = "Sign in/Sign up with email";
+          }, 100);
         },
       },
       // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
