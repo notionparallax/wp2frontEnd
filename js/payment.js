@@ -30,28 +30,7 @@ window.addEventListener("userReady", function () {
             // billingAddressCollection: 'required',
             shippingAddressCollection: {
               // prettier-ignore
-              allowedCountries: 
-              ['CD', 'ES', 'BJ', 'RU', 'MW', 'YT', 'CM', 'SG', 'PM', 'SJ', 'MA', 
-               'BV', 'NG', 'WF', 'UA', 'CI', 'MT', 'SH', 'PY', 'FR', 'DZ', 'DM', 
-               'AX', 'SM', 'FI', 'MV', 'PN', 'IE', 'MN', 'VA', 'VU', 'LY', 'DE', 
-               'HT', 'KR', 'PT', 'SK', 'SR', 'EE', 'PA', 'AL', 'BH', 'GH', 'ME', 
-               'GD', 'KM', 'VC', 'DJ', 'AF', 'SV', 'BO', 'HU', 'IT', 'EC', 'IM', 
-               'TF', 'TG', 'CO', 'ID', 'LT', 'BT', 'DO', 'TO', 'IL', 'TC', 'TM', 
-               'MU', 'LB', 'KZ', 'CA', 'CN', 'GG', 'GW', 'RO', 'GR', 'IN', 'TT', 
-               'AE', 'CR', 'RW', 'MK', 'MO', 'SX', 'NA', 'PF', 'BQ', 'KY', 'AW', 
-               'LU', 'OM', 'GN', 'PH', 'MR', 'MS', 'PG', 'TK', 'UG', 'BB', 'KG', 
-               'KW', 'VG', 'TZ', 'YE', 'IS', 'JO', 'MQ', 'AT', 'RS', 'CK', 'MM', 
-               'SS', 'EH', 'BD', 'CH', 'IO', 'UY', 'GS', 'MG', 'KI', 'FO', 'GM', 
-               'AG', 'BM', 'PS', 'GA', 'LC', 'NO', 'NI', 'LV', 'JE', 'KE', 'LR', 
-               'BL', 'TD', 'ZM', 'ER', 'BW', 'CW', 'FK', 'BR', 'AR', 'HK', 'NZ', 
-               'TV', 'WS', 'CG', 'AO', 'FJ', 'SN', 'BZ', 'MD', 'AZ', 'PK', 'SC', 
-               'NE', 'SB', 'MY', 'GP', 'UZ', 'TH', 'GB', 'KN', 'IQ', 'HR', 'MZ', 
-               'NP', 'SA', 'HN', 'GF', 'SO', 'BF', 'NU', 'ST', 'CL', 'TJ', 'DK', 
-               'PE', 'CV', 'GT', 'LI', 'SL', 'LK', 'US', 'KH', 'GY', 'TL', 'CY', 
-               'GI', 'BE', 'GL', 'EG', 'BI', 'BG', 'ML', 'NR', 'SZ', 'VN', 'ZA', 
-               'XK', 'BA', 'LS', 'AI', 'CZ', 'JP', 'QA', 'NL', 'SI', 'ET', 'VE', 
-               'SE', 'TW', 'BY', 'AM', 'AD', 'JM', 'LA', 'MC', 'MX', 'TN', 'RE',
-               'BS', 'AU', 'GE', 'TR', 'GQ', 'PL', 'MF', 'ZW', 'NC', 'CF', 'BN'],
+              allowedCountries: ["AD", "AE", "AF", "AG", "AI", "AL", "AM", "AO", "AR", "AT", "AU", "AW", "AX", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BL", "BM", "BN", "BO", "BQ", "BR", "BS", "BT", "BV", "BW", "BY", "BZ", "CA", "CD", "CF", "CG", "CH", "CI", "CK", "CL", "CM", "CN", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "EH", "ER", "ES", "ET", "FI", "FJ", "FK", "FO", "FR", "GA", "GB", "GD", "GE", "GF", "GG", "GH", "GI", "GL", "GM", "GN", "GP", "GQ", "GR", "GS", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IM", "IN", "IO", "IQ", "IS", "IT", "JE", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KY", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MF", "MG", "MK", "ML", "MM", "MN", "MO", "MQ", "MR", "MS", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NC", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NU", "NZ", "OM", "PA", "PE", "PF", "PG", "PH", "PK", "PL", "PM", "PN", "PS", "PT", "PY", "QA", "RE", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SH", "SI", "SJ", "SK", "SL", "SM", "SN", "SO", "SR", "SS", "ST", "SV", "SX", "SZ", "TC", "TD", "TF", "TG", "TH", "TJ", "TK", "TL", "TM", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VA", "VC", "VE", "VG", "VN", "VU", "WF", "WS", "XK", "YE", "YT", "ZA", "ZM", "ZW"],
             },
           })
           .then(function (result) {
