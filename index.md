@@ -39,6 +39,12 @@ That's the price, no extra postage costs or mystery fees.
 
 </div>
 
+<div class="shipping">
+
+{% include shipping.md %}
+
+</div>
+
 <div class="what">
 
 {% include what_do_I_get.md %}
