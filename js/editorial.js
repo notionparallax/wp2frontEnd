@@ -200,6 +200,10 @@ function drawGraphOfTTR() {
     `You have ${rational_time(total_time)}  of content in your Pocket` +
     "<br>" +
     `${rational_time(inRangeTime)} of it is in range`;
+  if (rational_time(inRangeTime) > 260) {
+    // show some text if the user doesn't have much in their pocket.
+    document.getElementById("pocket-bare-warning").classList.remove("hide");
+  }
 }
 function rational_time(time_in_minutes) {
   if (time_in_minutes < 120) {
