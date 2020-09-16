@@ -23,6 +23,8 @@ featuredimg: https://pbs.twimg.com/media/EZakiU8VAAE1Okz?format=jpg
 
 You'd probably be horrified if you knew how much effort goes into getting your edition of Walden Pond to print nicely every month. The _experience_ of reading is the thing we're really focused on. **If you've got a PDF edition how can you make your experience of reading it great?**
 
+<!--more-->
+
 ## Screen
 
 If you're reading it on a tablet, you're probably all good. Single page view will make it look good, and the text should be plenty readable as the physical edition is about the same size as a normal-size iPad.

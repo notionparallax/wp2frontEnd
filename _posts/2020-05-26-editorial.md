@@ -23,6 +23,8 @@ featuredimg: ./img/blog/editorial/lengthsForEveryone.png"
 
 I thought I'd tell you about the Editorial page. I added another option to it yesterday, and I thought that this might be a good time to talk about it in a bit more depth.
 
+<!--more-->
+
 The point of the Editorial Details page is to give you control of what goes into your edition each month. You can change the settings as often as you like, but the way they are when I do the print run at the end of the month is what will determine how your edition comes out.
 
 You can find it in the menu on the right, or [go straight to it](https://waldenpond.press/editorial) if you're logged in.
