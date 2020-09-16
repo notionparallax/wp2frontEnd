@@ -197,8 +197,8 @@ function drawGraphOfTTR() {
   };
   Plotly.newPlot("plotlyDiv", traces, layout);
   document.getElementById("graph-title").innerHTML =
-    `You have ${rational_time(total_time)}  of content in your Pocket` +
-    "<br>" +
+    `You have ${rational_time(total_time)}` +
+    "  of content in your Pocket, " +
     `${rational_time(inRangeTime)} of it is in range`;
   if (rational_time(inRangeTime) > 260) {
     // show some text if the user doesn't have much in their pocket.

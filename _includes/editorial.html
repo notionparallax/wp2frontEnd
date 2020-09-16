@@ -1,0 +1,170 @@
+<p>
+  We make each edition specifically for you. Tell us a bit about how you'd like
+  us to do that:
+</p>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<div class="graph-container">
+  <div id="graph-loading-message" class="graph-loading-message">
+    <p>
+      Loading your Pocket data for a graph. We love graphs but if you have a lot
+      in your Pocket, this can take a <em>long</em> time. (You don't need to
+      wait for it to finish before you change the sliders below.)
+    </p>
+  </div>
+  <div class="hide" id="plotlyDiv">
+    <!-- Plotly chart will be drawn inside this DIV -->
+  </div>
+  <p class="hide" id="graph-title"></p>
+  <button class="hide" id="update-the-graph-btn">update the graph</button>
+  <p class="hide pocket-bare-warning" id="pocket-bare-warning">
+    If there's not much in your Pocket, and you're looking for some fascinating
+    artcles to save, there a
+    <a href="https://waldenpond.press/2020/08/30/popularity.html"
+      ><em>lot</em> here</a
+    >. It's a list of everything that had been printed in a Walden Pond edition
+    up until edition 6.
+  </p>
+</div>
+
+<form class="form" id="everything-form">
+  <h2>Controls</h2>
+  <div class="form-group">
+    <label for="form-longest_article">Longest article</label>
+    <div class="range-output" id="max-output"></div>
+    <p>What's the maximum length of article that you'd like?</p>
+    <input
+      type="range"
+      class="slider"
+      name="form-longest_article"
+      id="form-longest_article"
+      placeholder="Maximum, in minutes"
+      min="1"
+      max="100"
+      value="25"
+      step="1"
+    />
+  </div>
+
+  <div class="form-group">
+    <!-- 'shortest_article': 9,   -->
+    <label for="form-shortest_article">Shortest article</label>
+    <div class="range-output" id="min-output"></div>
+    <p>What's the minimum length of article that you'd like?</p>
+    <input
+      type="range"
+      class="slider"
+      name="form-shortest_article"
+      id="form-shortest_article"
+      placeholder="Minimum, in minutes"
+      min="0"
+      max="59"
+      value="9"
+      step="1"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="form-shortest_article">How far back should we look?</label>
+    <div class="range-output" id="history-output"></div>
+    <p>
+      Pocket has been going for a long time, so you might have articles that are
+      that old too. Maybe you want to read them, but this lets you filter for
+      only newer articles.
+    </p>
+    <input
+      type="range"
+      class="slider"
+      name="form-history_depth"
+      id="form-history_depth"
+      placeholder="Weeks to pull from"
+      min="4"
+      max="700"
+      value="200"
+      step="1"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="form-shortest_article">Paper</label>
+    <div class="range-output" id="min-output"></div>
+    <p>
+      What colour paper you'd like? We recommend cream, it's relaxing and it's
+      easy on your eyes.
+    </p>
+    <select name="paper-colour" id="paper-colour">
+      <option value="CREAM" selected="selected">Cream</option>
+      <option value="WHITE">White</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="extra-tags">Tag includer</label>
+    <p>
+      The tag <code>wpmustprint</code> makes articles be prioritised for
+      inclusion in your upcoming edition. If you want to add more tags that do
+      this, put them in here:
+    </p>
+    <input
+      type="text"
+      id="extra-tags"
+      name="extra-tags"
+      placeholder="Type tags in here"
+    />
+    <p>
+      Write them as a comma separated list, e.g.:
+      <code>knitting, malt, mountain bike</code> will give you three extra tags.
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label for="search-words">Search-term includer</label>
+    <p>
+      If you want to include articles with specific words in the title, put them
+      in here:
+    </p>
+    <input
+      type="text"
+      id="search-words"
+      name="search-words"
+      placeholder="Type search terms in here"
+    />
+    <p>
+      Write them as a comma separated list, e.g.:
+      <code>car, typography, plastic bag</code> will give you articles like:
+    </p>
+    <ul>
+      <li>Not All Electric Vehicles Are Cars, You Know</li>
+      <li>
+        Are cotton totes better for the Earth than plastic bags? It depends on
+        what you care about
+      </li>
+      <li>Rhythm in Web Typography</li>
+    </ul>
+    <p>
+      But it will also give you "The secret life of Wetherspoon’s freaky
+      <em>car</em>pets" because there is a car in carpets.
+    </p>
+  </div>
+  <!-- <div class="form-group">
+    <p>This isn't implemented yet, but it's coming soon.</p>
+    <label for="form-shortest_article"
+      >Should we include <code>code</code>?</label
+    >
+    <input
+      type="checkbox"
+      class="form-control"
+      name="form-allow_code"
+      id="form-allow_code"
+      value="allow_code"
+    /><span id="allow_code_output">No code please</span>
+    <p>
+      Articles with code sometimes have really long lines that don't wrap well.
+      We can exclude them if you like.
+    </p>
+  </div> -->
+
+  <input id="hidden-all-ok" name="allok" type="hidden" value="allok" />
+
+  <button id="all-good-btn">That all looks great, save it!</button>
+</form>

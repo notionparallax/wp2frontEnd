@@ -11,9 +11,10 @@ window.addEventListener("userReady", function () {
       console.log("I'm in home", user);
       if (user.meta && user.meta.subscription_active) {
         console.log("all aboard🚂");
-        document.querySelector("#regular-home").classList.remove("hide");
+        document.getElementById("regular-home").classList.remove("hide");
+        document.getElementById("editorial-control").classList.remove("hide");
       } else {
-        document.querySelector("#getting_started").classList.remove("hide");
+        document.getElementById("getting_started").classList.remove("hide");
         setSignupProgressTicks(user); //set the check marks or not
       }
     })
@@ -43,6 +44,9 @@ function setSignupProgressTicks(user) {
     ticks.money_set = true;
   }
 
+  if (ticks.pocket_set) {
+    document.getElementById("editorial-control").classList.remove("hide");
+  }
   if (ticks.pocket_set && ticks.money_set) {
     if (user.meta.subscription_active === false) {
       let body = JSON.stringify(window.wp_user);
@@ -57,8 +61,8 @@ function setSignupProgressTicks(user) {
           console.log(d);
           if (d.success) {
             alert("You're fully signed up and ready to go! Congratulations.");
-            document.querySelector("#getting_started").classList.add("hide");
-            document.querySelector("#regular-home").classList.remove("hide");
+            document.getElementById("getting_started").classList.add("hide");
+            document.getElementById("regular-home").classList.remove("hide");
           }
         });
     }
