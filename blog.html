@@ -1,15 +1,20 @@
 ---
-layout: default
+layout: default_dont_check_user
 title: Blog 📖
 ---
 
-<ul itemtype="http://schema.org/Blog">
+<style>
+  .page-content {
+    max-width: initial;
+  }
+</style>
+
+<ul itemtype="http://schema.org/Blog" class="blog-container">
   {% for post in site.posts %}
   <li>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <!-- {{ post.excerpt }} -->
+    {{ post.twitter-body }}
+    <img src="{{ post.featuredimg }}" />
   </li>
   {% endfor %}
 </ul>
-
-{% include base-scripts.md %}

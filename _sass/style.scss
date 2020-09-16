@@ -834,3 +834,20 @@ section#debug-data {
 .History {
   grid-area: History;
 }
+.blog-container {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 2em;
+}
+.blog-container li {
+  max-width: 17em;
+  list-style: none;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.15);
+}
