@@ -11,6 +11,8 @@ window.addEventListener("load", function () {
       if (user.photoURL) {
         document.querySelector("#header-profile-picture").src = user.photoURL;
       }
+      document.querySelector("#header-profile-name").innerHTML =
+        user.displayName;
     } else {
       // User is signed out.
       // ...
