@@ -76,6 +76,16 @@ function setPage(user) {
   if (ed.searchTerms) {
     document.getElementById("search-words").value = ed.searchTerms;
   }
+
+  // address data:
+  document.getElementById("form-name-of-user").value =
+    user.from_firebase_auth.auth_obj.displayName;
+  const ad = user.stripe.address;
+  document.getElementById("form-address-line1").value = ad.line1;
+  document.getElementById("form-address-line2").value = ad.line2;
+  document.getElementById("form-address-city").value = ad.city;
+  document.getElementById("form-address-state").value = ad.state;
+  document.getElementById("form-address-post-code").value = ad.postal_code;
 }
 
 function collectEditorial(event) {
