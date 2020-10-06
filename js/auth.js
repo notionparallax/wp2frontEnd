@@ -26,9 +26,9 @@ document.addEventListener(
             document.querySelectorAll(
               '[data-provider-id="github.com"] >span'
             )[1].innerText = "Sign in/Sign up with GitHub";
-            document.querySelectorAll(
-              '[data-provider-id="twitter.com"] >span'
-            )[1].innerText = "Sign in/Sign up with Twitter";
+            // document.querySelectorAll(
+            //   '[data-provider-id="twitter.com"] >span'
+            // )[1].innerText = "Sign in/Sign up with Twitter";
             document.querySelectorAll(
               '[data-provider-id="password"] >span'
             )[1].innerText = "Sign in/Sign up with email";
@@ -45,7 +45,7 @@ document.addEventListener(
         // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
         // "microsoft.com",
-        firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+        // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
         // firebase.auth.PhoneAuthProvider.PROVIDER_ID
       ],
       // Terms of service url.
