@@ -442,7 +442,7 @@ blockquote p {
 }
 
 .icon > svg path {
-  fill: #4d4d4d;
+  fill: hsl(0 0% 60% / 1);
 }
 
 /* payments */
@@ -649,8 +649,11 @@ footer {
   padding: 1em;
   padding-top: 3em;
 
+  a {
+    color: hsla(314deg 100% 82%, 1);
+  }
   a:visited {
-    color: hsla(200, 50%, 73%, 1);
+    color: hsla(200deg, 50%, 73%, 1);
   }
   .footer-content {
     column-width: 17em;
