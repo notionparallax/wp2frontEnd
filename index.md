@@ -75,6 +75,16 @@ That's the price, no extra postage costs or mystery fees.
 
 </div>
 
+<div class="know-more">
+
+## Want to know more?
+
+If you want to know even more, take a look at
+[these articles]({{ "blog" | absolute_url }})
+or send us an [email]({{ "mailto:ben@waldenpond.press?subject=Tell me something!&body=How do I get my WP in Klingon?" | relative_url }}) and ask us anything you like!
+
+</div>
+
 </div>
 <link
   type="text/css"
