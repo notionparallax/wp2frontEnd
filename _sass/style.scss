@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP|Raleway|Cinzel+Decorative|Raleway+Dots");
 
 :root {
-  --body-bg-colour: hsla(60, 10%, 98%, 1);
+  --body-bg-colour: HSLA(60, 10%, 98%, 1);
   --big-img-width: 98.5vw;
   --main-column-width: 38em;
   --preview-width: 9rem;
@@ -95,8 +95,8 @@ p.reset {
   }
 }
 section {
-  /* border-bottom: 1px solid hsla(0, 0%, 0%, 0.05); */
-  border-top: 1px solid hsla(0, 0%, 0%, 0.05);
+  /* border-bottom: 1px solid HSLA(0, 0%, 0%, 0.05); */
+  border-top: 1px solid HSLAa(0, 0%, 0%, 0.05);
   margin-bottom: 1em;
   padding: 1rem 2rem;
   max-width: 45rem;
@@ -109,7 +109,7 @@ a {
   transition: all 0.2s;
 }
 a:visited {
-  color: hsla(202, 80%, 39%, 1);
+  color: HSLA(202, 80%, 39%, 1);
 }
 a:hover {
   cursor: pointer;
@@ -117,7 +117,7 @@ a:hover {
 
 button,
 a.button {
-  background-color: hsla(0, 0%, 100%, 0.8);
+  background-color: HSLA(0, 0%, 100%, 0.8);
   border-radius: 0.12em;
   border: 0.1em solid black;
   box-sizing: border-box;
@@ -224,7 +224,7 @@ input[type="checkbox"] {
 }
 
 .form-group {
-  background-color: hsla(0, 0%, 100%, 0.2);
+  background-color: HSLA(0, 0%, 100%, 0.2);
   border-radius: 0.5em;
   border: 1px solid silver;
   margin: 0.25em;
@@ -442,7 +442,7 @@ blockquote p {
 }
 
 .icon > svg path {
-  fill: hsl(0 0% 60% / 1);
+  fill: #999999;
 }
 
 /* payments */
@@ -530,16 +530,16 @@ blockquote p {
     background-image: url(/img/Stripe%20logo%20-%20slate_sm.png),
       linear-gradient(
         150deg,
-        hsl(250, 100%, 60%) 15%,
-        hsl(190, 100%, 51%) 70%,
-        hsl(145, 100%, 83%) 94%
+        HSLA(250, 100%, 60%) 15%,
+        HSLA(190, 100%, 51%) 70%,
+        HSLA(145, 100%, 83%) 94%
       );
     background-position: 85% 0, 0 0;
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 1em;
     bottom: -1.3em;
-    color: hsl(230, 34%, 29%);
+    color: HSLA(230, 34%, 29%);
     content: "Subscribe with";
     font-family: "Raleway", sans-serif;
     font-size: 54%;
@@ -566,7 +566,7 @@ span.check.payment {
 }
 @media only screen and (min-width: 812px) {
   .onboarding-flow li {
-    background-color: hsla(34, 78%, 91%, 0.4);
+    background-color: HSLA(34, 78%, 91%, 0.4);
     border-radius: 1em;
     display: inline-block;
     margin: 1em 1.5em;
@@ -639,21 +639,21 @@ span.check.payment {
 
 /* footer */
 footer {
-  background-color: hsla(0, 0%, 0%, 0.8);
+  background-color: HSLA(0, 0%, 0%, 0.8);
   border-top: 1px solid;
   box-shadow: inset 0px 20px 10px 0px rgba(0, 0, 0, 0.75);
-  color: hsla(0, 0%, 100%, 0.85);
-  column-rule: 1px solid hsla(0, 0%, 100%, 0.6);
+  color: HSLA(0, 0%, 100%, 0.85);
+  column-rule: 1px solid HSLA(0, 0%, 100%, 0.6);
   font-size: 70%;
   margin-top: 10em;
   padding: 1em;
   padding-top: 3em;
 
   a {
-    color: hsla(314deg 100% 82%, 1);
+    color: HSLA(314deg, 100%, 82%, 1);
   }
   a:visited {
-    color: hsla(200deg, 50%, 73%, 1);
+    color: HSLA(200deg, 50%, 73%, 1);
   }
   .footer-content {
     column-width: 17em;
@@ -676,7 +676,7 @@ footer {
 }
 /* Firebase login */
 .firebaseui-tos.firebaseui-tospp-full-message {
-  color: hsla(0, 0%, 35%, 1);
+  color: HSLA(0, 0%, 35%, 1);
 }
 .firebaseui-idp-text-long {
   text-align: center;
@@ -789,7 +789,7 @@ section#debug-data {
 }
 .firebaseui-idp-password {
   /* default red is too full on */
-  background-color: hsl(5, 44%, 45%);
+  background-color: HSLA(5, 44%, 45%);
 }
 
 // Blog
