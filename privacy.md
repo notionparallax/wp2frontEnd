@@ -3,6 +3,8 @@ layout: index
 title: Privacy 🔏
 ---
 
+# Privacy
+
 ## Why we’re collecting your details
 
 Walden Pond is collecting your personal information so we can make and send you an edition of the physical zine, and so that we can keep in touch about anything regarding that.
