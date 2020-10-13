@@ -146,23 +146,30 @@
       <em>car</em>pets" because there is a car in carpets.
     </p>
   </div>
-  <!-- <div class="form-group">
-    <p>This isn't implemented yet, but it's coming soon.</p>
-    <label for="form-shortest_article"
-      >Should we include <code>code</code>?</label
+  <div class="form-group">
+    <label for="curator"
+      >Curation strategy: how should we fill your edition?</label
     >
-    <input
-      type="checkbox"
-      class="form-control"
-      name="form-allow_code"
-      id="form-allow_code"
-      value="allow_code"
-    /><span id="allow_code_output">No code please</span>
     <p>
-      Articles with code sometimes have really long lines that don't wrap well.
-      We can exclude them if you like.
+      We use a modified Knapsack algorithm to pack your edition to have the
+      right amount of content. It's the nicest way to get a variety of lengths
+      and ages of articles. You can
+      <a href="https://waldenpond.press/2020/09/10/curation.html"
+        >read about it here</a
+      >. We call it "big rock" because it make sure that you have at least one
+      long article to read.
     </p>
-  </div> -->
+    <p>
+      If you want your articles to come out like a plate stack, then chose FIFO
+      (First in, First Out). This takes the most recent thing that you've saved
+      and puts it at the start of your edition, and so on until you've used up
+      your time.
+    </p>
+    <select name="curation_strategy" id="curation_strategy">
+      <option value="big_rock" selected="selected">Big Rock</option>
+      <option value="fifo">FiFo</option>
+    </select>
+  </div>
 
   <input id="hidden-all-ok" name="allok" type="hidden" value="allok" />
 
