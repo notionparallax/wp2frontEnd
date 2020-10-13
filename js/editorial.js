@@ -10,7 +10,7 @@ window.addEventListener("userReady", function () {
     .then((data) => {
       if (data.editorial) {
         setPage(data);
-        showArticleLenghts(data);
+        showArticleLengths(data);
       }
       window.wp_user = data;
     })
@@ -128,7 +128,7 @@ function setSliderVal(selector, value) {
   document.querySelector(selector).value = value;
 }
 
-function showArticleLenghts(data) {
+function showArticleLengths(data) {
   let body = data.pocket;
   body.for_timing = true;
   fetch(contextAwareURL() + "/sample-pocket-articles", {
