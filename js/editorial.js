@@ -76,6 +76,11 @@ function setPage(user) {
   if (ed.searchTerms) {
     document.getElementById("search-words").value = ed.searchTerms;
   }
+  document
+    .getElementById("curation_strategy")
+    .querySelector(
+      `option[value=${ed.curation_strategy || "big_rock"}]`
+    ).selected = true;
 }
 
 function collectEditorial(event) {
@@ -95,6 +100,7 @@ function collectEditorial(event) {
     weeks_to_select_from: getSliderVal("#form-history_depth"),
     extraTags: document.getElementById("extra-tags").value,
     searchTerms: document.getElementById("search-words").value,
+    curation_strategy: document.getElementById("curation_strategy").value,
   };
   let body = JSON.stringify({ user: user, payload: editorial });
 
