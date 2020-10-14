@@ -20,7 +20,8 @@ window.addEventListener("userReady", function () {
     })
     .catch((e) => {
       document.querySelector(".page-content").innerHTML =
-        "Nothing's loading. Maybe you're offline?";
+        "Nothing's loading. This is super frustrating, and I'm working on it. " +
+        "If it's urgent, email me and I'll change the database by hand. 😥";
       console.error("fetch failed", e);
     });
 });
