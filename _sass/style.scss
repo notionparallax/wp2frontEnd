@@ -770,8 +770,18 @@ img.domain-meta {
 }
 
 /* history page */
-.history-container h2 {
-  text-transform: capitalize;
+.history-container {
+  h2 {
+    text-transform: capitalize;
+  }
+  & > div {
+    // height: 4em;
+    // overflow: hidden;
+    // TODO: Add the js to control rolling these up so
+    //       that you can see more history at once.
+    transition: all 0.5s ease;
+    padding-bottom: 1em;
+  }
 }
 
 /* debug */
