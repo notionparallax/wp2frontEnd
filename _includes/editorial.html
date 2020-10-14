@@ -151,23 +151,23 @@
       >Curation strategy: how should we fill your edition?</label
     >
     <p>
-      We use a modified Knapsack algorithm to pack your edition to have the
-      right amount of content. It's the nicest way to get a variety of lengths
-      and ages of articles. You can
+      We use a modified Knapsack algorithm to pick artcles for your edition so
+      it has the right amount of content. It's the nicest way to get a variety
+      of lengths and ages of articles. You can
       <a href="https://waldenpond.press/2020/09/10/curation.html"
         >read about it here</a
       >. We call it "big rock" because it make sure that you have at least one
       long article to read.
     </p>
     <p>
-      If you want your articles to come out like a plate stack, then chose FIFO
-      (First in, First Out). This takes the most recent thing that you've saved
+      If you want your articles to come out like a plate stack, then chose LIFO
+      (Last in, First Out). This takes the most recent thing that you've saved
       and puts it at the start of your edition, and so on until you've used up
       your time.
     </p>
     <select name="curation_strategy" id="curation_strategy">
       <option value="big_rock" selected="selected">Big Rock</option>
-      <option value="fifo">FiFo</option>
+      <option value="lifo">LiFo</option>
     </select>
   </div>
 
