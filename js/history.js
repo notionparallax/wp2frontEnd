@@ -18,7 +18,8 @@ window.addEventListener("userReady", function () {
 });
 
 function showHistory(history) {
-  for (editionName in history) {
+  editionNames = Object.keys(history).reverse();
+  editionNames.forEach((editionName) => {
     const edition = history[editionName];
     const dateISO = edition.date;
     const articles = edition.articles;
@@ -31,8 +32,5 @@ function showHistory(history) {
     document.getElementById("history-container").appendChild(editionContainer);
     const templateID = "article-template";
     showArticles(articles, templateID, `${editionName}-container`);
-    // for (articleID in articles) {
-    //   console.log(articles[articleID]);
-    // }
-  }
+  });
 }
