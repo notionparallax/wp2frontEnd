@@ -20,7 +20,8 @@ window.addEventListener("userReady", function () {
     })
     .catch((e) => {
       document.querySelector(".page-content").innerHTML =
-        "Nothing's loading. This is super frustrating, and I'm working on it. " +
+        "Nothing's loading. This is super frustrating, and I'm working on it. <br>" +
+        "Sometimes it works, sometimes it doesn't.<br>" +
         "If it's urgent, email me and I'll change the database by hand. 😥";
       console.error("fetch failed", e);
     });
