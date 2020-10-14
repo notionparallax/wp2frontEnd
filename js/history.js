@@ -18,19 +18,22 @@ window.addEventListener("userReady", function () {
 });
 
 function showHistory(history) {
-  editionNames = Object.keys(history).reverse();
-  editionNames.forEach((editionName) => {
-    const edition = history[editionName];
-    const dateISO = edition.date;
-    const articles = edition.articles;
-    console.log(edition, dateISO);
-    const editionContainer = document.createElement("div");
-    editionContainer.id = `${editionName}-container`;
-    let title = document.createElement("h2");
-    title.innerText = editionName.replace("_", " ");
-    editionContainer.appendChild(title);
-    document.getElementById("history-container").appendChild(editionContainer);
-    const templateID = "article-template";
-    showArticles(articles, templateID, `${editionName}-container`);
-  });
+  Object.keys(history)
+    .reverse()
+    .forEach((editionName) => {
+      const edition = history[editionName];
+      const dateISO = edition.date;
+      const articles = edition.articles;
+      console.log(edition, dateISO);
+      const editionContainer = document.createElement("div");
+      editionContainer.id = `${editionName}-container`;
+      let title = document.createElement("h2");
+      title.innerText = editionName.replace("_", " ");
+      editionContainer.appendChild(title);
+      document
+        .getElementById("history-container")
+        .appendChild(editionContainer);
+      const templateID = "article-template";
+      showArticles(articles, templateID, `${editionName}-container`);
+    });
 }
