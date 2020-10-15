@@ -26,7 +26,7 @@ function getSampleArticles(pocketKeys) {
     .then((data) => {
       console.log("articles", data);
       let title = document.createElement("h2");
-      title.innerText = "Some of your recent Pocket saves";
+      title.innerText = "Here are some of your recent Pocket saves";
       document.getElementById("articles-container").appendChild(title);
       showArticles(data, "article-template", "articles-container");
       // document.querySelector("#waiting").classList = "hide";

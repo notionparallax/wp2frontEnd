@@ -16,6 +16,7 @@ window.addEventListener("load", function () {
     } else {
       // User is signed out.
       // ...
+      // TODO: redirect to /
     }
   });
 });
