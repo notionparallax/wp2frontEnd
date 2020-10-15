@@ -81,6 +81,11 @@ function setPage(user) {
     .querySelector(
       `option[value=${ed.curation_strategy || "big_rock"}]`
     ).selected = true;
+  document
+    .getElementById("sorting_strategy")
+    .querySelector(
+      `option[value=${ed.sorting_strategy || "magic"}]`
+    ).selected = true;
 }
 
 function collectEditorial(event) {
@@ -101,6 +106,7 @@ function collectEditorial(event) {
     extraTags: document.getElementById("extra-tags").value,
     searchTerms: document.getElementById("search-words").value,
     curation_strategy: document.getElementById("curation_strategy").value,
+    sorting_strategy: document.getElementById("sorting_strategy").value,
   };
   let body = JSON.stringify({ user: user, payload: editorial });
 
