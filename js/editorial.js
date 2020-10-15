@@ -46,10 +46,6 @@ document
   .getElementById("update-the-graph-btn")
   .addEventListener("click", () => drawGraphOfTTR());
 
-// if (user.allow_code == "allow_code") {
-//   document.getElementById("form-allow_code").checked = true;
-// }
-
 document
   .getElementById("all-good-btn")
   .addEventListener("click", (e) => collectEditorial(e));
