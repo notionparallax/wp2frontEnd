@@ -167,8 +167,30 @@
     </p>
     <select name="curation_strategy" id="curation_strategy">
       <option value="big_rock" selected="selected">Big Rock</option>
+      <!-- 🪨 TODO: put this rock in once it's shipped! -->
       <option value="lifo">LiFo</option>
     </select>
+    <p>
+      If you've picked LiFo, you probably want to pick a non-magic sorting
+      strategy too.
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label for="curator">Sorting: how should we order your articles?</label>
+    <p>
+      The knapsack algorithm orders the editions by magic. If you want a more
+      predictable ordering, then here's your chance.
+    </p>
+    <select name="sorting_strategy" id="sorting_strategy">
+      <option value="magic" selected="selected">Magic 🧙‍♂️</option>
+      <option value="oldest_at_the_front">Oldest at the front</option>
+      <option value="newset_at_the_front">Newest at the front</option>
+    </select>
+    <p>
+      You might want this if you're reading a series of articles, or you like to
+      read news, and you don't want spoilers.
+    </p>
   </div>
 
   <input id="hidden-all-ok" name="allok" type="hidden" value="allok" />
