@@ -51,7 +51,6 @@ window.addEventListener("userReady", function () {
     });
 
   const managePaymentButton = document.getElementById("manage-payment-button");
-  // .setAttribute("action", contextAwareURL() + "/create_billing_portal");
   managePaymentButton.addEventListener("click", goToPaymentManagement);
 
   function goToPaymentManagement() {
