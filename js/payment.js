@@ -52,7 +52,9 @@ window.addEventListener("userReady", function () {
 
   const managePaymentButton = document.getElementById("manage-payment-button");
   // .setAttribute("action", contextAwareURL() + "/create_billing_portal");
-  managePaymentButton.addEventListener("click", () => {
+  managePaymentButton.addEventListener("click", goToPaymentManagement);
+
+  function goToPaymentManagement() {
     console.log("asking Stripe for a redirect URL");
     let body = JSON.stringify(window.wp_user);
     fetch(contextAwareURL() + "/create_billing_portal", {
@@ -71,7 +73,7 @@ window.addEventListener("userReady", function () {
         window.location.replace(data.session.url);
       })
       .catch((e) => console.error("fetch failed", e));
-  });
+  }
 
   fetch(contextAwareURL() + "/user-data", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
