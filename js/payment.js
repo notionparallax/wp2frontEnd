@@ -14,6 +14,11 @@ window.addEventListener("userReady", function () {
 
       checkoutButton.addEventListener("click", function () {
         // When the customer clicks on the button, redirect them to Checkout.
+        if (window.location.href.includes("payment")) {
+          console.log(
+            "on the payment page. TODO: make these buttons not be buttons!"
+          );
+        }
         stripe
           .redirectToCheckout({
             items: [{ plan: checkoutID, quantity: 1 }],
@@ -67,4 +72,16 @@ window.addEventListener("userReady", function () {
       })
       .catch((e) => console.error("fetch failed", e));
   });
+
+  fetch(contextAwareURL() + "/user-data", {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    headers: { "Content-Type": "application/json" },
+    body: body, // body data type must match "Content-Type" header
+    //docs: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("DB data:", data);
+    })
+    .catch((e) => console.error("fetch failed", e));
 });
