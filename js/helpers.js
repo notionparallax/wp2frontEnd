@@ -16,6 +16,7 @@ function showArticles(articles, templateID, containerID) {
   let fillerImg =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDJC3iiBbaebl2VaHmxnimTjwKbHr4FjAtf45uTI3ewzIiQLIv&usqp=CAU";
 
+  let editionLinks = [];
   for (let [key, article] of Object.entries(articles)) {
     let clone = template.content.cloneNode(true);
 
@@ -35,7 +36,9 @@ function showArticles(articles, templateID, containerID) {
         ? article.given_title || article.resolved_title
         : "Spooky! no title 👻";
 
-    clone.querySelector("h3 a").href = `https://app.getpocket.com/read/${key}`;
+    pocketLink = `https://app.getpocket.com/read/${key}`;
+    clone.querySelector("h3 a").href = pocketLink;
+    editionLinks.push(pocketLink);
     // article.given_url ? article.given_url : "";
 
     clone.querySelector(".exerpt").innerText = article.excerpt
@@ -52,6 +55,23 @@ function showArticles(articles, templateID, containerID) {
 
     container.appendChild(clone);
   }
+  let megaLink = document.createElement("span");
+  megaLink.innerText = "💥";
+  megaLink.classList.add("explode-all-articles");
+  megaLink.title =
+    "Click this to open the pocket page for all the articles in this edition.";
+  megaLink.onclick = () => {
+    alert(
+      "This will almost certainly be blocked by your popup blocker, you'll " +
+        "need to tell the browser that you're OK with that and then click it again."
+    );
+    for (let i = 0; i < editionLinks.length; i++) {
+      const link = editionLinks[i];
+      window.open(link);
+    }
+  };
+  // console.log(containerID, editionLinks);
+  container.querySelector("h2").appendChild(megaLink);
 
   let example = {
     domain_metadata: {

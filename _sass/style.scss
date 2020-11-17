@@ -786,6 +786,14 @@ img.domain-meta {
     padding-bottom: 1em;
   }
 }
+.explode-all-articles {
+  float: right;
+  opacity: 0.3;
+  transition: all 1s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
 
 /* debug */
 .monospace {
