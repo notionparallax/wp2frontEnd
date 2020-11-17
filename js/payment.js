@@ -14,11 +14,11 @@ window.addEventListener("userReady", function () {
 
       checkoutButton.addEventListener("click", function () {
         // When the customer clicks on the button, redirect them to Checkout.
-        if (window.location.href.includes("payment")) {
-          console.log(
-            "on the payment page. TODO: make these buttons not be buttons!"
-          );
-        }
+
+        // Unless they're already signed up, in which case,
+        // send them to account management page
+        if (window.signedUpUser) goToPaymentManagement();
+
         stripe
           .redirectToCheckout({
             items: [{ plan: checkoutID, quantity: 1 }],
@@ -75,6 +75,7 @@ window.addEventListener("userReady", function () {
       .catch((e) => console.error("fetch failed", e));
   }
 
+  let body = JSON.stringify(window.wp_user);
   fetch(contextAwareURL() + "/user-data", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
     headers: { "Content-Type": "application/json" },
@@ -84,6 +85,21 @@ window.addEventListener("userReady", function () {
     .then((response) => response.json())
     .then((data) => {
       console.log("DB data:", data);
+      let subscriptionName =
+        data.stripe.complete_event.display_items[0].plan.nickname;
+      // e.g. wp1hPDF should highlight pdf-1-hr
+      // print-4-hr
+      let format = subscriptionName.includes("PDF") ? "pdf" : "print";
+      let length = subscriptionName[2];
+      let targetSelector = `.${format}-${length}-hr`;
+      let targeted = document.querySelector(targetSelector);
+      if (targeted) {
+        targeted.classList.add("subscription-selected");
+        document.querySelector(".payment-grid").classList.add("signed-up-user");
+        window.signedUpUser = true;
+      } else {
+        console.log("must have a beta subscription, contact Ben to modify it.");
+      }
     })
     .catch((e) => console.error("fetch failed", e));
 });
