@@ -31,7 +31,7 @@ Everyone's circumstances change, usually pretty frequently. So if you know you'v
 
 This is also how you get to the secret menu which so you can get all the lengths. I'd like to claim that it's some kind of clever marketing hack, but it's just that I haven't updated the rest of the site. Through this magic button, you can now get a 1, 2, 4, 8, 10 or 12 hour edition.
 
-<figure class="half-width right v-clip">
+<figure class="">
 
 ![this is what the button looks like](https://waldenpond.press/img/blog/updateSub/manageBillingButton.jpg)
 
@@ -39,7 +39,7 @@ This is also how you get to the secret menu which so you can get all the lengths
 
 It'll take you to a page hosted by the geniuses at Stripe, where you can click **Update plan**.
 
-<figure class="half-width right v-clip">
+<figure class="half-width right">
 
 ![The stripe site, ready to click](https://waldenpond.press/img/blog/updateSub/update-plan.jpg)
 
@@ -47,7 +47,7 @@ It'll take you to a page hosted by the geniuses at Stripe, where you can click *
 
 and you'll get this list of options:
 
-<figure class="half-width right v-clip">
+<figure class="half-width left">
 
 ![The stripe site, ready to click](https://waldenpond.press/img/blog/updateSub/prices.jpg)
 
@@ -56,3 +56,5 @@ and you'll get this list of options:
 and you can pick the new length that you'd like.
 
 If you pick _Pause_, it'll set your subscription to 0 minutes and you'll pay $0 until you put that number back up again.
+
+Then you _Continue_ and everything happens exactly as yo expect it to!

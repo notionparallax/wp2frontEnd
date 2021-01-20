@@ -359,11 +359,14 @@ figure figcaption {
     }
     &.half-width {
       width: 50%;
+      padding: 1em 0;
       &.right {
         float: right;
+        margin-left: 1em;
       }
       &.left {
         float: left;
+        margin-right: 1em;
       }
     }
     img {
