@@ -29,8 +29,16 @@ It's pretty easy to change how long your edition of Walden Pond is. You can even
 
 Everyone's circumstances change, usually pretty frequently. So if you know you've got a bit of cabin time coming up, and you want a longer edition, or you're about to go into intense crunch time, and want a shorter edition, or even to pause for a while, you can go to the <em>payment details</em> page and change your edition length, or pause your subscription.
 
+This is also how you get to the secret menu which so you can get
+
 <figure class="half-width right v-clip">
 
-![](https://waldenpond.press/img/blog/changing-subscription/manageBillingButton.jpg)
+![this is what the button looks like]({{ site.baseurl }}/img/blog/updateSub/manageBillingButton.jpg)
+
+</figure>
+
+<figure class="half-width right v-clip">
+
+![The stripe site, ready to click]({{ site.baseurl }}/img/blog/updateSub/update-plan.jpg)
 
 </figure>
