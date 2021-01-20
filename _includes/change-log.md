@@ -1,5 +1,23 @@
 ## What's changed?
 
+### December
+
+I'd neglected this a little as I didn't think anyone really cared, but people have been looking at it lately, so I'll do my best to be more diligent.
+
+#### In the zine:
+
+There's been a major change to how the magazine gets built. Before there was very little pre-processing of the HTML that I get from Pocket, and then there was a _lot_ of post-processing with JavaScript. I've flipped that and now the pre-processing is much more dramatic. This makes it a bit slower for me, but the quality of the HTML that is rendered in the magazine is _much_ higher. This seems to protect against the strange empty columns problem that occasionally showed up. It also means that the footnote URLS are much more robust.
+
+There's an article title in the right margin of each spread. This can sometimes look a bit tatty because it wraps strangely, but we'll get to that later.
+
+The PDF that I send to the printer is now made with Firefox, not with chrome. It renders much more reliably, but at the cost of not having widow and orphan control on the paragraphs. (That's been an open bug for 14 years!)
+
+#### On the website:
+
+This update.
+
+There is also some more js that controls the payments page which should stop people signing up for two subscriptions when they mean to change the one they have.
+
 ### June
 
 #### In the zine:
