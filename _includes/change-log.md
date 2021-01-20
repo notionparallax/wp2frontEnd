@@ -1,5 +1,17 @@
 ## What's changed?
 
+### January
+
+#### In the zine:
+
+The big change in December to how we pre-process the HTML didn't have full test coverage, so there's been a lot more work on getting the level of coverage up.
+
+A tiny thing, but I didn't like the line spacing of the article titles in the margins, so it's a bit tighter now.
+
+#### On the website:
+
+You can now change your subscription length to 1, 2, 4, 8, 10 or 12 hour editions, or pick zero to pause your subscription.
+
 ### December
 
 I'd neglected this a little as I didn't think anyone really cared, but people have been looking at it lately, so I'll do my best to be more diligent.
