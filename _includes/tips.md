@@ -10,6 +10,9 @@
 
   Once you've tagged something with each of those tags, Pocket will remember them so it's easy to tag articles with them in future.
 
+- You can make [edits](https://waldenpond.press/2020/05/26/editorial.html) up until the 17<sup>th</sup> that will show up in the next month's edition.
+
+  ![](./img/printing_schedule.svg)
 
 - Articles with `computer code` can be hard to print because the lines are sometimes really long, you can't exclude them yet but we're working on it.
 
