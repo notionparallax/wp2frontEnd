@@ -8,7 +8,8 @@
 
 - If you want a particular article to be in the upcoming edition, then tag it with <code>wpMustPrint</code>. If you don't want something to be printed, then tag it with <code>wpNoPrint</code>.
 
-  Once you've tagged something with each of those tags, they'll be in your tag list to use whenever you like.
+  Once you've tagged something with each of those tags, Pocket will remember them so it's easy to tag articles with them in future.
+
 
 - Articles with `computer code` can be hard to print because the lines are sometimes really long, you can't exclude them yet but we're working on it.
 
