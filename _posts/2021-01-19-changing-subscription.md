@@ -29,16 +29,30 @@ It's pretty easy to change how long your edition of Walden Pond is. You can even
 
 Everyone's circumstances change, usually pretty frequently. So if you know you've got a bit of cabin time coming up, and you want a longer edition, or you're about to go into intense crunch time, and want a shorter edition, or even to pause for a while, you can go to the <em>payment details</em> page and change your edition length, or pause your subscription.
 
-This is also how you get to the secret menu which so you can get
+This is also how you get to the secret menu which so you can get all the lengths. I'd like to claim that it's some kind of clever marketing hack, but it's just that I haven't updated the rest of the site. Through this magic button, you can now get a 1, 2, 4, 8, 10 or 12 hour edition.
 
 <figure class="half-width right v-clip">
 
-![this is what the button looks like]({{ site.baseurl }}/img/blog/updateSub/manageBillingButton.jpg)
+![this is what the button looks like](https://waldenpond.press/img/blog/updateSub/manageBillingButton.jpg)
 
 </figure>
+
+It'll take you to a page hosted by the geniuses at Stripe, where you can click **Update plan**.
 
 <figure class="half-width right v-clip">
 
-![The stripe site, ready to click]({{ site.baseurl }}/img/blog/updateSub/update-plan.jpg)
+![The stripe site, ready to click](https://waldenpond.press/img/blog/updateSub/update-plan.jpg)
 
 </figure>
+
+and you'll get this list of options:
+
+<figure class="half-width right v-clip">
+
+![The stripe site, ready to click](https://waldenpond.press/img/blog/updateSub/prices.jpg)
+
+</figure>
+
+and you can pick the new length that you'd like.
+
+If you pick _Pause_, it'll set your subscription to 0 minutes and you'll pay $0 until you put that number back up again.
