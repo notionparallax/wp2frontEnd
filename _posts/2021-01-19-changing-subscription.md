@@ -60,3 +60,5 @@ If you pick _Pause_, it'll set your subscription to 0 minutes and you'll pay $0 
 Then you _Continue_ and everything happens exactly as yo expect it to!
 
 If you're doing this very close to the print date probably between the 10<sup>th</sup> and the 17<sup>th</sup> then it might be worth sending me a quick note to warn me to check that I've collected the change.
+
+<div style="clear:both"></div>
