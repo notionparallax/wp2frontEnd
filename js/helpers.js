@@ -36,7 +36,7 @@ function showArticles(articles, templateID, containerID) {
         ? article.given_title || article.resolved_title
         : "Spooky! no title 👻";
 
-    pocketLink = `https://app.getpocket.com/read/${key}`;
+    pocketLink = `https://getpocket.com/read/${key}`;
     clone.querySelector("h3 a").href = pocketLink;
     editionLinks.push(pocketLink);
     // article.given_url ? article.given_url : "";
