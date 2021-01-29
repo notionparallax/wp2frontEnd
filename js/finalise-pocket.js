@@ -29,8 +29,9 @@ function getSampleArticles(pocketKeys) {
       title.innerText = "Here are some of your recent Pocket saves";
       document.getElementById("articles-container").appendChild(title);
       showArticles(data, "article-template", "articles-container");
-      // document.querySelector("#waiting").classList = "hide";
-      // document.querySelector("#done").classList = "show";
+      document
+        .querySelectorAll(".article-preview-placeholder")
+        .forEach((el) => el.remove());
     })
     .catch((e) => console.error("fetch failed", e));
 }
