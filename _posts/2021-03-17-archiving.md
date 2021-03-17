@@ -18,7 +18,7 @@ description: "Here's how to avoid a LOT of clicking and searching."
 twitter-body: "Here's how to avoid a LOT of clicking and searching."
 # Twitter and facebook will pick up this image. you can also use it in a post with: -
 #![alt text]({{ site.baseurl }}/assets/{{page.featuredimg}})
-featuredimg: https://waldenpond.press/img/blog/explainer/pocket2WP.png
+featuredimg: https://waldenpond.press/img/blog/collision.png
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gPSB9orKpEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
