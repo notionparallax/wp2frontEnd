@@ -18,7 +18,7 @@ description: "Here's how to avoid a LOT of clicking and searching."
 twitter-body: "Here's how to avoid a LOT of clicking and searching."
 # Twitter and facebook will pick up this image. you can also use it in a post with: -
 #![alt text]({{ site.baseurl }}/assets/{{page.featuredimg}})
-featuredimg: https://waldenpond.press/img/blog/collision.png
+featuredimg: https://waldenpond.press/assets/img/blog/collision.png
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gPSB9orKpEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -29,7 +29,9 @@ After you've read your edition, what should you do? Actually you don't _need_ to
 
 ![](https://waldenpond.press/img/blog/editorial/myGraph.png)
 
-<figcaption>This graph doesn't know about what you've had in your edition, just what's still in your Pocket.</figcaption>
+<figcaption>This graph doesn't know about what you've had in your edition, just what's still in your Pocket.
+
+</figcaption>
 
 </figure>
 
