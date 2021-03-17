@@ -29,6 +29,8 @@ After you've read your edition, what should you do? Actually you don't _need_ to
 
 ![](https://waldenpond.press/img/blog/editorial/myGraph.png)
 
+<figcaption>This graph doesn't know about what you've had in your edition, just what's still in your Pocket.</figcaption>
+
 </figure>
 
 You might want to mark them as read[^read] so that your pocket list isn't cluttered up with articles that you've already read. This is especially useful if you read in the Pocket app[^sort] as well as on paper with Walden Pond. The graph of what’s left in your Pocket is reading only from Pocket; it's not going via our database. That means that it shows more content than is actually available if you haven’t marked your articles.
