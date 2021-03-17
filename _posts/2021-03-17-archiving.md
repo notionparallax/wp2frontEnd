@@ -25,7 +25,13 @@ featuredimg: https://waldenpond.press/img/blog/collision.png
 
 After you've read your edition, what should you do? Actually you don't _need_ to do anything. We keep track of the articles that have been in each edition so you won't get them again.
 
-You might want to mark them as read[^read] so that your pocket list isn't cluttered up with articles that you've already read. This is especially useful if you read in the Pocket app[^sort] as well as on paper with Walden Pond. The graph of what's left in your Pocket is reading only from Pocket, not going via our database, so it shows more content than is actually available if you haven't marked your articles.
+<figure class="half-width right">
+
+![](https://waldenpond.press/img/blog/editorial/myGraph.png)
+
+</figure>
+
+You might want to mark them as read[^read] so that your pocket list isn't cluttered up with articles that you've already read. This is especially useful if you read in the Pocket app[^sort] as well as on paper with Walden Pond. The graph of what’s left in your Pocket is reading only from Pocket; it's not going via our database. That means that it shows more content than is actually available if you haven’t marked your articles.
 
 I [wrote about this](https://waldenpond.press/2020/08/24/history.html) a little while ago, but if you have a lot of articles to mark, it's a _very_ tedious job doing it that way. There's a quick way, and the video above explains it in 35 seconds. If you're anti-video, then here's what it says:
 
