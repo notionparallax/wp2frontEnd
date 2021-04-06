@@ -1,17 +1,24 @@
 <!--facebook.html-->
 <!-- Docs here https://developers.facebook.com/docs/sharing/best-practices -->
 
-<meta property="fb:app_id"      content="818520265330863">
-<meta property="og:url"         content="{{site.url}}{{page.url}}">
-<meta property="og:title"       content="{{ page.title }}">
-<meta property="og:description" content="{{ page.description }}">
-<meta property="og:site_name"   content="{{ site.title }}">
-<meta property="og:image"       content="{% if page.featuredimg %}{{ site.url }}/assets/{{ page.featuredimg }}{% else %}{% endif %}">
-<meta property="og:type"        content="article">
-<meta property="og:locale"      content="en_GB">
-<meta property="article:author" content="https://www.facebook.com/{{site.author-facebook}}">
-<meta itemprop="name"           content="{{ page.title }}">
-<meta itemprop="author"    itemscope itemtype="http://schema.org/Person">
-<meta itemprop="name"           content="{{page.author-name}}">
-<meta itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-<meta itemprop="name"           content="{{site.publisher}}">
+<meta property="fb:app_id" content="818520265330863" />
+<meta property="og:url" content="{{site.url}}{{page.url}}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:image" content="{{ page.featuredimg }}" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_GB" />
+<meta
+  property="article:author"
+  content="https://www.facebook.com/{{site.author-facebook}}"
+/>
+<meta itemprop="name" content="{{ page.title }}" />
+<meta itemprop="author" itemscope itemtype="http://schema.org/Person" />
+<meta itemprop="name" content="{{page.author-name}}" />
+<meta
+  itemprop="publisher"
+  itemscope
+  itemtype="http://schema.org/Organization"
+/>
+<meta itemprop="name" content="{{site.publisher}}" />

@@ -1,5 +1,9 @@
 ---
 layout: index
+title: Walden Pond
+description: A little paper zine, full of articles for you to read in your cabin. (Or, on the beach, on a plane, a train, or your sofa)
+featuredimg: https://waldenpond.press/img/frontPageImage2.jpg
+author-name: Ben Doherty
 ---
 
 <div class="index">

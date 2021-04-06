@@ -14,6 +14,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://waldenpond.press" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: WaldenPondZine
 github_username: notionparallax
+author-facebook: ben.doherty1
+publisher: Walden Pond Zine
 
 excerpt_separator: <!--more-->
 
