@@ -1,5 +1,33 @@
 ## What's changed?
 
+### April
+
+#### In the zine:
+
+A tonne of changes to subtle edge cases, loads more testing (just the html processing after it comes from Pocket now has 2000 lines of tests).
+
+#### On the website:
+
+A little bit of setup on google analytics so that I can see if people are using the link expander service.
+
+### February
+
+#### In the zine:
+
+There's been a massive push to add more tests, but also to squash little bugs:
+
+- Wikipedia: I've built up a list of things that get excluded when the robots are building your editions. They're in the sin bin because they make mangled content through Pocket. They are not in the sin bin because I'm doing any censorship. The Australian version of _The Telegraph_ is in there because of bad HTML, not bad journalism, that's a lucky coincidence.
+
+  I always wanted Wikipedia articles to come through nicely, it's the kind of nerd I am. But as I read the piece on [Equites](https://en.wikipedia.org/wiki/Equites) in a café in Vancouver, the 6 pages of footnotes and garbage made me sad. Wikipedia got banned.
+
+  I've finally got around to addressing that. Now you can have Wikipedia articles in your Walden Pond. This might mean that Wikipedia articles show up a bit more often than you'd expect for a while. Such is the nature of stats.
+
+- Code blocks don't lose their line breaks any more (this was a subtle thing with the Mako templating engine). The letter spacing is also slightly tighter (lighter kerning overall) to allow for longer lines of code to fit on the page.
+- There are tests for the em dash and en dash modifications, and more cases are picked up, properly.
+- `Mailto` links are now footnoted properly, not just _undefined_
+- Links that are just images (i.e. no text) are footnoted properly now.
+-
+
 ### January
 
 #### In the zine:
