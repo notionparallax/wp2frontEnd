@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   lx.querySelector("button").addEventListener("click", (e) => {
     e.preventDefault();
     const newState = Array.from(lx.classList).includes("out") ? "in" : "out";
-    alert(newState);
     gtag("event", "shortlink_drawer_" + newState);
     lx.classList.toggle("out");
   });
