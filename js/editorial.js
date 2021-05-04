@@ -50,6 +50,10 @@ document
   .getElementById("all-good-btn")
   .addEventListener("click", (e) => collectEditorial(e));
 
+document
+  .getElementById("about-me-all-good-btn")
+  .addEventListener("click", (e) => collectAboutMe(e));
+
 function setPage(user) {
   let ed = user.editorial;
   console.log(user, "ready to set the sliders");
@@ -82,6 +86,21 @@ function setPage(user) {
     .querySelector(
       `option[value=${ed.sorting_strategy || "magic"}]`
     ).selected = true;
+
+  // about me section
+  document.getElementById("form-name-of-user").value =
+    user.from_firebase_auth.name || "";
+
+  const addr = user.stripe.address;
+  document.getElementById("form-address-line1").value = addr.line1 || "";
+  document.getElementById("form-address-line2").value = addr.line2 || "";
+  document.getElementById("form-address-city").value = addr.city || "";
+  document.getElementById("form-address-state").value = addr.state || "";
+  document.getElementById("form-address-post-code").value =
+    addr.postal_code || "";
+  document
+    .getElementById("shipping_address_country")
+    .querySelector(`option[value=${addr.country || ""}]`).selected = true;
 }
 
 function collectEditorial(event) {
@@ -222,4 +241,37 @@ function rational_time(time_in_minutes) {
     const h = Math.round((time_in_minutes / 60) * subdivisions) / subdivisions;
     return `${h} hours`;
   }
+}
+
+function collectAboutMe(event) {
+  // triggered by the button being clicked collects up the settings,
+  // packages them into an object and patches it back to the server
+  event.preventDefault();
+  let user = window.wp_user;
+  let aboutMe = {
+    name: document.getElementById("form-name-of-user").value,
+    city: document.getElementById("form-address-city").value,
+    country: document.getElementById("shipping_address_country").value,
+    line1: document.getElementById("form-address-line1").value,
+    line2: document.getElementById("form-address-line2").value,
+    postal_code: document.getElementById("form-address-post-code").value,
+    state: document.getElementById("form-address-state").value,
+  };
+  let body = JSON.stringify({ user: user, payload: aboutMe });
+
+  fetch(contextAwareURL() + "/update-about-me", {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    headers: { "Content-Type": "application/json" },
+    body: body,
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.success) {
+        window.location = "home";
+      }
+    })
+    .catch((e) => console.error("fetch failed", e));
+
+  document.getElementById("about-me-all-good-btn").innerText =
+    "hold on a sec...";
 }

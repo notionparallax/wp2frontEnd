@@ -1,0 +1,59 @@
+<form class="form" id="about-me-form">
+  <div class="form-group">
+    <label for="form-name-of-user">Your name</label>
+    <p>This is how your name will be on your edition, and on the envelope.</p>
+    <input
+      type="text"
+      name="form-name-of-user"
+      id="form-name-of-user"
+      placeholder="What's your name?"
+    />
+
+    <p>Where should we send your edition?</p>
+    <label for="form-address-line1">Line 1</label>
+    <input
+      name="form-address-line1"
+      id="form-address-line1"
+      type="text"
+      maxlength="30"
+    />
+    <label for="form-address-line1">Line 2</label>
+    <input
+      name="form-address-line2"
+      id="form-address-line2"
+      type="text"
+      maxlength="30"
+    />
+    <label for="form-address-city">City</label>
+    <input
+      name="form-address-city"
+      id="form-address-city"
+      type="text"
+      maxlength="30"
+    />
+    <label for="form-address-state">State</label>
+    <input
+      name="form-address-state"
+      id="form-address-state"
+      type="text"
+      maxlength="30"
+    />
+    <label for="form-address-post-code">Post code</label>
+    <input
+      name="form-address-post-code"
+      id="form-address-post-code"
+      type="text"
+    />
+    <select
+      aria-required="true"
+      name="country"
+      id="shipping_address_country"
+      placeholder="Country/Region"
+    >
+      {% include countries_select.html %}
+    </select>
+    <input id="hidden-all-ok" name="allok" type="hidden" value="allok" />
+
+    <button id="about-me-all-good-btn">That all looks great, save it!</button>
+  </div>
+</form>
