@@ -251,6 +251,11 @@ input[type="text"] {
   padding: 5px;
   width: 100%;
 }
+select {
+  border: 2px solid #0b0c0c;
+  width: 100%;
+  padding: 5px 2px;
+}
 
 .graph-loading-message {
   max-width: 30rem;
@@ -695,7 +700,7 @@ footer {
 
 /* article preview page */
 .articles-container {
-  margin-top: 2em;
+  // margin-top: 2em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -703,10 +708,9 @@ footer {
   align-content: stretch;
   min-height: 25rem;
 }
-.articles-container h2 {
+.articles-container h1 {
   display: block;
   width: 100%;
-  padding-bottom: 1em;
 }
 .article-preview {
   border-radius: 0.5em;
@@ -839,7 +843,8 @@ section#debug-data {
   grid-template-areas:
     "Intro"
     "History"
-    "Editorial";
+    "Editorial"
+    "About-me";
 }
 @media only screen and (min-width: 1200px) {
   .grid-container {
@@ -849,7 +854,9 @@ section#debug-data {
     gap: 0px 0px;
     grid-template-areas:
       "Intro Intro Intro Intro"
-      "Editorial Editorial History History";
+      "Editorial Editorial History History"
+      "Editorial Editorial About-me About-me"
+      "Editorial Editorial About-me About-me";
   }
 }
 
@@ -865,6 +872,9 @@ section#debug-data {
 
 .History {
   grid-area: History;
+}
+.About-me {
+  grid-area: About-me;
 }
 .blog-container {
   align-content: flex-start;

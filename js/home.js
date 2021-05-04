@@ -13,6 +13,7 @@ window.addEventListener("userReady", function () {
         console.log("all aboard🚂");
         document.getElementById("regular-home").classList.remove("hide");
         document.getElementById("editorial-control").classList.remove("hide");
+        document.getElementById("about-me").classList.remove("hide");
       } else {
         document.getElementById("getting_started").classList.remove("hide");
         setSignupProgressTicks(user); //set the check marks or not
