@@ -5,7 +5,7 @@ title: Stories
 
 <div class="use-case">
 
-{% include use_case.md %}
+{% include use_case.html %}
 
 </div>
 
