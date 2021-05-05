@@ -7,12 +7,13 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <style>
   .gallery-cell {
-    width: 66%;
-    /* height: 200px; */
-    /* margin-right: 2em; */
+    width: 80%;
     padding: 1em;
-    /* background: #8c8; */
-    /* counter-increment: gallery-cell; */
+  }
+  @media only screen and (min-width: 550px) {
+    .gallery-cell {
+      width: 60%;
+    }
   }
 </style>
 
