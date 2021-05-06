@@ -25,13 +25,13 @@ A little paper zine, full of articles for you to read in your cabin. <br><span c
 
 _Walden Pond_ is a little paper zine that comes once a month in the mail ✉. It's full of a selection of the articles you've saved to [Pocket](https://getpocket.com), so you know that you're interested in everything inside. Each issue has over an hour of reading, the battery will never run out, it's clear in bright sunlight 😎 and has a low-latency pen interface (or pencil) 📝.
 
-<div class="use-case" markdown="0">
+<div id="use-case" class="use-case" markdown="0">
 
 {% include use_case.html %}
 
 </div>
 
-<div class="pricing">
+<div id="pricing" class="pricing">
 
 ## Pricing
 
@@ -39,53 +39,51 @@ You'll get a monthly edition that fits how much you read. The fancy thing to do 
 
 {% include pricing.html %}
 
-That's the price, no extra postage costs or mystery fees.
-
 </div>
 
-<div class="shipping">
+<div id="shipping" class="shipping">
 
 {% include shipping.md %}
 
 </div>
 
-<div class="what">
+<div id="what" class="what">
 
 {% include what_do_I_get.md %}
 
 </div>
 
-<div class="yeah-but-why">
+<div id="yeah-but-why" class="yeah-but-why">
 
 {% include yeah_but_why.md %}
 
 </div>
 
-<div class="what-is-pocket">
+<div id="what-is-pocket" class="what-is-pocket">
 
 {% include what_is_pocket.md %}
 
 </div>
 
-<div class="quick-story">
+<div id="quick-story" class="quick-story">
 
 {% include quick_story.md %}
 
 </div>
 
-<div class="long-story">
+<div id="long-story" class="long-story">
 
 {% include long_story.md %}
 
 </div>
 
-<div class="stripe-climate">
+<div id="stripe-climate" class="stripe-climate">
 
 {% include stripe_climate.md %}
 
 </div>
 
-<div class="know-more">
+<div id="know-more" class="know-more">
 
 ## Want to know more?
 
