@@ -54,6 +54,7 @@ window.addEventListener("userReady", function () {
   managePaymentButton.addEventListener("click", goToPaymentManagement);
 
   function goToPaymentManagement() {
+    gtag("event", "going_to_payment_management");
     console.log("asking Stripe for a redirect URL");
     let body = JSON.stringify(window.wp_user);
     fetch(contextAwareURL() + "/create_billing_portal", {

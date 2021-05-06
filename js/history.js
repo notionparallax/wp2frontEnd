@@ -27,6 +27,7 @@ function showHistory(history) {
       console.log(edition, dateISO);
       const editionContainer = document.createElement("div");
       editionContainer.id = `${editionName}-container`;
+      editionContainer.classList.add(`edition-container`);
       let title = document.createElement("h2");
       title.innerText = editionName.replace("_", " ");
       editionContainer.appendChild(title);
@@ -36,4 +37,21 @@ function showHistory(history) {
       const templateID = "article-template";
       showArticles(articles, templateID, `${editionName}-container`);
     });
+
+  document
+    .querySelectorAll(".history-container .preview-title a")
+    .forEach((el) =>
+      el.addEventListener("click", (e) => {
+        const t = e.target;
+        const edition = t.closest(".edition-container").id.split("-")[0];
+        gtag("event", "history_pocket_link", { edition });
+      })
+    );
+  document.querySelectorAll(".history-container .meta a").forEach((el) =>
+    el.addEventListener("click", (e) => {
+      const t = e.target;
+      const edition = t.closest(".edition-container").id.split("-")[0];
+      gtag("event", "history_source_link", { edition });
+    })
+  );
 }

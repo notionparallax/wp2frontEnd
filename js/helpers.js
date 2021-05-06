@@ -61,6 +61,7 @@ function showArticles(articles, templateID, containerID) {
   megaLink.title =
     "Click this to open the pocket page for all the articles in this edition.";
   megaLink.onclick = () => {
+    gtag("event", "explode_link_clicked");
     alert(
       "This will almost certainly be blocked by your popup blocker, you'll " +
         "need to tell the browser that you're OK with that and then click it again."

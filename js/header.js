@@ -4,6 +4,7 @@ if (hamburger) {
   // console.log("set click on burger");
   hamburger.onclick = function () {
     document.querySelector(".profile").classList.toggle("menu-active");
+    gtag("event", "menu-toggled");
   };
 }
 
