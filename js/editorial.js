@@ -54,6 +54,19 @@ document
   .getElementById("about-me-all-good-btn")
   .addEventListener("click", (e) => collectAboutMe(e));
 
+document
+  .getElementById("form-longest_article")
+  .addEventListener("change", (e) =>
+    gtag("event", "longest-changed", { newVal: e.target.value })
+  );
+document
+  .getElementById("form-history_depth")
+  .addEventListener("change", (e) =>
+    gtag("event", "history_depth-changed", { newVal: e.target.value })
+  );
+
+document.getElementById("form-shortest_article");
+
 function setPage(user) {
   let ed = user.editorial;
   console.log(user, "ready to set the sliders");
@@ -123,6 +136,7 @@ function collectEditorial(event) {
     curation_strategy: document.getElementById("curation_strategy").value,
     sorting_strategy: document.getElementById("sorting_strategy").value,
   };
+  gtag("event", "editorial-changed", editorial);
   let body = JSON.stringify({ user: user, payload: editorial });
 
   fetch(contextAwareURL() + "/update-editorial", {
@@ -257,6 +271,7 @@ function collectAboutMe(event) {
     postal_code: document.getElementById("form-address-post-code").value,
     state: document.getElementById("form-address-state").value,
   };
+  gtag("event", "about_me_data_changed");
   let body = JSON.stringify({ user: user, payload: aboutMe });
 
   fetch(contextAwareURL() + "/update-about-me", {
