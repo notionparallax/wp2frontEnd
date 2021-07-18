@@ -99,6 +99,12 @@ function setPage(user) {
     .querySelector(
       `option[value=${ed.sorting_strategy || "magic"}]`
     ).selected = true;
+  if (ed.show_name_on_spine != undefined) {
+    document.getElementById("show_name_on_spine").checked =
+      ed.show_name_on_spine;
+  } else {
+    document.getElementById("show_name_on_spine").checked = true;
+  }
 
   // about me section
   document.getElementById("form-name-of-user").value =
@@ -135,6 +141,7 @@ function collectEditorial(event) {
     searchTerms: document.getElementById("search-words").value,
     curation_strategy: document.getElementById("curation_strategy").value,
     sorting_strategy: document.getElementById("sorting_strategy").value,
+    show_name_on_spine: document.getElementById("show_name_on_spine").checked,
   };
   gtag("event", "editorial-changed", editorial);
   let body = JSON.stringify({ user: user, payload: editorial });
