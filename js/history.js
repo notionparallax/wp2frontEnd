@@ -17,8 +17,20 @@ window.addEventListener("userReady", function () {
     .catch((e) => console.error("fetch failed", e));
 });
 
+function edNum(edString) {
+  let numStr = edString.replace("edition_", "");
+  return parseInt(numStr, 10);
+}
+function sortByEditionNumber(a, b) {
+  if (edNum(a) > edNum(b)) {
+    return 1;
+  } else {
+    return -1;
+  }
+}
 function showHistory(history) {
   Object.keys(history)
+    .sort(sortByEditionNumber)
     .reverse()
     .forEach((editionName) => {
       const edition = history[editionName];
