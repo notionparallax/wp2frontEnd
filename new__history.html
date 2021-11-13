@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<p>Here's what you've read so far.</p>
+
+<p>
+  The most recent edition is only indicative of what you'll get. If you don't
+  like it, you can exclude articles with the <code>wpnoprint</code> tag in
+  Pocket, or include other articles with the editorial controls on
+  <a href="/home">the home page</a>.
+</p>
+
+<div id="history-container" class="history-container">
+  {% include pocket_article_template.html %}
+</div>
+
+{% include base-scripts.md %}
+<script src="js/new_history.js"></script>
