@@ -56,7 +56,7 @@ window.addEventListener("userReady", function () {
   function goToPaymentManagement() {
     gtag("event", "going_to_payment_management");
     console.log("asking Stripe for a redirect URL");
-    let body = JSON.stringify(window.wp_user);
+    const body = JSON.stringify(window.wp_user);
     fetch(contextAwareURL() + "/create_billing_portal", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: { "Content-Type": "application/json" },
