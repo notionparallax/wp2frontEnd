@@ -10,7 +10,7 @@ author-name: Ben Doherty
 
 <p class="reset"><img src="./img/frontPageImage2.jpg" class="mega-image" alt="a copy of Walden Pond on a wooden table, with a pencil resting on top"></p>
 
-<h1 class="name-title">Walden Pond</h1>
+<h1 class="name-title">Walden Pond - on indefinite hiatus! Don't pay for a subscription.</h1>
 
 <blockquote class="value-prop">
 A little paper zine, full of articles for you to read in your cabin. <br><span class="secondary-prop">(Or, on the beach, on a plane, a train, or your sofa)</span>
